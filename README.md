@@ -37,12 +37,12 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 - As logged in website user, I can:
 
-1. Like and unlike blog posts
-2. Comment on blog posts to give my opinion
-3. Read other users comments
-4. Edit comments I made
-5. Delete my comments if I desire to do so
-6. Logout from the website
+1. Like and unlike blog posts, so that I can show other users which posts are interesting
+2. Comment on blog posts, so that I can give my opinion and feel lots of interactivity with the website
+3. Read other users comments, so that I feel connected to a community
+4. Edit comments I made, so that I feel in control of the content I add to the website
+5. Delete my comments, so that I do not have to leave comments on the website forever
+6. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users
 
 ## Features
 
