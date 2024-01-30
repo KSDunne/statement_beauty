@@ -26,13 +26,14 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 - As a website user, I can:
 
-1. Understand the purpose of this website at a glance and easily navigate around it
-2. View a list of blogs that this site contains
-3. View the date a blog post was created so that it is obvious which blogs are recent
-4. View the number of likes on blogs showing which ones are popular
-5. Click on a blog post of interest that will then send the user to the login page if not already logged in
-6. Register for an account to avail of the services offered to members
-7. Navigate to an about page that gives the overall mission statement of the website
+1. Understand the purpose of this website quickly, so that I can stay interested and use the website to its full capability
+2. Navigate easily, so that I use all the capabilities of the website
+3. View a list of blogs that this site contains, so that I can find the posts I am interested in
+4. View the date a blog post was created, so that it is obvious which blogs are recent
+5. View the number of likes on blogs, so that it's easy to see which ones are popular
+6. Click on a blog post of interest that will then send the user to the login page, so that they can log in if not already logged in
+7. Register for an account, so that they can avail of the services offered to members
+8. Navigate to an about page, so that the user can view the overall mission statement of the website
 
 - As logged in website user, I can:
 
