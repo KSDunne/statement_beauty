@@ -51,7 +51,11 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 3. Read other users comments, so that I feel connected to a community (Part of epic 6)
 4. Edit comments I made, so that I feel in control of the content I add to the website (Part of epic 2 and 6)
 5. Delete my comments, so that I do not have to leave comments on the website forever (Part of epic 2 and 6)
-6. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 5 and 7)
+6. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2 and 6)
+7. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
+8. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
+9. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 2 and 6)
+10. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 5 and 7)
 
 ## Features
 
