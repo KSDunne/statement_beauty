@@ -69,9 +69,9 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 ![Index iPhone SE](docs/readme_images/Home_Page_Wireframe.png)
 
-![Index Tablet](docs/readme_images/Monitor_Home_Page_Wireframe.png)
+![Index Tablet](docs/readme_images/Tablet_Home_Page_Wireframe.png)
 
-![Index Monitor](docs/readme_images/Tablet_Home_Page_Wireframe.png)
+![Index Monitor](docs/readme_images/Monitor_Home_Page_Wireframe.png)
 
 ## Technology
 
