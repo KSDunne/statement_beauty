@@ -65,6 +65,14 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 ## Wireframes
 
+### Index page wireframes
+
+![Index iPhone SE](docs/wireframes/Home_Page_Wireframe.png)
+
+![Index Tablet](docs/wireframes/Monitor_Home_Page_Wireframe.png)
+
+![Index Monitor](docs/wireframes/Tablet_Home_Page_Wireframe.png)
+
 ## Technology
 
 ### Languages
