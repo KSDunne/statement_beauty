@@ -84,7 +84,7 @@ Only if further colors needed - Mustard, Green
 - #FFD8DD, a light pink that can be see in palette shown
 - #FCD885, a mustard color that can be see in palette shown
 - #C8D889, a green color that can be see in palette shown
-- #fffae6, off-white
+- #FFFAE6, off-white
 
 See color palette below for an illustration of all colors mentioned
 
