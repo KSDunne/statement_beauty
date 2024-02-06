@@ -69,19 +69,19 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 ### Color
 
-This website is a makeup and hair blog. The topics that this website will host are largely based around trends, therefore I decided to base the color palette for this project around the trending color of the year in 2024. The color trending for this year is 'Peach Fuzz' with the hexcode of #FFBE98.
+This website is a makeup and hair blog. The topics that this website will host are largely based around trends, therefore I decided to base the color palette for this project around the trending color of the year in 2024. The color trending for this year is 'Peach Fuzz' with the hexadecimal code of #FFBE98.
 
 I also kept accessibility in mind when choosing colors and I used a color blind friendly palette. Colors were generated using [Venngage's accessible color palette generator](https://venngage.com/tools/accessible-color-palette-generator).
 
-Primary Colors - White / Peach Fuzz
+Primary Colors - White, Peach Fuzz
 
-Secondary Colors - Light Pink, Light Peach
+Secondary Colors - Light Purple, Light Pink
 
-Only if further colors needed - Mustard / Green
+Only if further colors needed - Mustard, Green
 
-- #FFBE98, peach fuzz that can be see in palette shown
-- #F0CCE2, a light pink/purple that can be see in palette shown
-- #FFD8DD, a light peach that can be see in palette shown
+- #FFBE98, peach fuzz that can be seen in the palette below
+- #F0CCE2, a light purple that can be seen in palette shown
+- #FFD8DD, a light pink that can be see in palette shown
 - #FCD885, a mustard color that can be see in palette shown
 - #C8D889, a green color that can be see in palette shown
 - #fffae6, off-white
