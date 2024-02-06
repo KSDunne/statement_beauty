@@ -43,7 +43,7 @@ body {
   bottom: 5%;
   min-width: 30%;
   left: -2px;
-  background-color: #188181;
+  background-color: #ffbe98;
 }
 
 .scale {
@@ -52,7 +52,7 @@ body {
 }
 
 .author {
-  color: white;
+  color: black;
   margin: 4px;
   text-transform: uppercase;
 }
@@ -113,7 +113,7 @@ body {
 
 .btn-signup,
 .btn-edit {
-  background-color: #188181;
+  background-color: #ffbe98;
   color: #fff;
 }
 
