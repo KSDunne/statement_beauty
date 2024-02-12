@@ -109,11 +109,20 @@ See color palette below for an illustration of all colors mentioned
 
 ![Index Monitor](docs/readme_images/Monitor_Home_Page_Wireframe.png)
 
-## Technology
+## Technology Used
 
-### Languages
-
-### Frameworks & Tools
+- [HTML5](https://developer.mozilla.org/en-US/docs/Learn/HTML "link to html mozilla documentation")
+Used to create content and structure
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS "link to css mozilla documentation")
+Used to add custom styles
+- [Django](https://www.djangoproject.com/ "link to django docs homepage")
+The python framework used to develop the site
+- [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage")
+Used to host images
+- [GitHub](https://github.com/ "Link to github webpage")
+GitHub was used to store the code files, README files and assets
+- [Heroku](https://id.heroku.com/login "Link to Heroku login")
+Heroku was used to deploy the project
 
 ## Testing
 
