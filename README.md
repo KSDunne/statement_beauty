@@ -61,6 +61,11 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 9. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 2 and 6)
 10. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 5 and 7)
 
+- As a site owner, I can:
+
+1. Allow comments to be shown to the casual website user, only if they have been approved
+2. I can mark collaboration requests as read, so that I can see how many still need to be processed
+
 ## Features
 
 ### Logo and navigation bar
