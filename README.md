@@ -44,6 +44,10 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 7. Register for an account, so that they can avail of the services offered to members (Part of epic 3)
 8. Navigate to an about page, so that the user can view the overall mission statement of the website (Part of epic 8)
 
+- As a potential collaborator, I can:
+
+1. Fill out a contact form to request collaboration on my project or idea (Part of epic 8)
+
 - As logged in website user, I can:
 
 1. Like and unlike blog posts, so that I can show other users which posts are interesting (Part of epic 6)
