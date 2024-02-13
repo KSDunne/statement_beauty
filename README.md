@@ -55,11 +55,14 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 3. Read other users comments, so that I feel connected to a community (Part of epic 6)
 4. Edit comments I made, so that I feel in control of the content I add to the website (Part of epic 2 and 6)
 5. Delete my comments, so that I do not have to leave comments on the website forever (Part of epic 2 and 6)
-6. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2 and 6)
-7. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
-8. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
-9. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 2 and 6)
-10. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 5 and 7)
+6. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 5 and 7)
+
+- As a logged in superuser, I can:
+
+1. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2 and 6)
+2. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
+3. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
+4. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 2 and 6)
 
 - As a site owner, I can:
 
@@ -112,17 +115,17 @@ See color palette below for an illustration of all colors mentioned
 ## Technology Used
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Learn/HTML "link to html mozilla documentation")
-Used to create content and structure
+  Used to create content and structure
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS "link to css mozilla documentation")
-Used to add custom styles
+  Used to add custom styles
 - [Django](https://www.djangoproject.com/ "link to django docs homepage")
-The python framework used to develop the site
+  The python framework used to develop the site
 - [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage")
-Used to host images
+  Used to host images
 - [GitHub](https://github.com/ "Link to github webpage")
-GitHub was used to store the code files, README files and assets
+  GitHub was used to store the code files, README files and assets
 - [Heroku](https://id.heroku.com/login "Link to Heroku login")
-Heroku was used to deploy the project
+  Heroku was used to deploy the project
 
 ## Testing
 
