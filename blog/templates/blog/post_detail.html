@@ -68,10 +68,10 @@
           {% if not comment.approved and comment.author == user %}
           <p class="approval">This comment is awaiting approval</p>
           {% endif %} {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-delete" comment_id="{{ comment.id }}">
+          <button class="btn btn-delete" data-comment_id="{{ comment.id }}">
             Delete
           </button>
-          <button class="btn btn-edit" comment_id="{{ comment.id }}">
+          <button class="btn btn-edit" data-comment_id="{{ comment.id }}">
             Edit
           </button>
           {% endif %}
