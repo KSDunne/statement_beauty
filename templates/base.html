@@ -1,8 +1,8 @@
-{% load static %}
-{% url 'home' as home_url %}
-{% url 'about' as about_url %}
-{% url 'account_login' as login_url %}
-{% url 'account_signup' as signup_url %}
+{% load static %} 
+{% url 'home' as home_url %} 
+{% url 'about' as about_url %} 
+{% url 'account_login' as login_url %} 
+{% url 'account_signup' as signup_url %} 
 {% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
@@ -46,9 +46,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}"
           ><span class="brand"
-            >s<span class="red-o">t</span>atement<span class="thin"
-              >|beauty</span
-            ></span
+            >Statement<span class="thin">|Beauty</span></span
           ></a
         >
         <button
@@ -69,7 +67,7 @@
                 class="nav-link {% if request.path == home_url %}active"
                 aria-current="page{% endif %}"
                 href="{% url 'home' %}"
-                >Home</a
+                >Blog</a
               >
             </li>
             <li class="nav-item">
@@ -108,7 +106,7 @@
             </li>
             {% endif %}
           </ul>
-          <span class="navbar-text text-muted"> hair and makeup blog </span>
+          <span class="navbar-text text-muted"> Hair and Makeup</span>
         </div>
       </div>
     </nav>
