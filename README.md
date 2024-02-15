@@ -30,6 +30,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 6. Blog that has different capabilities when logged in compared to when not logged in
 7. Log out page
 8. About page
+9. Book makeover
 
 ### User stories
 
@@ -52,6 +53,8 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 4. Edit comments I made, so that I feel in control of the content I add to the website (Part of epic 2 and 6)
 5. Delete my comments, so that I do not have to leave comments on the website forever (Part of epic 2 and 6)
 6. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 5 and 7)
+7. View deals of the season on makeovers, so that I can save some money by booking the makeover that is trending (Part of epic 9)
+8. Fill in a form on the book makeover tab, so that I can inform the business owner of a time that suits me for my makeover
 
 - As a logged in superuser, I can:
 
