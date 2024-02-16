@@ -9,7 +9,17 @@ def makeover_deals(request):
     """
     makeover = Makeover.objects.all().order_by('-updated_on').first()
     booking = Booking.objects.all().order_by('-date_of_booking').first()
+    
+    if request.method == "POST":
+        booking_form = BookingForm(data=request.POST)
+        if booking_form.is_valid():
+            booking = booking_form.save(commit=False)
+            booking.username = request.user
+            booking.save()
+
+    
     booking_form = BookingForm()
+
 
     return render(
         request,
