@@ -29,7 +29,7 @@ class Makeover(models.Model):
     
     Fields:
         - `title` (CharField): A heading for the deal of the season
-        - `updated_on` (DateField): Date the last deal was updated on the 
+        - `updated_on` (DateTimeField): Date the last deal was updated on the 
         website so customer knows if the deal is still running.
         - `content` (TextField): A text field for a description of the deal
         of the season
@@ -49,13 +49,13 @@ class Booking(models.Model):
     Fields:
         - `username` (ForeignKey): Reference to the user making the booking.
         - `date_of_booking` (DateField): Date of the reservation.
-        - `service_type` (ForeignKey): Reference to the booked service.
+        - `service_type` (IntegerField): Reference to the booked service.
         - `start_time` (TimeField): Start time of the reservation chosen from
         predefined choices.
-        - `end_time` (TimeField): End time of the reservation, calculated
-        based on the start time and service session length.
         - `confirmed` (BooleanField): Indicates whether the booking is
         confirmed.
+        - `message` (CharField): A free text area to allow the customer to
+        make addition comments or ask a question.
 
     Meta:
         - `ordering`: Default ordering for queries based on date and
