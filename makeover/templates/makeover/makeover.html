@@ -1,10 +1,13 @@
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
+{% extends 'base.html' %} 
+{% block content %} 
+{% load static %} 
+{% load crispy_forms_tags %}
+
+<!-- Displaying Deal of the Season -->
 <div class="container mt-5">
   <div class="row">
     <div class="col-4 text-center">
-      <img src="{% static 'images/default.jpg' %}" class="profile-image"/>
+      <img src="{% static 'images/default.jpg' %}" class="profile-image" />
     </div>
     <div class="col-8">
       <!-- Title goes between these h2 tags -->
@@ -16,9 +19,45 @@
   <div class="row">
     <div class="col text-right">
       <!-- Updated on field goes in here -->
-
       <p class="text-end"><em>Updated on: {{ makeover.updated_on }}</em></p>
     </div>
   </div>
+
+  <!-- Displaying Bookings -->
+  <div class="row">
+    <div class="col-md-8 card mb-4 mt-3">
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3>Your booking:</h3>
+        <div class="col-12 col-md-8">
+          <h3>{{ booking.username }}</h3>
+          <h4>{{ booking.date_of_booking}}</h4>
+          {{ booking.service_type}}
+        </div>
+        {% else %}
+        <p>Log in to view your booking</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Creating New Bookings -->
+    <div class="col-md-4 card mb-4 mt-3">
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3>Make a booking:</h3>
+        <form id="bookingForm" method="post" style="margin-top: 1.3em">
+          {{ booking_form | crispy }} {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">
+            Submit
+          </button>
+        </form>
+        {% else %}
+        <p>Log in to make a booking</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endblock content %} {% block extras %}
+  <script src="{% static 'js/comments.js' %}"></script>
 </div>
-{% endblock content %}
+{% endblock %}
