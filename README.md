@@ -117,6 +117,14 @@ See color palette below for an illustration of all colors mentioned
 
 ![Index Monitor](docs/readme_images/Home_Page_Monitor.png)
 
+### Book makeover page wireframes
+
+![Index iPhone SE](docs/readme_images/Book_Makeover_Page_Phone.png)
+
+![Index Tablet](docs/readme_images/Book_Makeover_Page_Tablet.png)
+
+![Index Monitor](docs/readme_images/Book_Makeover_Page_Monitor.png)
+
 ## Technology Used
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Learn/HTML "link to html mozilla documentation")
