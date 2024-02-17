@@ -90,11 +90,13 @@ Statement Beauty is a fictitious business that started out as a hair and makeup 
 
 ### Makeover deals
 
-### Form to book a makeover when logged in
+### Form with CRUD functionality to book a makeover when logged in
 
 ### View the bookings I have made when I am logged in
 
-### Comments sections on posts
+### View comments on posts
+
+### CRUD functionality on comments when logged in
 
 ### Footer
 
