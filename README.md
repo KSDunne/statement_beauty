@@ -111,11 +111,11 @@ See color palette below for an illustration of all colors mentioned
 
 ### Index page wireframes
 
-![Index iPhone SE](docs/readme_images/Home_Page_Wireframe.png)
+![Index iPhone SE](docs/readme_images/Home_Page_Phone.png)
 
-![Index Tablet](docs/readme_images/Tablet_Home_Page_Wireframe.png)
+![Index Tablet](docs/readme_images/Home_Page_Tablet.png)
 
-![Index Monitor](docs/readme_images/Monitor_Home_Page_Wireframe.png)
+![Index Monitor](docs/readme_images/Home_Page_Monitor.png)
 
 ## Technology Used
 
