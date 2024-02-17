@@ -149,7 +149,7 @@ See color palette below for an illustration of all colors mentioned
 
 Please find a screenshot of tables below. These tables are in preparation for the final entity relationship diagram (ERD)
 
-![ERD](docs/readme_images/erd_1_170224.png)
+![ERD](docs/readme_images/erd_1_170224.PNG)
 
 ## Technology Used
 
