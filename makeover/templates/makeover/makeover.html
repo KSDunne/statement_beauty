@@ -32,7 +32,8 @@
         <div class="col-12 col-md-8">
           <h3>{{ booking.username }}</h3>
           <h4>{{ booking.date_of_booking}}</h4>
-          {{ booking.service_type}}
+          <h4>{{ booking.service_type}}</h4>
+          {{ booking.start_time}}
         </div>
         {% else %}
         <p>Log in to view your booking</p>
