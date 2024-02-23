@@ -16,7 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from hello_world import views as index_views
 from about import views as about_views
 
 urlpatterns = [
@@ -24,7 +23,6 @@ urlpatterns = [
     path("makeover/", include("makeover.urls"), name="makeover-urls"),
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
-    path('hello/', index_views.index, name='index'),
     path('summernote/', include('django_summernote.urls')),
     path("", include("blog.urls"), name="blog-urls"),
 ]
