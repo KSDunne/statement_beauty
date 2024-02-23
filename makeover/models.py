@@ -21,7 +21,7 @@ BOOKING_TIME = ((datetime.time(8, 30, 0), '8:30am'),
                 (datetime.time(16, 30, 0), '4:30pm'),
                 )
 
-SERVICE = ((0, "Makeup"), (1, "Hair"))
+SERVICE = (("Makeup Appointment", "Makeup"), ("Hair Appointment", "Hair"))
 
 class Makeover(models.Model):
     """
@@ -67,7 +67,7 @@ class Booking(models.Model):
     username = models.ForeignKey(User, on_delete=models.CASCADE,
                                  related_name='username_booking')
     date_of_booking = models.DateField()
-    service_type = models.IntegerField(choices=SERVICE)
+    service_type = models.TextField(choices=SERVICE)
     start_time = models.TimeField(choices=BOOKING_TIME)
     confirmed = models.BooleanField(default=False)
     message = models.CharField(max_length=500, blank=True)
