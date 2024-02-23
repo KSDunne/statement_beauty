@@ -172,6 +172,8 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ### Fixed bugs
 
+1. Had to 'zero' the makeup models due to a data type change of integer field to text field.
+
 ### Unfixed bugs
 
 ### Supported screens and browsers
