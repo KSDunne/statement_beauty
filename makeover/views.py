@@ -8,14 +8,14 @@ def makeover_deals(request):
     Renders the Makeover page
     """
     makeover = Makeover.objects.all().order_by('-updated_on').first()
-    booking = Booking.objects.all().order_by('-date_of_booking').first()
+    bookings = Booking.objects.all().order_by('-date_of_booking')
     
     if request.method == "POST":
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
-            booking = booking_form.save(commit=False)
-            booking.username = request.user
-            booking.save()
+            bookings = booking_form.save(commit=False)
+            bookings.username = request.user
+            bookings.save()
 
     
     booking_form = BookingForm()
@@ -26,7 +26,7 @@ def makeover_deals(request):
         "makeover/makeover.html",
         {
          "makeover": makeover,
-         "booking": booking,
+         "bookings": bookings,
          "booking_form": booking_form,
          },
     )
