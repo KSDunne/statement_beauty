@@ -31,7 +31,8 @@
         <h3>List of Your Bookings:</h3>
         <hr>
         {% for booking in bookings %}
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8
+        {% if not booking.confirmed %} faded{% endif %}">
           <h3>{{ booking.username }}</h3>
           <h4>{{ booking.date_of_booking}}</h4>
           <h4>{{ booking.service_type}}</h4>
