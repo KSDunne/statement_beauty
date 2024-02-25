@@ -19,7 +19,7 @@ def makeover_deals(request):
             messages.add_message(request, messages.SUCCESS, 
 "Booking request received! Please await confirmation.")
 
-    bookings = Booking.objects.all().order_by('-date_of_booking')
+    bookings = Booking.objects.all().filter(username = request.user).order_by('-date_of_booking')
     booking_form = BookingForm()
 
 
