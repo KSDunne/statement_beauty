@@ -174,6 +174,8 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 1. Had to 'zero' the makeup models due to a data type change of integer field to text field.
 
+2. Booking query was in the wrong place in the makeover_deals function in the makeover view.
+
 ### Unfixed bugs
 
 ### Supported screens and browsers
