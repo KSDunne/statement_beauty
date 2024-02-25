@@ -176,6 +176,10 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 2. Booking query was in the wrong place in the makeover_deals function in the makeover view.
 
+3. Filter bookings bug
+
+4. Navbar bug
+
 ### Unfixed bugs
 
 ### Supported screens and browsers
