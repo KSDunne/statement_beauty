@@ -178,7 +178,7 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 3. Filter bookings bug
 
-4. Navbar bug
+4. Navbar bug was fixed at the top of base.html 
 
 ### Unfixed bugs
 
