@@ -36,19 +36,28 @@ def makeover_deals(request):
     
 def booking_edit(request, booking_id):
     """
-    View to edit booking
+    Edit an existing booking.
+
+    **Context**
+
+    ``booking``
+        An instance of :model:`makeover.Booking`.
+
+    ``booking_form``
+        An instance of :form:`makeup.BookingForm`.
     """
     if request.method == "POST":
-        Booking = Booking.objects.all().filter(username = request.user).order_by('-date_of_booking')
         booking = get_object_or_404(Booking, pk=booking_id)
         booking_form = BookingForm(data=request.POST, instance=booking)
 
         if booking_form.is_valid():
-            booking = booking_form.save(commit=False)
-            booking.confirmed = False
-            booking.save()
+            booking = booking_form.save()
             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
+            return HttpResponseRedirect(reverse('makeover', args=[booking_id]))
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating booking!')   
+            messages.add_message(request, messages.ERROR, 'Error updating booking!')
+    else:
+        booking = get_object_or_404(Booking, pk=booking_id)
+        booking_form = BookingForm(instance=booking)
 
-    return HttpResponseRedirect(reverse('makeover'))
+    return render(request, 'makeover/booking_edit.html', {'booking': booking, 'booking_form': booking_form})

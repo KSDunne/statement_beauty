@@ -11,73 +11,60 @@
     </div>
     <div class="col-8">
       <!-- Title goes between these h2 tags -->
-      <h2>{{ makeover.title }}</h2>
+      <h2 id="makeoverTitle">{{ makeover.title }}</h2>
       <!-- Content goes directly underneath this -->
-      {{ makeover.content | safe }}
+      <div id="makeoverContent">{{ makeover.content | safe }}</div>
     </div>
   </div>
   <div class="row">
     <div class="col text-right">
-      <!-- Updated on field goes in here -->
-      <p class="text-end"><em>Updated on: {{ makeover.updated_on }}</em></p>
+      <!-- Updated on goes here -->
+      <p class="text-end"><em>Updated on: <span id="makeoverUpdatedOn">{{ makeover.updated_on }}</span></em></p>
     </div>
   </div>
 
   <!-- Displaying Bookings -->
-  <div class="row">
-    <div class="col-md-8 card mb-4 mt-3">
-      <div class="card-body">
-        {% if user.is_authenticated %}
-        <h3>List of Your Bookings:</h3>
-        <hr />
-        {% for booking in bookings %}
-        <div
-          class="col-12 col-md-8 {% if not booking.confirmed %} faded{% endif %}"
-        >
+  <div class="row" id="bookingList">
+    {% if user.is_authenticated %}
+      <h3>List of Your Bookings:</h3>
+      <hr />
+      {% for booking in bookings %}
+        <div class="col-12 col-md-8 bookingItem" id="booking{{ booking.id }}">
           <h3>{{ booking.username }}</h3>
           <h4>{{ booking.date_of_booking}}</h4>
           <h4>{{ booking.service_type}}</h4>
-          <h5>{{ booking.message}}</h5>
+          <div class="bookingMessage">{{ booking.message | linebreaks }}</div>
           <h6>{{ booking.id}}</h6>
-          {{ booking.start_time}}
+          <span class="startTime">{{ booking.start_time}}</span>
           <hr />
           {% if user.is_authenticated %}
-            <button
-              class="btn btn-edit-book"
-              data-booking_id="{{ booking.id }}"
-            >
-              Edit
-            </button>
+            <button class="btn btn-edit-book" data-booking_id="{{ booking.id }}">Edit</button>
           {% endif %}
         </div>
-        {% endfor %} {% elif not user.is_authenticated %}
-        <p>Log in to view your booking</p>
-        {% endif %}
-      </div>
-    </div>
+      {% endfor %}
+    {% elif not user.is_authenticated %}
+      <p>Log in to view your booking</p>
+    {% endif %}
+  </div>
 
-    <!-- Creating New Bookings -->
+  <!-- Creating New Bookings -->
+  <div class="row">
     <div class="col-md-4 card mb-4 mt-3">
       <div class="card-body">
         {% if user.is_authenticated %}
-        <h3>Make a booking:</h3>
-        <form id="bookingForm" method="post" style="margin-top: 1.3em">
-          {{ booking_form | crispy }} {% csrf_token %}
-          <button
-            id="submitButtonBook"
-            type="submit"
-            class="btn btn-signup btn-lg"
-          >
-            Submit
-          </button>
-        </form>
+          <h3>Make a booking:</h3>
+          <form id="bookingForm" method="post" style="margin-top: 1.3em">
+            {{ booking_form | crispy }} {% csrf_token %}
+            <button id="submitButtonBook" type="submit" class="btn btn-signup btn-lg">Submit</button>
+          </form>
         {% else %}
-        <p>Log in to make a booking</p>
+          <p>Log in to make a booking</p>
         {% endif %}
       </div>
     </div>
   </div>
 </div>
-{% endblock content %} {% block extras %}
+{% endblock content %}
+{% block extras %}
 <script src="{% static 'js/bookings.js' %}"></script>
 {% endblock %}
