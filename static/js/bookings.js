@@ -6,7 +6,8 @@ const submitButton = document.getElementById("submitButtonBook");
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
     let bookingId = e.target.getAttribute("booking_id");
-    let bookingContent = document.getElementsByTagName("h5").innerText;
+    let bookingContent = document.getElementById(`booking${bookingId}`
+    ).innerText;
     bookingText.value = bookingContent;
     submitButton.innerText = "Update";
     bookingForm.setAttribute("action", `booking_edit/${bookingId}`);
