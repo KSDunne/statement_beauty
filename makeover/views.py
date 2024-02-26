@@ -39,20 +39,16 @@ def booking_edit(request, booking_id):
     View to edit booking
     """
     if request.method == "POST":
-        queryset = Booking.objects.all().filter(username = request.user).order_by('-date_of_booking')
-        booking = get_object_or_404(queryset)
+        Booking = Booking.objects.all().filter(username = request.user).order_by('-date_of_booking')
         booking = get_object_or_404(Booking, pk=booking_id)
         booking_form = BookingForm(data=request.POST, instance=booking)
 
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
-            booking.booking = booking
             booking.confirmed = False
             booking.save()
             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating booking!')
-
-    booking_form = BookingForm()           
+            messages.add_message(request, messages.ERROR, 'Error updating booking!')   
 
     return HttpResponseRedirect(reverse('makeover'))
