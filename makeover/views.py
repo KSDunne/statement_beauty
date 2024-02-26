@@ -52,6 +52,7 @@ def booking_edit(request, booking_id):
 
         if booking_form.is_valid():
             booking = booking_form.save()
+            booking.confirmed = False
             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
             return HttpResponseRedirect(reverse('makeover', args=[booking_id]))
         else:
