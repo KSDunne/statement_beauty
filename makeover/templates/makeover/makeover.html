@@ -29,18 +29,28 @@
       <div class="card-body">
         {% if user.is_authenticated %}
         <h3>List of Your Bookings:</h3>
-        <hr>
+        <hr />
         {% for booking in bookings %}
-        <div class="col-12 col-md-8
-        {% if not booking.confirmed %} faded{% endif %}">
+        <div
+          class="col-12 col-md-8 {% if not booking.confirmed %} faded{% endif %}"
+        >
           <h3>{{ booking.username }}</h3>
           <h4>{{ booking.date_of_booking}}</h4>
           <h4>{{ booking.service_type}}</h4>
+          <h5>{{ booking.message}}</h5>
+          <h6>{{ booking.id}}</h6>
           {{ booking.start_time}}
-          <hr>
+          <hr />
+          {% if user.is_authenticated %}
+            <button
+              class="btn btn-edit-book"
+              data-booking_id="{{ booking.id }}"
+            >
+              Edit
+            </button>
+          {% endif %}
         </div>
-        {% endfor %} 
-        {% elif not user.is_authenticated %}
+        {% endfor %} {% elif not user.is_authenticated %}
         <p>Log in to view your booking</p>
         {% endif %}
       </div>
@@ -53,7 +63,11 @@
         <h3>Make a booking:</h3>
         <form id="bookingForm" method="post" style="margin-top: 1.3em">
           {{ booking_form | crispy }} {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">
+          <button
+            id="submitButtonBook"
+            type="submit"
+            class="btn btn-signup btn-lg"
+          >
             Submit
           </button>
         </form>
@@ -63,8 +77,8 @@
       </div>
     </div>
   </div>
-  {% endblock content %} 
-  {% block extras %}
-  <script src="{% static 'js/comments.js' %}"></script>
+  {% endblock content %} {% block extras %}
+  <script src="{% static 'js/bookings.js' %}"></script>
+  <!-- <script src="{% static 'js/comments.js' %}"></script>-->
 </div>
 {% endblock %}

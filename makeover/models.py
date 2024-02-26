@@ -70,7 +70,7 @@ class Booking(models.Model):
     service_type = models.TextField(choices=SERVICE)
     start_time = models.TimeField(choices=BOOKING_TIME)
     confirmed = models.BooleanField(default=False)
-    message = models.CharField(max_length=500, blank=True)
+    message = models.TextField(max_length=500, blank=True)
 
     class Meta:
         ordering = ['date_of_booking', 'start_time']
