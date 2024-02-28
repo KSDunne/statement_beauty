@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Makeover, Booking
@@ -35,30 +35,14 @@ def makeover_deals(request):
     )
     
 def booking_edit(request, booking_id):
-    """
-    Edit an existing booking.
-
-    **Context**
-
-    ``booking``
-        An instance of :model:`makeover.Booking`.
-
-    ``booking_form``
-        An instance of :form:`makeup.BookingForm`.
-    """
-    if request.method == "POST":
-        booking = get_object_or_404(Booking, pk=booking_id)
-        booking_form = BookingForm(data=request.POST, instance=booking)
-
-        if booking_form.is_valid():
-            booking = booking_form.save()
+    booking = Booking.objects.get(id=booking_id)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
             booking.confirmed = False
-            messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
-            return HttpResponseRedirect(reverse('makeover', args=[booking_id]))
-        else:
-            messages.add_message(request, messages.ERROR, 'Error updating booking!')
+            form.save()
+            messages.success(request, 'Booking updated successfully.')
+            return redirect('makeover')  # Redirect to the makeover page
     else:
-        booking = get_object_or_404(Booking, pk=booking_id)
-        booking_form = BookingForm(instance=booking)
-
-    return render(request, 'makeover/booking_edit.html', {'booking': booking, 'booking_form': booking_form})
+        form = BookingForm(instance=booking)
+    return render(request, 'makeover.html', {'form': form, 'booking_id': booking_id})
