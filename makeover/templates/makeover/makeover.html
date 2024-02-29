@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
+{% extends 'base.html' %} 
+{% block content %} 
+{% load static %} 
 {% load crispy_forms_tags %}
 
 <!-- Displaying Deal of the Season -->
@@ -19,17 +19,27 @@
   <div class="row">
     <div class="col text-right">
       <!-- Updated on goes here -->
-      <p class="text-end"><em>Updated on: <span id="makeover-updatedon">{{ makeover.updated_on }}</span></em></p>
+      <p class="text-end">
+        <em
+          >Updated on:
+          <span id="makeover-updatedon">{{ makeover.updated_on }}</span></em
+        >
+      </p>
     </div>
   </div>
 
   <!-- Displaying Bookings -->
   <div class="row" id="booking-list">
-    {% if user.is_authenticated %}
-      <h3>List of Your Bookings:</h3>
-      <hr />
-      {% for booking in bookings %}
-        <div class="col-12 col-md-8 booking-item {% if not booking.confirmed %} faded{% endif %}" id="booking{{ booking.id }}">
+    <div class="col-md-8 card mb-4 mt-3">
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3>List of Your Bookings:</h3>
+        <hr />
+        {% for booking in bookings %}
+        <div
+          class="col-12 col-md-8 booking-item {% if not booking.confirmed %} faded{% endif %}"
+          id="booking{{ booking.id }}"
+        >
           <h3>{{ booking.username }}</h3>
           <h4>{{ booking.date_of_booking}}</h4>
           <h4 class="service-type">{{ booking.service_type}}</h4>
@@ -37,33 +47,39 @@
           <span class="start-time">{{ booking.start_time}}</span>
           <hr />
           {% if user.is_authenticated %}
-            <button class="btn btn-edit" data-booking_id="{{ booking.id }}">Edit</button>
+          <button class="btn btn-edit" data-booking_id="{{ booking.id }}">
+            Edit
+          </button>
           {% endif %}
         </div>
-      {% endfor %}
-    {% elif not user.is_authenticated %}
-      <p>Log in to view your booking</p>
-    {% endif %}
-  </div>
+        {% endfor %} {% elif not user.is_authenticated %}
+        <p>Log in to view your booking</p>
+        {% endif %}
+      </div>
+    </div>
 
-  <!-- Creating New Bookings -->
-  <div class="row">
+    <!-- Creating New Bookings -->
     <div class="col-md-4 card mb-4 mt-3">
       <div class="card-body">
         {% if user.is_authenticated %}
-          <h3>Make a booking:</h3>
-          <form id="booking-form" method="post" style="margin-top: 1.3em">
-            {{ booking_form | crispy }} {% csrf_token %}
-            <button id="submit-buttonbook" type="submit" class="btn btn-signup btn-lg">Submit</button>
-          </form>
+        <h3>Make a booking:</h3>
+        <form id="booking-form" method="post" style="margin-top: 1.3em">
+          {{ booking_form | crispy }} {% csrf_token %}
+          <button
+            id="submit-buttonbook"
+            type="submit"
+            class="btn btn-signup btn-lg"
+          >
+            Submit
+          </button>
+        </form>
         {% else %}
-          <p>Log in to make a booking</p>
+        <p>Log in to make a booking</p>
         {% endif %}
       </div>
     </div>
   </div>
 </div>
-{% endblock content %}
-{% block extras %}
+{% endblock content %} {% block extras %}
 <script src="{% static 'js/bookings.js' %}"></script>
 {% endblock %}
