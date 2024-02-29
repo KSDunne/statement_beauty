@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const editButtons = document.querySelectorAll(".btn-edit-book");
+  const editButtons = document.querySelectorAll(".btn-edit");
   const bookingText = document.getElementById("id_message");
   const bookingForm = document.getElementById("booking-form");
   const submitButton = document.getElementById("submit-buttonbook");
