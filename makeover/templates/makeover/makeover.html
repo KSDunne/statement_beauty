@@ -34,7 +34,6 @@
           <h4>{{ booking.date_of_booking}}</h4>
           <h4>{{ booking.service_type}}</h4>
           <div class="bookingMessage">{{ booking.message | linebreaks }}</div>
-          <h6>{{ booking.id}}</h6>
           <span class="startTime">{{ booking.start_time}}</span>
           <hr />
           {% if user.is_authenticated %}

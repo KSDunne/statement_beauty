@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", (e) => {
       let bookingId = e.target.getAttribute("data-booking_id");
       let bookingContent = document.getElementById(`booking${bookingId}`);
-      bookingText.value = bookingContent.innerText;
+      let message = bookingContent.querySelector(".bookingMessage").innerText;
+      bookingText.value = message;
       submitButton.innerText = "Update";
       bookingForm.setAttribute("action", `booking_edit/${bookingId}`);
     });
