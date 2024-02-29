@@ -11,30 +11,30 @@
     </div>
     <div class="col-8">
       <!-- Title goes between these h2 tags -->
-      <h2 id="makeoverTitle">{{ makeover.title }}</h2>
+      <h2 id="makeover-title">{{ makeover.title }}</h2>
       <!-- Content goes directly underneath this -->
-      <div id="makeoverContent">{{ makeover.content | safe }}</div>
+      <div id="makeover-content">{{ makeover.content | safe }}</div>
     </div>
   </div>
   <div class="row">
     <div class="col text-right">
       <!-- Updated on goes here -->
-      <p class="text-end"><em>Updated on: <span id="makeoverUpdatedOn">{{ makeover.updated_on }}</span></em></p>
+      <p class="text-end"><em>Updated on: <span id="makeover-updatedon">{{ makeover.updated_on }}</span></em></p>
     </div>
   </div>
 
   <!-- Displaying Bookings -->
-  <div class="row" id="bookingList">
+  <div class="row" id="booking-list">
     {% if user.is_authenticated %}
       <h3>List of Your Bookings:</h3>
       <hr />
       {% for booking in bookings %}
-        <div class="col-12 col-md-8 bookingItem {% if not booking.confirmed %} faded{% endif %}" id="booking{{ booking.id }}">
+        <div class="col-12 col-md-8 booking-item {% if not booking.confirmed %} faded{% endif %}" id="booking{{ booking.id }}">
           <h3>{{ booking.username }}</h3>
           <h4>{{ booking.date_of_booking}}</h4>
-          <h4>{{ booking.service_type}}</h4>
-          <div class="bookingMessage">{{ booking.message | linebreaks }}</div>
-          <span class="startTime">{{ booking.start_time}}</span>
+          <h4 class="service-type">{{ booking.service_type}}</h4>
+          <div class="booking-message">{{ booking.message | linebreaks }}</div>
+          <span class="start-time">{{ booking.start_time}}</span>
           <hr />
           {% if user.is_authenticated %}
             <button class="btn btn-edit-book" data-booking_id="{{ booking.id }}">Edit</button>
@@ -52,9 +52,9 @@
       <div class="card-body">
         {% if user.is_authenticated %}
           <h3>Make a booking:</h3>
-          <form id="bookingForm" method="post" style="margin-top: 1.3em">
+          <form id="booking-form" method="post" style="margin-top: 1.3em">
             {{ booking_form | crispy }} {% csrf_token %}
-            <button id="submitButtonBook" type="submit" class="btn btn-signup btn-lg">Submit</button>
+            <button id="submit-buttonbook" type="submit" class="btn btn-signup btn-lg">Submit</button>
           </form>
         {% else %}
           <p>Log in to make a booking</p>
