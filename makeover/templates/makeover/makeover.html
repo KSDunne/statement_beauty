@@ -47,6 +47,9 @@
           <span class="start-time">{{ booking.start_time}}</span>
           <hr />
           {% if user.is_authenticated %}
+          <button class="btn btn-delete" data-booking_id="{{ booking.id }}">
+            Delete
+          </button>
           <button class="btn btn-edit" data-booking_id="{{ booking.id }}">
             Edit
           </button>
