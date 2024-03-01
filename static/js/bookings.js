@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const bookingForm = document.getElementById("booking-form");
   const submitButton = document.getElementById("submit-buttonbook");
 
+  const deleteModal = new bootstrap.Modal(
+    document.getElementById("deleteModal")
+  );
+  const deleteButtons = document.querySelectorAll(".btn-delete");
+  const deleteConfirm = document.getElementById("deleteConfirm");
+
   editButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
       let bookingId = e.target.getAttribute("data-booking_id");
@@ -12,6 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
       bookingText.value = message;
       submitButton.innerText = "Update";
       bookingForm.setAttribute("action", `booking_edit/${bookingId}`);
+    });
+  });
+
+  deleteButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      let bookingId = e.target.getAttribute("data-booking_id");
+      deleteConfirm.href = `delete_booking/${bookingId}`;
+      deleteModal.show();
     });
   });
 });

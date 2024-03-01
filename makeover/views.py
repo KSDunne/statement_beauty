@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Makeover, Booking
 from .forms import BookingForm
@@ -41,7 +41,15 @@ def booking_edit(request, booking_id):
             booking.confirmed = False
             form.save()
             messages.success(request, 'Booking updated successfully.')
-            return redirect('makeover')  # Redirect to the makeover page
+            return redirect('makeover')  
     else:
         form = BookingForm(instance=booking)
     return render(request, 'makeover.html', {'form': form, 'booking_id': booking_id})
+
+def booking_delete(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id)
+    if request.method == 'POST':
+        booking.delete()
+        messages.success(request, 'Booking deleted successfully.')
+        return redirect('makeover') 
+    return render(request, 'makeover.html', {'booking': booking})
