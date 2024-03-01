@@ -19,7 +19,7 @@ def makeover_deals(request):
             messages.add_message(request, messages.SUCCESS, 
 "Booking submitted! It will appear faded until confirmed. Phone us if you would like a short-notice appointment.")
 
-    bookings = Booking.objects.all().filter(username = request.user).order_by('-date_of_booking')
+    bookings = Booking.objects.all().filter(username = request.user).order_by('date_of_booking')
     booking_form = BookingForm()
 
 
