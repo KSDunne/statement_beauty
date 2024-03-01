@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Makeover, Booking
 from .forms import BookingForm
@@ -34,6 +34,9 @@ def makeover_deals(request):
     )
     
 def booking_edit(request, booking_id):
+    """
+    view to edit booking
+    """
     booking = Booking.objects.get(id=booking_id)
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
@@ -46,10 +49,15 @@ def booking_edit(request, booking_id):
         form = BookingForm(instance=booking)
     return render(request, 'makeover.html', {'form': form, 'booking_id': booking_id})
 
-def booking_delete(request, booking_id):
-    booking = get_object_or_404(Booking, id=booking_id)
-    if request.method == 'POST':
+def delete_booking(request, booking_id):
+    """
+    view to delete booking
+    """
+    booking = Booking.objects.get(id=booking_id)
+    if booking.username == request.user:
         booking.delete()
-        messages.success(request, 'Booking deleted successfully.')
+        messages.add_message(request, messages.SUCCESS, 'Booking deleted!')
         return redirect('makeover') 
-    return render(request, 'makeover.html', {'booking': booking})
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own booking!')
+    return render(request, 'makeover.html')
