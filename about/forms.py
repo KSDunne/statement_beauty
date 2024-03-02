@@ -7,4 +7,4 @@ class CollaborateForm(forms.ModelForm):
         Specify the django model and order of the fields
         """
         model = CollaborateRequest
-        fields = ('name', 'email', 'message')
+        fields = ('name', 'email', 'interest', 'message')
