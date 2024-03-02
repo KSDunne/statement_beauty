@@ -22,7 +22,7 @@ class BookingForm(forms.ModelForm):
         date_of_booking = cleaned_data.get('date_of_booking')
         start_time = cleaned_data.get('start_time')
 
-        if date_of_booking and date_of_booking < date.today():
+        if date_of_booking < date.today():
             raise ValidationError('Please select a date in the future.')
 
         if date_of_booking == date.today() and \
