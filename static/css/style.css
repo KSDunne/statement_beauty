@@ -88,7 +88,7 @@ body {
 }
 
 .profile-image {
-    width: 75%;
+  width: 75%;
 }
 
 .post-link {
@@ -158,4 +158,61 @@ body {
 
 .approval {
   color: rgb(222, 146, 168);
+}
+
+/* hero image and cover text*/
+
+#hero-outer {
+  height: 520px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-image {
+  height: 520px;
+  width: 100%;
+  background: url(https://res.cloudinary.com/dt7x7qmmo/image/upload/v1709487360/default_bi6ei7.jpg)
+    no-repeat center center/cover;
+
+  /* credit for hero animated zoom effect: love-running-2.0 depreciated project July 2023 */
+  /* animating zoom effect on the hero image when loading page */
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+/* creating a zoom for the hero image */
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* cover text on home page with main blog content*/
+#cover-text {
+  background-color: rgba(33, 33, 33, 0.9);
+  font-size: 130%;
+  position: absolute;
+  bottom: 125px;
+  min-height: 200px;
+  padding-top: 40px;
+  text-align: center;
+  left: 25%;
+  right: 25%;
+  border-radius: 50px;
+}
+
+/* background-color: rgba(200, 216, 137, 0.8);*/
+
+#cover-text > h2 {
+  color: #C8D889;
+}
+
+#cover-text > h3 {
+  color: #C8D889;
 }

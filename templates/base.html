@@ -1,10 +1,9 @@
-{% load static %} 
-{% url 'home' as home_url %} 
-{% url 'about' as about_url %} 
+{% load static %}
+{% url 'home' as home_url %}
+{% url 'about' as about_url %}
 {% url 'makeover' as makeover_url %}
-{% url 'account_login' as login_url %} 
-{% url 'account_signup' as signup_url %} 
-{% url 'account_logout' as logout_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %} {% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -81,8 +80,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link
-                {% if request.path == makeover_url %}active{%endif%}"
+                class="nav-link {% if request.path == makeover_url %}active{%endif%}"
                 aria-current="page"
                 href="{% url 'makeover' %}"
                 >Book Makeover</a
@@ -144,6 +142,16 @@
       </div>
     </div>
     <main class="flex-shrink-0 main-bg">
+      <!-- credit for hero section code: love-running-2.0 depreciated project July 2023 -->
+      <section id="hero-outer">
+        <!--Image taken from -->
+        <div id="hero-image"></div>
+          <div id="cover-text">
+            <h2>Statement Beauty Blog</h2>
+            <br />
+            <h3>"Beauty With A Voice"</h3>
+          </div>
+      </section>
       {% if user.is_authenticated %}
       <p class="text-end m-3">You are logged in as {{ user.username }}</p>
       {% else %}
