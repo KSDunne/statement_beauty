@@ -1,5 +1,5 @@
 /*Importing Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 body {
   background-color: #f9fafc;
@@ -166,15 +166,18 @@ body {
 /* hero image and cover text*/
 
 #hero-outer {
-  height: 510px;
+  height: 60vh;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
+/*credit for object-fit: https://www.w3schools.com/csS/css3_object-fit.asp*/
 .hero-image {
-  height: 510px;
+  height: 60vh;
   width: 100%;
+  overflow: hidden;
+  object-fit: cover;
   /* credit for hero animated zoom effect: love-running-2.0 depreciated project July 2023 */
   /* animating zoom effect on the hero image when loading page */
   animation-name: hero-zoom;
@@ -196,7 +199,7 @@ body {
 /* cover text on home page with main blog content*/
 #cover-text {
   background-color: rgba(33, 33, 33, 0.9);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 130%;
   position: absolute;
   bottom: 150px;
@@ -209,11 +212,11 @@ body {
 }
 
 #cover-text > h2 {
-  color: #FDE09E;
+  color: #fde09e;
   padding-top: 8px;
 }
 
 #cover-text > h3 {
-  color: #FDE09E;
+  color: #fde09e;
   padding-top: 10px;
 }
