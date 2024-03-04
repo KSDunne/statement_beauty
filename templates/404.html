@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5 text-center">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h1 class="error-heading">404 Page Not Found</h1>
+            <p class="error-paragraph">The page you requested cannot be found!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <a href="{% url 'home' %}" class="btn" type="submit"><h3>Click to go back</h3></a>
+        </div>
+    </div>
+    <div class="row">
+        <img src="{% static 'images/404.jpg' %}" class="error-image" />
+    </div>
+</div>
+
+{% endblock %}
