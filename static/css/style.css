@@ -173,7 +173,7 @@ body {
 }
 
 .hero-image {
-  /*height: 510px;*/
+  height: 510px;
   width: 100%;
   /* credit for hero animated zoom effect: love-running-2.0 depreciated project July 2023 */
   /* animating zoom effect on the hero image when loading page */
