@@ -201,14 +201,12 @@ body {
   position: absolute;
   bottom: 125px;
   min-height: 180px;
-  padding-top: 30px;
+  padding-top: 15px;
   text-align: center;
   left: 22%;
   right: 22%;
   border-radius: 35px;
 }
-
-/* background-color: rgba(200, 216, 137, 0.8);*/
 
 #cover-text > h2 {
   color: #FDE09E;
