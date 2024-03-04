@@ -172,12 +172,9 @@ body {
   position: relative;
 }
 
-#hero-image {
-  height: 510px;
+.hero-image {
+  /*height: 510px;*/
   width: 100%;
-  background: url(../images/default.jpg)
-    no-repeat center center/cover;
-
   /* credit for hero animated zoom effect: love-running-2.0 depreciated project July 2023 */
   /* animating zoom effect on the hero image when loading page */
   animation-name: hero-zoom;
