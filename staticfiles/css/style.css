@@ -166,7 +166,7 @@ body {
 /* hero image and cover text*/
 
 #hero-outer {
-  height: 60vh;
+  height: 54vh;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -174,7 +174,7 @@ body {
 
 /*credit for object-fit: https://www.w3schools.com/csS/css3_object-fit.asp*/
 .hero-image {
-  height: 60vh;
+  height: 54vh;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
