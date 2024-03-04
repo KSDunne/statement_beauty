@@ -202,9 +202,9 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 130%;
   position: absolute;
-  bottom: 150px;
+  bottom: 220px;
   min-height: 180px;
-  padding-top: 15px;
+  padding: 15px 15px 0px 15px;
   text-align: center;
   left: 22%;
   right: 22%;
@@ -212,11 +212,11 @@ body {
 }
 
 #cover-text > h2 {
-  color: #fde09e;
+  color: #FEF2D8;
   padding-top: 8px;
 }
 
 #cover-text > h3 {
-  color: #fde09e;
+  color: #FEF2D8;
   padding-top: 10px;
 }
