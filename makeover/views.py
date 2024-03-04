@@ -1,9 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Makeover, Booking
 from .forms import BookingForm
 
 
+@login_required
 def makeover_deals(request):
     """
     Renders the Makeover page
@@ -34,6 +36,7 @@ def makeover_deals(request):
         },
     )
     
+@login_required
 def booking_edit(request, booking_id):
     """
     view to edit booking
@@ -50,11 +53,12 @@ def booking_edit(request, booking_id):
         form = BookingForm(instance=booking)
     return render(request, 'makeover.html', {'form': form, 'booking_id': booking_id})
 
+@login_required
 def delete_booking(request, booking_id):
     """
     view to delete booking
     """
-    booking = Booking.objects.get(id=booking_id)
+    booking = get_object_or_404(Booking, id=booking_id)
     if booking.username == request.user:
         booking.delete()
         messages.add_message(request, messages.SUCCESS, 'Booking deleted!')
