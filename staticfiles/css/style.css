@@ -5,30 +5,6 @@ body {
   background-color: #f9fafc;
 }
 
-/* style for navbar items*/
-.nav-item {
-  font-size: 118%;
-  font-weight: bold;
-}
-
-#login-button a {
-  color: #ffbe98;
-  font-size: 118%;
-  font-weight: bold;
-}
-
-#logout-button a {
-  color: #ffbe98;
-  font-size: 118%;
-  font-weight: bold;
-}
-
-#register-button a {
-  color: #ffbe98;
-  font-size: 118%;
-  font-weight: bold;
-}
-
 .brand {
   font-family: Lato, sans-serif;
   font-size: 1.4rem;
@@ -187,6 +163,34 @@ body {
   color: rgb(222, 146, 168);
 }
 
+/* style for navbar items*/
+.nav-item {
+  font-size: 118%;
+  font-weight: bold;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#login-button a {
+  color: #fe2c89;
+  font-size: 118%;
+  font-weight: bold;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#logout-button a {
+  color: #fe2c89;
+  font-size: 118%;
+  font-weight: bold;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#register-button a {
+  color: #fe2c89;
+  font-size: 118%;
+  font-weight: bold;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
 /* hero image and cover text*/
 #hero-outer {
   height: 54vh;
@@ -296,6 +300,17 @@ body {
 @media screen and (min-width: 992px) {
   .nav-item a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+  #login-button a:hover {
+    border-bottom: 1px solid #fe2c89;
+  }
+
+  #logout-button a:hover {
+    border-bottom: 1px solid #fe2c89;
+  }
+
+  #register-button a:hover {
+    border-bottom: 1px solid #fe2c89;
   }
 }
 
