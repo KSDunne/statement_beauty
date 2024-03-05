@@ -165,30 +165,30 @@ body {
 
 /* style for navbar items*/
 .nav-item {
-  font-size: 118%;
+  font-size: 115%;
   font-weight: bold;
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
 }
 
 #login-button a {
   color: #fe2c89;
   font-size: 118%;
   font-weight: bold;
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
 }
 
 #logout-button a {
   color: #fe2c89;
   font-size: 118%;
   font-weight: bold;
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
 }
 
 #register-button a {
   color: #fe2c89;
   font-size: 118%;
   font-weight: bold;
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
 }
 
 /* hero image and cover text*/
