@@ -24,7 +24,7 @@ def makeover_deals(request):
     else:
         booking_form = BookingForm()
 
-    bookings = Booking.objects.all().filter(username=request.user).order_by('date_of_booking')
+    bookings = Booking.objects.all().filter(username=request.user).order_by('date_of_booking', 'start_time')
 
     return render(
         request,
