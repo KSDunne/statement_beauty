@@ -7,7 +7,7 @@ body {
 
 .brand {
   font-family: Lato, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #4a4a4f;
 }
@@ -163,6 +163,12 @@ body {
   color: rgb(222, 146, 168);
 }
 
+/* style for navbar items*/
+.nav-item {
+  font-size: 120%;
+  font-weight: bold;
+}
+
 /* hero image and cover text*/
 #hero-outer {
   height: 54vh;
@@ -256,6 +262,21 @@ body {
     right: 22%;
     border-radius: 35px;
   }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .brand {
+    font-family: Lato, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4a4a4f;
+  }
+
+  .nav-item a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
 }
 
 /* Very Large devices (large laptop screens and monitors, 1440px and up) */
