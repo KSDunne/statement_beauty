@@ -169,6 +169,10 @@ body {
   font-weight: bold;
 }
 
+.login-out a {
+  color: #ffbe98;
+}
+
 /* hero image and cover text*/
 #hero-outer {
   height: 54vh;

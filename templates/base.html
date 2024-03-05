@@ -90,8 +90,10 @@
                 >Book Makeover</a
               >
             </li>
-            {% if user.is_authenticated %}
-            <li class="nav-item">
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+           {% if user.is_authenticated %}
+            <li class="login-out" id="logout-button">
               <a
                 class="nav-link {% if request.path == logout_url %}active"
                 aria-current="page{% endif %}"
@@ -100,7 +102,7 @@
               >
             </li>
             {% else %}
-            <li class="nav-item">
+            <li class="login-out" id="register-button">
               <a
                 class="nav-link {% if request.path == signup_url %}active"
                 aria-current="page{% endif %}"
@@ -108,7 +110,7 @@
                 >Register</a
               >
             </li>
-            <li class="nav-item">
+            <li class="login-out" id="login-button">
               <a
                 class="nav-link {% if request.path == login_url %}active"
                 aria-current="page{% endif %}"

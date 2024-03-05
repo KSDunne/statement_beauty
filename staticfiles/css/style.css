@@ -5,6 +5,30 @@ body {
   background-color: #f9fafc;
 }
 
+/* style for navbar items*/
+.nav-item {
+  font-size: 118%;
+  font-weight: bold;
+}
+
+#login-button a {
+  color: #ffbe98;
+  font-size: 118%;
+  font-weight: bold;
+}
+
+#logout-button a {
+  color: #ffbe98;
+  font-size: 118%;
+  font-weight: bold;
+}
+
+#register-button a {
+  color: #ffbe98;
+  font-size: 118%;
+  font-weight: bold;
+}
+
 .brand {
   font-family: Lato, sans-serif;
   font-size: 1.4rem;
@@ -161,12 +185,6 @@ body {
 
 .approval {
   color: rgb(222, 146, 168);
-}
-
-/* style for navbar items*/
-.nav-item {
-  font-size: 118%;
-  font-weight: bold;
 }
 
 /* hero image and cover text*/
