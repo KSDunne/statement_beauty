@@ -211,12 +211,12 @@ body {
 }
 
 #cover-text > h2 {
-  color: #FEF2D8;
+  color: #fef2d8;
   padding-top: 8px;
 }
 
 #cover-text > h3 {
-  color: #FEF2D8;
+  color: #fef2d8;
   padding-top: 10px;
 }
 
@@ -231,46 +231,46 @@ body {
   font-weight: bold;
 }
 
-.error-btn{
-    border-radius: 6px;
-    padding: 15px 32px;
-    font-size: 100%;
-    font-weight: bold;
-    background-color: #fffae6;
-    color: #2a2a2a;
-    box-shadow: 0.3rem 0.4rem #2a2a2a;
+.error-btn {
+  border-radius: 6px;
+  padding: 15px 32px;
+  font-size: 100%;
+  font-weight: bold;
+  background-color: #fffae6;
+  color: #2a2a2a;
+  box-shadow: 0.3rem 0.4rem #2a2a2a;
 }
 
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-#cover-text {
-  background-color: rgba(33, 33, 33, 0.9);
-  font-family: "Quicksand", sans-serif;
-  font-size: 130%;
-  position: absolute;
-  bottom: 25vh;
-  min-height: 128px;
-  padding: 8px 15px 0px 15px;
-  text-align: center;
-  left: 22%;
-  right: 22%;
-  border-radius: 35px;
-}
+  #cover-text {
+    background-color: rgba(33, 33, 33, 0.9);
+    font-family: "Quicksand", sans-serif;
+    font-size: 130%;
+    position: absolute;
+    bottom: 25vh;
+    min-height: 128px;
+    padding: 8px 15px 0px 15px;
+    text-align: center;
+    left: 22%;
+    right: 22%;
+    border-radius: 35px;
+  }
 }
 
 /* Very Large devices (large laptop screens and monitors, 1440px and up) */
 @media screen and (min-width: 1440px) {
-#cover-text {
-  background-color: rgba(33, 33, 33, 0.9);
-  font-family: "Quicksand", sans-serif;
-  font-size: 130%;
-  position: absolute;
-  bottom: 25vh;
-  min-height: 128px;
-  padding: 8px 15px 0px 15px;
-  text-align: center;
-  left: 35%;
-  right: 35%;
-  border-radius: 35px;
-}
+  #cover-text {
+    background-color: rgba(33, 33, 33, 0.9);
+    font-family: "Quicksand", sans-serif;
+    font-size: 130%;
+    position: absolute;
+    bottom: 25vh;
+    min-height: 128px;
+    padding: 8px 15px 0px 15px;
+    text-align: center;
+    left: 35%;
+    right: 35%;
+    border-radius: 35px;
+  }
 }
