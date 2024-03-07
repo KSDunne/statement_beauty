@@ -44,7 +44,8 @@
           <h5>Name: {{ booking.username }}</h5>
           <h5>Date: {{ booking.date_of_booking}}</h5>
           <h5 class="start-time">Time: {{ booking.start_time}}</h5>
-          <div class="booking-message">Your message: {{ booking.message | linebreaks }}</div>
+          <div>Your message: </div>
+          <div class="booking-message"> {{ booking.message | linebreaks }}</div>
           <hr />
           <button class="btn btn-delete" data-booking_id="{{ booking.id }}">
             Delete
