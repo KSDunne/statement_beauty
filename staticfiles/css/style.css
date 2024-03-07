@@ -128,7 +128,8 @@ body {
 
 /*Custom sign in style*/
 .btn-signin,
-.btn-signout {
+.btn-signout,
+.btn-register {
   background-color: #ffbe98;
   color: #fff;
   margin-bottom: 0.5rem;
