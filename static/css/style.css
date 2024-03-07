@@ -117,7 +117,8 @@ body {
 .btn-signup,
 .btn-edit {
   background-color: #ffbe98;
-  color: #fff;
+  color: black;
+  font-weight: 500;
 }
 
 .btn-signup:hover,
@@ -168,8 +169,14 @@ body {
 }
 
 .btn-delete {
-  color: #fff;
-  background: #e84610;
+  color: black;
+  background: #fe61a6;
+  font-weight: 500;
+}
+
+.btn-delete:hover {
+  background: #fcd885;
+  border: none;
 }
 
 .btn-like:hover,
@@ -277,6 +284,13 @@ body {
   padding-top: 10px;
 }
 
+.booking-item{
+  margin-top: 1rem;
+  background-color: #ffeaec;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;
@@ -300,7 +314,7 @@ body {
 
 /* Custom footer style */
 .footer-section {
-  background-color: #ffbe90;
+  background-color: #ffbe98;
 }
 
 .social-icon {
