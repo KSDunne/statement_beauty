@@ -140,12 +140,12 @@ body {
   color: #23bbbb;
 }
 
-.signin-bg{
+.signin-bg {
   background-color: #fef2d8;
   border-radius: 35px;
   width: 90%;
   padding: 2%;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-bottom: 0.5rem;
 }
 
@@ -342,8 +342,12 @@ body {
     right: 22%;
     border-radius: 35px;
   }
-}
 
+  .sign-in-form {
+    display: flex;
+    justify-content: center;
+  }
+}
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .nav-item a:hover {
@@ -407,16 +411,16 @@ body {
     font-weight: 500;
   }
 
-  .signin-bg{
+  .signin-bg {
     background-color: #fef2d8;
     border-radius: 35px;
-    width: 90%;
+    width: 45%;
     padding: 2%;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-bottom: 1rem;
   }
 
-  .sign-in-form{
+  .sign-in-form {
     display: flex;
     justify-content: center;
   }
