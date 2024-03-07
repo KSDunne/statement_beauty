@@ -127,9 +127,11 @@ body {
 }
 
 /*Custom sign in style*/
-.btn-signin {
+.btn-signin,
+.btn-signout {
   background-color: #ffbe98;
   color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .btn-signin:hover,
