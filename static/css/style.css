@@ -130,13 +130,21 @@ body {
 .btn-signin {
   background-color: #ffbe98;
   color: #fff;
-  margin-bottom: 10vh;
 }
 
 .btn-signin:hover,
 .btn-signin:active {
   background-color: #fff;
   color: #23bbbb;
+}
+
+.signin-bg{
+  background-color: #fef2d8;
+  border-radius: 35px;
+  width: 90%;
+  padding: 2%;
+  margin: 0 auto; 
+  margin-bottom: 0.5rem;
 }
 
 .link {
@@ -395,6 +403,20 @@ body {
     color: black;
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  .signin-bg{
+    background-color: #fef2d8;
+    border-radius: 35px;
+    width: 90%;
+    padding: 2%;
+    margin: 0 auto; 
+    margin-bottom: 1rem;
+  }
+
+  .sign-in-form{
+    display: flex;
+    justify-content: center;
   }
 }
 
