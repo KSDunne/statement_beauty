@@ -167,17 +167,44 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-      <p class="m-0 text-center text-white"></p>
-      <p class="m-0 text-center text-white">
-        {% block copyright %} Website by Katie Dunne {% endblock copyright %}
-      </p>
-      <p class="m-0 text-center text-white">
-        Follow us: <i class="fab fa-facebook-square ms-3"></i>
-        <i class="fab fa-twitter-square ms-3"></i>
-        <i class="fab fa-instagram-square ms-3"></i>
-        <i class="fab fa-youtube-square ms-3"></i>
-      </p>
+    <footer class="mt-auto py-4 footer-section">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa-brands fa-facebook fa-stack-1x social-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa-brands fa-instagram fa-stack-1x social-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube page (opens in a new tab)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa-brands fa-youtube fa-stack-1x social-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/ksdunne" target="_blank" aria-label="Visit our GitHub page (opens in a new tab)">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa-brands fa-github fa-stack-1x social-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="m-0 text-center footer-text">Copyright &copy; Katie Dunne 2024</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script
@@ -185,6 +212,8 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://kit.fontawesome.com/076967cb18.js" crossorigin="anonymous"></script>
 
     {% block extras %} {% endblock %}
   </body>
