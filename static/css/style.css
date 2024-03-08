@@ -130,20 +130,23 @@ body {
 /*Custom sign in style*/
 .btn-signin,
 .btn-signout,
-.btn-register {
+.btn-register,
+.btn-about {
   background-color: #ffbe98;
-  color: #fff;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
 .btn-signin:hover,
-.btn-signin:active {
+.btn-signin:active,
+.btn-about:hover,
+.btn-about:active {
   background-color: #fff;
   color: #23bbbb;
 }
 
 .signin-bg {
-  background-color: #fef2d8;
+  background-color: #fffaef;
   border-radius: 35px;
   width: 90%;
   padding: 2%;
@@ -152,8 +155,9 @@ body {
 }
 
 .link {
-  color: #23bbbb;
+  color: #146c6c;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .link:hover,
