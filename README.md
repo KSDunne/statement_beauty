@@ -2,6 +2,8 @@
 
 (Developer: Katie Dunne)
 
+![AmIResponsive Image](docs/readme_images/amiresponsive_screenshot.PNG)
+
 ## Live website
 
 Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.herokuapp.com/about/)
