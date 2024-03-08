@@ -309,6 +309,10 @@ body {
   border-radius: 10px;
 }
 
+.commenter-style{
+  font-weight: bold;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;

@@ -55,11 +55,11 @@
           to iterate through each comment in comments -->
         {% for comment in comments %}
         <div
-          class="p-2 comments {% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}"
+          class="p-2 booking-item comments {% if not comment.approved and comment.author == user %} faded{% elif not comment.approved %} d-none{% endif %}"
         >
-          <p class="font-weight-bold">
+          <p class="commenter-style">
             {{ comment.author }}
-            <span class="font-weight-normal"> {{ comment.created_on }} </span>
+            <span class="commenter-style"> {{ comment.created_on }} </span>
             wrote:
           </p>
           <div id="comment{{ comment.id }}">
