@@ -1,7 +1,7 @@
-{% load static %} 
+{% load static %}
 {% url 'home' as home_url %}
-{% url 'about' as about_url %} 
-{% url 'makeover' as makeover_url %} 
+{% url 'about' as about_url %}
+{% url 'makeover' as makeover_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -41,7 +41,11 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'favicon/favicon.ico' %}"
+    />
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
@@ -92,7 +96,7 @@
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
-           {% if user.is_authenticated %}
+            {% if user.is_authenticated %}
             <li class="login-out" id="logout-button">
               <a
                 class="nav-link {% if request.path == logout_url %}active"
@@ -159,11 +163,11 @@
       </section>
       {% if user.is_authenticated %}
       <div class="loggedin-container">
-      <p class="mt-3 logged-in">You are logged in as {{ user.username }}</p>
+        <p class="mt-3 logged-in">You are logged in as {{ user.username }}</p>
       </div>
       {% else %}
       <div class="loggedin-container">
-      <p class="mt-3 logged-in">You are not logged in</p>
+        <p class="mt-3 logged-in">You are not logged in</p>
       </div>
       {% endif %} {% block content %}
       <!-- Content Goes here -->
@@ -172,43 +176,65 @@
 
     <!-- Footer -->
     <footer class="mt-auto py-4 footer-section">
-        <div class="container px-4">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa-brands fa-facebook fa-stack-1x social-icon"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa-brands fa-instagram fa-stack-1x social-icon"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube page (opens in a new tab)">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa-brands fa-youtube fa-stack-1x social-icon"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/ksdunne" target="_blank" aria-label="Visit our GitHub page (opens in a new tab)">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa-brands fa-github fa-stack-1x social-icon"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="m-0 text-center footer-text">Copyright &copy; Katie Dunne 2024</p>
-                </div>
-            </div>
+      <div class="container px-4">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  aria-label="Visit our Facebook page (opens in a new tab)"
+                >
+                  <span class="fa-stack fa-lg">
+                    <i
+                      class="fa-brands fa-facebook fa-stack-1x social-icon"
+                    ></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  aria-label="Visit our Instagram page (opens in a new tab)"
+                >
+                  <span class="fa-stack fa-lg">
+                    <i
+                      class="fa-brands fa-instagram fa-stack-1x social-icon"
+                    ></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  aria-label="Visit our YouTube page (opens in a new tab)"
+                >
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-brands fa-youtube fa-stack-1x social-icon"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://github.com/ksdunne"
+                  target="_blank"
+                  aria-label="Visit our GitHub page (opens in a new tab)"
+                >
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-brands fa-github fa-stack-1x social-icon"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="m-0 text-center footer-text">
+              Copyright &copy; Katie Dunne 2024
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script
@@ -217,7 +243,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://kit.fontawesome.com/076967cb18.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/076967cb18.js"
+      crossorigin="anonymous"
+    ></script>
 
     {% block extras %} {% endblock %}
   </body>
