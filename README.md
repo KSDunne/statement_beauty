@@ -18,9 +18,25 @@ Statement Beauty is a fictitious business that started out as a hair and makeup 
 
 ### Key project goals
 
+-	Increase awareness of the Statement Beauty business, through a feel-good and accessible website that offers information of all things beauty through blogs
+-	Encourage beauty professionals to get in contact if they would like to collaborate on blog posts or offer their services for our makeovers
+-	Build a website that encourages and directs the site users to book a makeover with us
+
 ### Target audience
 
+- Users that are enthusiastic about current beauty trends
+- Users that have a celebratory event coming up, for example a birthday or wedding, that would like their hair or makeup done
+- Users that are professionals in the beauty industry and would like to collaborate on blog posts or offer their own services through our makeover service
+
 ### User requirements and expectations
+
+- An intuitively structured and visually appealing website that is easy to read on all screen sizes
+- An intuitive navigation system wheather using a mobile, tablet or monitor
+- Ability to quickly understand the purpose of the website
+- An ability to find relevant information on the business and its services
+- Easy ways to contact the business
+- Access to a collaboration form
+- An accessible website for all users
 
 ## Epics and user stories
 
