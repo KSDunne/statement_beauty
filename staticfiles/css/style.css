@@ -291,6 +291,20 @@ body {
   padding: 0.5rem;
 }
 
+.loggedin-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logged-in{
+  font-weight: 500;
+  background-color: #ffeaec;
+  font-size: 115%;
+  padding: 4px 8px;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;
@@ -299,7 +313,8 @@ body {
 
 .error-paragraph {
   padding: 1%;
-  font-weight: bold;
+  font-weight: 500;
+
 }
 
 .error-btn {
