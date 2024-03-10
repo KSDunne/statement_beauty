@@ -313,6 +313,14 @@ body {
   font-weight: bold;
 }
 
+.about-heading{
+  background-color: #ffbe98;
+  color: black;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;
