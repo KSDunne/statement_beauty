@@ -351,8 +351,15 @@ body {
 
 .footer-text {
   color: black;
-  font-size: 1rem;
+  font-size: 110%;
   font-weight: 500;
+}
+
+.contact-text {
+  color: black;
+  font-size: 102%;
+  font-weight: 300;
+  padding-bottom: 1rem;
 }
 
 /* media query: tablets and larger (375px and up) */
@@ -441,12 +448,6 @@ body {
   .navbar-text {
     font-size: 112%;
     padding: 2rem 1rem 2rem 1rem;
-  }
-
-  .footer-text {
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 500;
   }
 
   .signin-bg {
