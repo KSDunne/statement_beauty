@@ -10,7 +10,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 ## Purpose of the project
 
-Statement Beauty is a fictitious business that started out as a hair and makeup blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. Here is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website is aimed at people that are interested in beauty topics. This website provides the user with; a blog, comments sections on posts, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time. The makeover booking form provides the options for a hair or makeup appointment with a Statement Beauty beautician.
+Statement Beauty is a fictitious business that started out as a hair and makeup blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website is aimed at people that are interested in beauty topics. This website provides the user with; a blog, comments sections on posts, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time. The makeover booking form provides the options for a hair or makeup appointment with a Statement Beauty beautician.
 
 ## Table of contents
 
@@ -25,17 +25,24 @@ Statement Beauty is a fictitious business that started out as a hair and makeup 
 ### Target audience
 
 - Users that are enthusiastic about current beauty trends
-- Users that have a celebratory event coming up, for example a birthday or wedding, that would like their hair or makeup done
+- Users that would like to book to have their hair or makeup done for an upcoming event
 - Users that are professionals in the beauty industry and would like to collaborate on blog posts or offer their own services through our makeover service
 
 ### User requirements and expectations
 
 - An intuitively structured and visually appealing website that is easy to read on all screen sizes
-- An intuitive navigation system wheather using a mobile, tablet or monitor
+- Navigation that is easy to use and understand whether using mobile, tablet or monitor
 - Ability to quickly understand the purpose of the website
+- An ability to register, login and logout
+- An ability to interact with content by commenting
+- An ability to read comments that have been made under blogs
+- An ability to update and delete comments if desired
 - An ability to find relevant information on the business and its services
-- Easy ways to contact the business
 - Access to a collaboration form
+- An ability to make a booking for a makeover
+- An ability to see a list of their own bookings
+- An ability to update and delete bookings if desired
+- Easy ways to contact the business
 - An accessible website for all users
 
 ## Epics and user stories
