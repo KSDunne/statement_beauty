@@ -2,7 +2,8 @@
 {% load static %}
 {% block content %}
 
-<!-- index.html content starts here -->
+<!-- index.html content -->
+<!-- call to action button is my own code -->
 <div class="container mt-5 text-center">
   <div class="row">
     <div class="col-md-8 offset-md-2">
@@ -12,9 +13,12 @@
     </div>
   </div>
 </div>
+
+<!-- credit for displaying blogs: 
+  https://github.com/Code-Institute-Solutions/blog/blob/main/09_views_part2/01_building_a_blogpost_view/blog/templates/blog/index.html -->
 <div class="container-fluid">
   <div class="row">
-    <!-- Blog Entries Column -->
+    <!-- blog entries column -->
     <div class="col-12 mt-3 left">
       <div class="row">
         {% for post in post_list %}
@@ -48,8 +52,13 @@
       <div class="row">{% endif %} {% endfor %}</div>
     </div>
   </div>
+
+  <!-- pagination -->
+  <!-- credit for pagination: 
+    https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/c592ed45498e440587b764e29891b2fc/ -->
+<div class="container-fluid">
   {% if is_paginated %}
-  <nav aria-label="Page navigation">
+  <nav aria-label="A button for page navigation">
     <ul class="pagination justify-content-center">
       {% if page_obj.has_previous %}
       <li>
