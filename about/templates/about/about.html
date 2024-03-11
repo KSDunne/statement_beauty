@@ -3,6 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<!-- centered about heading. this code is my own -->
 <div class="container mt-5 text-center">
   <div class="row">
     <div class="col-md-8 offset-md-2">
@@ -10,6 +11,10 @@
     </div>
   </div>
 </div>
+
+<!-- container for about infomation -->
+<!-- credit for this about code:
+  https://github.com/Code-Institute-Solutions/blog/blob/main/10_create_about_app/about/templates/about/about.html -->
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-md-4 mt-2 text-center">
@@ -24,6 +29,8 @@
             {{ about.content | safe }}
         </div>
     </div>
+
+    <!-- collaborate section-->
     <div class="row justify-content-center">
         <div class="col-12 col-md-7 my-5">
             <h2>Would you like to collaborate?</h2>
@@ -36,6 +43,7 @@
               connect and create beauty magic together! Fill out the form 
               below to get started.</p>
 
+            <!-- collaborate form: I added the 'interest' field to this model to make it my own -->
             <form method="post">
                 {{ collaborate_form | crispy }}
                 {% csrf_token %}
