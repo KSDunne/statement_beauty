@@ -149,19 +149,59 @@ See color palette below for an illustration of all colors mentioned
 
 ### Index page wireframes
 
-![Index iPhone SE](docs/readme_images/Home_Page_Phone.png)
+![Index iPhone SE](docs/readme_images/Home_Page.png)
 
-![Index Tablet](docs/readme_images/Home_Page_Tablet.png)
+![Index Tablet](docs/readme_images/Tablet_Home.png)
 
-![Index Monitor](docs/readme_images/Home_Page_Monitor.png)
+![Index Monitor](docs/readme_images/Monitor_Home.png)
+
+### About page wireframes
+
+![About iPhone SE](docs/readme_images/About_Page.png)
+
+![About Tablet](docs/readme_images/Tablet_About.png)
+
+![About Monitor](docs/readme_images/Monitor_About.png)
 
 ### Book makeover page wireframes
 
-![Index iPhone SE](docs/readme_images/Book_Makeover_Page_Phone.png)
+![Makover iPhone SE](docs/readme_images/Book_Makeover_Page.png)
 
-![Index Tablet](docs/readme_images/Book_Makeover_Page_Tablet.png)
+![Makeover Tablet](docs/readme_images/Tablet_Book_Makeover.png)
 
-![Index Monitor](docs/readme_images/Book_Makeover_Page_Monitor.png)
+![Makeover Monitor](docs/readme_images/Monitor_Book_Makeover.png)
+
+### Blog Post Detail Page
+
+![Blog Post iPhone SE](docs/readme_images/Post_Detail_Page.png)
+
+![Blog Post Tablet](docs/readme_images/Tablet_Post_Detail.png)
+
+![Blog Post Monitor](docs/readme_images/Monitor_Post_Detail.png)
+
+### Register Page
+
+![Register iPhone SE](docs/readme_images/Register_Page.png)
+
+![Register Tablet](docs/readme_images/Tablet_Register.png)
+
+![Register Monitor](docs/readme_images/Monitor_Register.png)
+
+### Log In Page
+
+![Log In iPhone SE](docs/readme_images/Login_Page.png)
+
+![Log In Tablet](docs/readme_images/Tablet_Login.png)
+
+![Log In Monitor](docs/readme_images/Monitor_Login.png)
+
+### Log Out Page
+
+![Log Out iPhone SE](docs/readme_images/Logout_Page.png)
+
+![Log Out Tablet](docs/readme_images/Tablet_Logout.png)
+
+![Log Out Monitor](docs/readme_images/Monitor_Logout.png)
 
 ## Entity Relationship Diagrams
 
