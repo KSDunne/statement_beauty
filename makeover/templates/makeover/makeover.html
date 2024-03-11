@@ -1,17 +1,22 @@
-{% extends 'base.html' %} 
-{% block content %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
 {% load crispy_forms_tags %}
 
 <!-- Displaying Deal of the Season -->
+<!-- Credit: This section was inspired by the about code in I think therefore I blog -->
+<!-- Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/10_create_about_app/about/templates/about/about.html -->
 <div class="container mt-5">
   <div class="row">
     <div class="col-4 text-center">
-      <img src="{% static 'images/default.jpg' %}" class="profile-image" 
-      alt="image related to current deal being offered on makeovers"/>
+      <img
+        src="{% static 'images/default.jpg' %}"
+        class="profile-image"
+        alt="image related to current deal being offered on makeovers"
+      />
     </div>
     <div class="col-8">
-      <!-- Title here -->
+      <!-- Title -->
       <h2 id="makeover-title">{{ makeover.title }}</h2>
       <!-- Content -->
       <div id="makeover-content">{{ makeover.content | safe }}</div>
@@ -30,9 +35,14 @@
   </div>
 
   <!-- Displaying Bookings -->
+  <!-- Credit: This section was inspired by the comments code in I think therefore I blog -->
+  <!-- Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/templates/blog/post_detail.html#L45 -->
   <div class="row" id="booking-list">
     <div class="col-md-8 card mb-4 mt-3">
-      <div class="card-body" aria-label="list of previous bookings displayed here">
+      <div
+        class="card-body"
+        aria-label="list of previous bookings displayed here"
+      >
         {% if user.is_authenticated %}
         <h3>List of Your Bookings:</h3>
         <hr />
@@ -45,8 +55,8 @@
           <h5>Name: {{ booking.username }}</h5>
           <h5>Date: {{ booking.date_of_booking}}</h5>
           <h5 class="start-time">Time: {{ booking.start_time}}</h5>
-          <div>Your message: </div>
-          <div class="booking-message"> {{ booking.message | linebreaks }}</div>
+          <div>Your message:</div>
+          <div class="booking-message">{{ booking.message | linebreaks }}</div>
           <hr />
           <button class="btn btn-delete" data-booking_id="{{ booking.id }}">
             Delete
@@ -55,17 +65,17 @@
             Edit
           </button>
         </div>
-        {% endfor %} 
-        {% elif not user.is_authenticated %}
+        {% endfor %} {% elif not user.is_authenticated %}
         <p>Log in to view your booking</p>
         {% endif %}
       </div>
     </div>
 
     <!-- Creating New Bookings -->
+    <!-- Credit: This section was inspired by the comments code in I think therefore I blog -->
+    <!-- Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/templates/blog/post_detail.html#L75 -->
     <div class="col-md-4 card mb-4 mt-3">
-      <div class="card-body" 
-        aria-label="here is a form for making a booking">
+      <div class="card-body" aria-label="here is a form for making a booking">
         {% if user.is_authenticated %}
         <h3>Make a booking:</h3>
         <form id="booking-form" method="post" style="margin-top: 1.3em">
@@ -85,26 +95,36 @@
     </div>
   </div>
 </div>
+
 <!-- Delete confirmation modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1"
-  aria-labelledby="deleteModalLabel" aria-hidden="true">
+<!-- Credit: This section of code was taken from the comments code in I think therefore I blog -->
+<!-- Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/templates/blog/post_detail.html#L93 -->
+<div
+  class="modal fade"
+  id="deleteModal"
+  tabindex="-1"
+  aria-labelledby="deleteModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"
-          id="deleteModalLabel">Delete booking?</h5>
-        <button type="button" class="btn-close"
-          data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="deleteModalLabel">Delete booking?</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-        Are you sure you want to delete your booking?
-        This cannot be undone.
+        Are you sure you want to delete your booking? This cannot be undone.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
-          data-bs-dismiss="modal">Close</button>
-        <a id="deleteConfirm" href="#" class="btn
-          btn-danger">Delete</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
       </div>
     </div>
   </div>
