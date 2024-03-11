@@ -105,6 +105,10 @@ Statement Beauty is a fictitious business that started out as a hair and makeup 
 
 A responsive navigation bar is in place. Concentrating on 'mobile first' design, the navigation bar incorporates a clickable burger icon with a drop down menu on mobile. There is a burger icon at tablet size too but when moving to monitor size the burger disappears and a navigation bar appears with options to navigate to pages; 'Blog' which is essentially the home page, 'About' or 'Book Makeover'. There is a clickable brand logo for all screen sizes that loads the blog page.
 
+#### Mobile navigation bar with burger menu
+
+![Mobile navbar with burger menu](docs/navbar_burger.PNG)
+
 ### A list of blog posts
 
 Individual blog posts are displayed under one another on mobile screens. On tablet screens there are 3 blog posts displayed in a row and 6 on a page, with the option to use a next and previous button. Large laptop screens and monitor screens have the same layout as tablet size only the pictures are bigger.
