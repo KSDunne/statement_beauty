@@ -101,7 +101,7 @@ body {
 
 .post-link:hover,
 .page-link {
-  color: #e84610;
+  color: black;
 }
 
 .post-title {
@@ -322,6 +322,10 @@ body {
   border-radius: 12px;
 }
 
+.text-date{
+  color: black;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;
@@ -362,6 +366,17 @@ body {
   color: black;
   font-size: 110%;
   font-weight: 500;
+}
+
+.contact-text-email{
+  color: black;
+  font-size: 102%;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.contact-text-email a{
+  color: #692d5d;
 }
 
 .contact-text {
