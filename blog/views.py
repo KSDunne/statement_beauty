@@ -6,7 +6,7 @@ from .models import Post, Comment
 from .forms import CommentForm
 
 # Views
-
+# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py
 
 class PostList(generic.ListView):
     """
