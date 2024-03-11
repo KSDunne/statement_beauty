@@ -10,15 +10,15 @@
       <img src="{% static 'images/default.jpg' %}" class="profile-image" />
     </div>
     <div class="col-8">
-      <!-- Title goes between these h2 tags -->
+      <!-- Title here -->
       <h2 id="makeover-title">{{ makeover.title }}</h2>
-      <!-- Content goes directly underneath this -->
+      <!-- Content -->
       <div id="makeover-content">{{ makeover.content | safe }}</div>
     </div>
   </div>
   <div class="row">
     <div class="col text-right">
-      <!-- Updated on goes here -->
+      <!-- Updated on -->
       <p class="text-end">
         <em
           >Updated on:
@@ -31,7 +31,7 @@
   <!-- Displaying Bookings -->
   <div class="row" id="booking-list">
     <div class="col-md-8 card mb-4 mt-3">
-      <div class="card-body">
+      <div class="card-body" aria-label="list of previous bookings displayed here">
         {% if user.is_authenticated %}
         <h3>List of Your Bookings:</h3>
         <hr />
@@ -63,7 +63,8 @@
 
     <!-- Creating New Bookings -->
     <div class="col-md-4 card mb-4 mt-3">
-      <div class="card-body">
+      <div class="card-body" 
+        aria-label="here is a form for making a booking">
         {% if user.is_authenticated %}
         <h3>Make a booking:</h3>
         <form id="booking-form" method="post" style="margin-top: 1.3em">
