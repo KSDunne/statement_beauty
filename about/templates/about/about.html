@@ -39,7 +39,9 @@
             <form method="post">
                 {{ collaborate_form | crispy }}
                 {% csrf_token %}
-                <button class="btn btn-about" type="submit">Submit</button>
+                <button class="btn btn-about" 
+                aria-label="click this button to submit your collaboration request"
+                type="submit">Submit</button>
             </form>
         </div>
     </div>
