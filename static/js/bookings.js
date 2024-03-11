@@ -1,4 +1,5 @@
 // JS script with event listeners for editing and deleting a makeover booking
+// Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/static/js/comments.js
 // Note: A defensive design was built in to the delete funtion with a modal
 
 // constants for edit event listener
