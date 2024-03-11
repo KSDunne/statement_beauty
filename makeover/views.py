@@ -4,7 +4,7 @@ from django.contrib import messages
 from .models import Makeover, Booking
 from .forms import BookingForm
 
-
+# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/about/views.py#L8
 @login_required
 def makeover_deals(request):
     """
@@ -35,7 +35,8 @@ def makeover_deals(request):
             "booking_form": booking_form,
         },
     )
-    
+
+# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py#L60
 @login_required
 def booking_edit(request, booking_id):
     """
@@ -53,6 +54,7 @@ def booking_edit(request, booking_id):
         form = BookingForm(instance=booking)
     return render(request, 'makeover.html', {'form': form, 'booking_id': booking_id})
 
+# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py#L84
 @login_required
 def delete_booking(request, booking_id):
     """
