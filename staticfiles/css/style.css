@@ -264,7 +264,7 @@ body {
 }
 
 /* cover text on home page with main blog content*/
-#cover-text {
+.cover-text {
   background-color: rgba(33, 33, 33, 0.9);
   font-family: "Quicksand", sans-serif;
   font-size: 130%;
@@ -278,14 +278,15 @@ body {
   border-radius: 35px;
 }
 
-#cover-text > h2 {
+.cover-text > h1 {
   color: #fef2d8;
   padding-top: 8px;
 }
 
-#cover-text > h3 {
+.cover-text > h2 {
   color: #fef2d8;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .booking-item{
@@ -382,7 +383,7 @@ body {
 
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-  #cover-text {
+  .cover-text {
     background-color: rgba(33, 33, 33, 0.9);
     font-family: "Quicksand", sans-serif;
     font-size: 130%;
@@ -475,7 +476,7 @@ body {
 
 /* Very Large devices (large laptop screens and monitors, 1440px and up) */
 @media screen and (min-width: 1440px) {
-  #cover-text {
+  .cover-text {
     background-color: rgba(33, 33, 33, 0.9);
     font-family: "Quicksand", sans-serif;
     font-size: 130%;
