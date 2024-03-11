@@ -30,7 +30,7 @@
     <div class="col card mb-4 mt-3 left top">
       <div class="card-body">
         <!-- The post content goes inside the card-text. -->
-        <!-- Use the | safe filter inside the template tags -->
+        <!-- The | safe filter was used inside the template tags -->
         <article class="card-text">{{ post.content | safe }}</article>
       </div>
     </div>
@@ -68,10 +68,12 @@
           {% if not comment.approved and comment.author == user %}
           <p class="approval">This comment is awaiting approval</p>
           {% endif %} {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-delete" data-comment_id="{{ comment.id }}">
+          <button aria-label="click this button to delete your comment if desired" 
+          class="btn btn-delete" data-comment_id="{{ comment.id }}">
             Delete
           </button>
-          <button class="btn btn-edit" data-comment_id="{{ comment.id }}">
+          <button aria-label="click this button to edit your comment if desired" 
+          class="btn btn-edit" data-comment_id="{{ comment.id }}">
             Edit
           </button>
           {% endif %}
@@ -88,7 +90,8 @@
         <p>Posting as: {{ user.username }}</p>
         <form id="commentForm" method="post" style="margin-top: 1.3em">
           {{ comment_form | crispy }} {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">
+          <button aria-label="click this button to submit your comment" 
+          id="submitButton" type="submit" class="btn btn-signup btn-lg">
             Submit
           </button>
         </form>
