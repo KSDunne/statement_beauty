@@ -121,6 +121,8 @@ When a blog title or exerpt is clicked the post detail html is rendered displayi
 
 The user does not need to be logged in to view the about page. Here there is the hero image at the top. Then the div that tells the user whether they are logged in or not. Followed by; a portrait of the business owner, the about title and the about content. Underneath this is a collaboration form targeted at beauty professionals that would like to collaborate on blog posts or offer their services for our makeovers.
 
+### Clear indication as to whether the user is logged in or out at all times
+
 ### Collaboration request form
 
 ### Book a makeover page
