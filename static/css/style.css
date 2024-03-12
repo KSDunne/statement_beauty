@@ -426,7 +426,14 @@ body {
     display: flex;
     justify-content: center;
   }
+
+/* style for edit form on edit_makeover.html */
+  .edit-form{
+    width: 55%;
+  }
+
 }
+
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .nav-item a:hover {
@@ -517,6 +524,12 @@ body {
     display: flex;
     justify-content: center;
   }
+
+/* style for edit form on edit_makeover.html */
+  .edit-form{
+    width: 50%;
+  }
+
 }
 
 /* Very Large devices (large laptop screens and monitors, 1440px and up) */
@@ -579,5 +592,10 @@ body {
   .navbar-text {
     font-size: 130%;
     padding: 2rem 1rem 2.2rem 1rem;
+  }
+
+/* style for edit form on edit_makeover.html */
+  .edit-form{
+    width: 45%;
   }
 }
