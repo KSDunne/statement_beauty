@@ -107,7 +107,7 @@ A responsive navigation bar is in place. Concentrating on 'mobile first' design,
 
 #### Mobile navigation bar with burger menu
 
-![Mobile navbar with burger menu](docs/readme_images/navbar_burger1.PNG)
+![Mobile navbar with burger menu](docs/readme_images/navbar_burger.PNG)
 
 #### Monitor navigation bar
 
