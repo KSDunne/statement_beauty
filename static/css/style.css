@@ -267,26 +267,26 @@ body {
 .cover-text {
   background-color: rgba(33, 33, 33, 0.9);
   font-family: "Quicksand", sans-serif;
-  font-size: 130%;
   position: absolute;
-  bottom: 15vh;
-  min-height: 160px;
-  padding: 8px 15px 0px 15px;
+  top: 5vh;
+  padding: 8px 7px 0px 7px;
   text-align: center;
-  left: 22%;
-  right: 22%;
-  border-radius: 35px;
+  border-radius: 3px;
+  width: 78%;
 }
 
 .cover-text > h1 {
   color: #fef2d8;
   padding-top: 8px;
+  font-size: 1.5rem;
 }
 
 .cover-text > h2 {
   color: #fef2d8;
   padding-top: 10px;
   padding-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .booking-item{
@@ -401,16 +401,26 @@ body {
   .cover-text {
     background-color: rgba(33, 33, 33, 0.9);
     font-family: "Quicksand", sans-serif;
-    font-size: 130%;
     position: absolute;
-    bottom: 21vh;
-    min-height: 128px;
+    font-size: 130%;
+    top: auto;
+    bottom: 25vh;
+    min-height: 116px;
     padding: 8px 15px 0px 15px;
     text-align: center;
     left: 22%;
     right: 22%;
-    border-radius: 35px;
+    border-radius: 30px;
+    width: auto; 
   }
+
+  .cover-text > h2 {
+  color: #fef2d8;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 
   .sign-in-form {
     display: flex;
@@ -433,6 +443,26 @@ body {
   #register-button a:hover {
     border-bottom: 1px solid #fe2c89;
   }
+
+  .cover-text {
+    background-color: rgba(33, 33, 33, 0.9);
+    font-family: "Quicksand", sans-serif;
+    font-size: 130%;
+    position: absolute;
+    bottom: 24vh;
+    min-height: 120px;
+    padding: 8px 15px 0px 15px;
+    text-align: center;
+    left: 30%;
+    right: 30%;
+    border-radius: 35px;
+  }
+
+.cover-text > h1 {
+  color: #fef2d8;
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
 
   .brand {
     font-family: Lato, sans-serif;
@@ -496,14 +526,20 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 130%;
     position: absolute;
-    bottom: 21vh;
-    min-height: 128px;
+    bottom: 24vh;
+    min-height: 120px;
     padding: 8px 15px 0px 15px;
     text-align: center;
     left: 35%;
     right: 35%;
     border-radius: 35px;
   }
+
+  .cover-text > h1 {
+  color: #fef2d8;
+  padding-top: 12px;
+  font-size: 1.5rem;
+}
 
   .brand {
     font-family: Lato, sans-serif;

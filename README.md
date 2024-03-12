@@ -103,11 +103,27 @@ Statement Beauty is a fictitious business that started out as a hair and makeup 
 
 ### Logo and navigation bar
 
-A responsive navigation bar is in place. Concentrating on 'mobile first' design, the navigation bar incorporates a clickable burger icon with a drop down menu on mobile. There is a burger icon at tablet size too but when moving to monitor size the burger disappears and a navigation bar appears with options to navigate to pages; 'Blog' which is essentially the home page, 'About' or 'Book Makeover'. There is a clickable brand logo for all screen sizes that loads the blog page.
+A responsive navigation bar is in place. Concentrating on 'mobile first' design, the navigation bar incorporates a clickable burger icon with a drop down menu on mobile. There is a burger icon at tablet size too, but when moving to monitor size the burger disappears and a navigation bar appears with options to navigate to pages; 'Blog' which is essentially the home page, 'About' or 'Book Makeover'. There is a clickable brand logo for all screen sizes that loads the blog page.
 
 #### Mobile navigation bar with burger menu
 
 ![Mobile navbar with burger menu](docs/readme_images/navbar_burger.PNG)
+
+#### Monitor navigation bar
+
+![Monitor navbar](docs/navbar_monitor.PNG)
+
+### Hero Image
+
+The hero image was chosen to convey the main topic of the blog site. It is a beauty blog so an image of a brightly colored nail salon was used.
+
+### Django alert messages
+
+Every time there is a change in data the user is alerted. For example when a comment is posted, when a comment is edited, when a comment is deleted, when a booking is created, when a booking is edited or when a booking is deleted. There is also an alert message displayed when a collaboration request is made.
+
+### Clear indication as to whether the user is logged in or out at all times
+
+The base html contains for whether the user is logged in or not and will display "You are logged in as username" or "You are not logged in" depending on the boolean state of authentication.
 
 ### A list of blog posts
 
@@ -120,8 +136,6 @@ When a blog title or exerpt is clicked the post detail html is rendered displayi
 ### About page
 
 The user does not need to be logged in to view the about page. Here there is the hero image at the top. Then the div that tells the user whether they are logged in or not. Followed by; a portrait of the business owner, the about title and the about content. Underneath this is a collaboration form targeted at beauty professionals that would like to collaborate on blog posts or offer their services for our makeovers.
-
-### Clear indication as to whether the user is logged in or out at all times
 
 ### Collaboration request form
 
