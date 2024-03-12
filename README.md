@@ -324,11 +324,6 @@ Please find a screenshot of tables below. These tables are in preparation for th
 - Blog image for winter tanning is from [pixabay](https://pixabay.com/photos/woman-beach-people-sea-bikini-909323/)
 - Blog image for laser hair removal is from [pixabay](https://pixabay.com/photos/model-dark-skin-cosmetology-5973472/)
 
-
-### Inspiration for structure from CI walk through
-
-[I think therefore I blog code repo](https://github.com/Code-Institute-Solutions/blog/tree/main/12_views_part_3/05_edit_delete)
-
 ### Inspiration from real world beauty blogs
 
 [Sosueme beauty blog](https://sosueme.ie/)
