@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib.auth.decorators import login_required
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -76,7 +77,8 @@ def post_detail(request, slug):
           "comment_form": comment_form,
         },
     )
-    
+
+@login_required
 def comment_edit(request, slug, comment_id):
     """
     Display an individual comment for edit.
@@ -108,7 +110,7 @@ def comment_edit(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-
+@login_required
 def comment_delete(request, slug, comment_id):
     """
     Delete an individual comment.
