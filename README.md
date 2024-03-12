@@ -111,7 +111,7 @@ A responsive navigation bar is in place. Concentrating on 'mobile first' design,
 
 #### Monitor navigation bar
 
-![Monitor navbar](docs/navbar_monitor.PNG)
+![Monitor navbar](docs/readme_images/navbar_monitor.PNG)
 
 ### Hero Image
 
