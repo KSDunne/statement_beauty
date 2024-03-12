@@ -33,7 +33,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost','.herokuapp.com']
 
-APPEND_SLASH = False
 
 # Application definition
 
