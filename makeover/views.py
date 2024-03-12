@@ -4,6 +4,7 @@ from django.views.generic import UpdateView
 from django.contrib import messages
 
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
+# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -43,6 +44,7 @@ def makeover_deals(request):
     )
     
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
+# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61
 class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit a booking"""
     model = Booking
