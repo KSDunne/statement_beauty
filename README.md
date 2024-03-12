@@ -147,9 +147,11 @@ The user does not need to be logged in to view the about page. Here there is the
 
 ### Collaboration request form
 
-This is located at the bottom of the about page. Beauty professionals are encouraged to use it. It should be ideally used by people that would like to collaborate on blogs or who can offer their professional services for the makeovers that statement beauty offer. In the Django administration panel there are green and red dots to indicate whether admin have read the request of not and an option to tick a box when it has been read.
+This is located at the bottom of the about page. I changed the model that was in I think therefore I blog to suit my needs by adding an 'interest' field with options to pick 'hair' 'makeup' or 'other'. Beauty professionals are encouraged to use this form. It should be ideally used by people that would like to collaborate on blogs or who can offer their professional services for the makeovers that statement beauty offer. In the Django administration panel there are green and red dots to indicate whether admin have read the request of not and an option to tick a box when it has been read.
 
 ### Book a makeover page
+
+An original custom model is contained in this original custom app. The app is called 'makeover' and it has its own template, models, form and views.
 
 ### Makeover deals
 
