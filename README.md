@@ -312,7 +312,11 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ### Code
 
+[CI student booking website](https://github.com/DanMorriss/nialls-barbershop/blob/main/templates/base.html#L67) - Niall's Barbarshop footer looked similar to the way I wanted my footer, so their footer code was adapted for my use.
+
 ### Media
+
+- The hero image is from [shutterstock](https://www.shutterstock.com/image-photo/interior-modern-nail-design-beauty-salon-2370398915)
 
 ### Inspiration for structure from CI walk through and other CI students
 
