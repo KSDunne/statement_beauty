@@ -45,33 +45,28 @@ def makeover_deals(request):
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
 class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit a booking"""
-    template_name = 'makeover/edit_makeover.html'
     model = Booking
+    template_name = 'makeover/edit_makeover.html'
     form_class = BookingForm
     success_url = '/makeover/'
     
-    def test_func(self):
-        return self.request.user == self.get_object().username
+    # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L234
+    def form_valid(self, form):
+        form.instance.confirmed = False
+        messages.success(
+            self.request,
+            "Your booking has been updated!",
+            extra_tags="alert alert-success alert-dismissible",
+        )
 
-'''
-# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py#L60
-@login_required
-def booking_edit(request, booking_id):
-    """
-    view to edit booking
-    """
-    booking = Booking.objects.get(id=booking_id)
-    if request.method == 'POST':
-        form = BookingForm(request.POST, instance=booking)
-        if form.is_valid():
-            booking.confirmed = False
-            form.save()
-            messages.success(request, 'Booking updated successfully.')
-            return redirect('makeover')  
-    else:
-        form = BookingForm(instance=booking)
-    return render(request, 'makeover.html', {'form': form, 'booking_id': booking_id})
-'''
+        return super().form_valid(form)
+    
+    # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L242
+    def test_func(self):
+        booking = self.get_object()
+        return (self.request.user == booking.username or
+                self.request.user.is_superuser)
+        
 
 # Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py#L84
 @login_required
