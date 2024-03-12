@@ -107,7 +107,7 @@ A responsive navigation bar is in place. Concentrating on 'mobile first' design,
 
 #### Mobile navigation bar with burger menu
 
-![Mobile navbar with burger menu](docs/readme_images/navbar_burger.PNG)
+![Mobile navbar with burger menu](docs/readme_images/navbar_burger1.PNG)
 
 #### Monitor navigation bar
 
@@ -138,6 +138,8 @@ When a blog title or exerpt is clicked the post detail html is rendered displayi
 The user does not need to be logged in to view the about page. Here there is the hero image at the top. Then the div that tells the user whether they are logged in or not. Followed by; a portrait of the business owner, the about title and the about content. Underneath this is a collaboration form targeted at beauty professionals that would like to collaborate on blog posts or offer their services for our makeovers.
 
 ### Collaboration request form
+
+This is located at the bottom of the about page. Beauty professionals are encouraged to use it. It should be ideally used by people that would like to collaborate on blogs or who can offer their professional services for the makeovers that statement beauty offer.
 
 ### Book a makeover page
 
