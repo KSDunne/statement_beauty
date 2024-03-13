@@ -3,8 +3,8 @@
 
 <!-- credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/templates/recipes/recipe_confirm_delete.html -->
 <!-- customised by: warning the user this cannot be undone -->
-<!-- customised by: using for a booking deletion opposed to the original recipe deletion -->
-{% block title %}Delete booking {{ object.title }}{% endblock %} 
+<!-- customised by: using {booking.service_type} and { booking.date_of_booking} instead of {object.title} -->
+{% block title %}Delete booking - {{ booking.service_type }} {% endblock %} 
 
 {% block content %}
 <div class="container">
@@ -12,8 +12,8 @@
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %} 
-            <p>Are you sure you want to delete "{{object.title}}"?</p>
-            <p>This cannot be undone</p>
+            <p>Are you sure you want to delete "{{ booking.service_type }}, {{ booking.date_of_booking}}, {{ booking.start_time}}"?</p>
+            <p>This cannot be undone!</p>
             <input type="submit" value="Confirm" class="btn btn-primary w-25">
         </form>
     </div>
