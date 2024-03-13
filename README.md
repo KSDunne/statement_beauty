@@ -318,6 +318,16 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ## Deployment
 
+### Pre Deployment
+
+- To ensure successful deployment on Heroku, it's good practice to make sure that the requirements.txt file is kept up to date so as that imported python modules are configured correctly.
+
+- A Procfile is required to allow Heroku deployment to be configured to a gunicorn web app.
+
+- In settings.py configure the ALLOWED_HOSTS list the format ['app_name.heroku.com', 'localhost'], make sure all static files and directories are configured correctly.
+
+- All environment variables on the env.py which gitignored on the repo must be configured correctly with the database url, cloundinary url and secret key.
+
 ## Credits
 
 ### Code
