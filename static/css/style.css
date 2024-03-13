@@ -289,19 +289,19 @@ body {
   font-weight: 400;
 }
 
-.booking-item{
+.booking-item {
   margin-top: 1rem;
   background-color: #ffeaec;
   border-radius: 8px;
   padding: 0.5rem;
 }
 
-.loggedin-container{
+.loggedin-container {
   display: flex;
   justify-content: flex-end;
 }
 
-.logged-in{
+.logged-in {
   font-weight: 500;
   background-color: #ffeaec;
   font-size: 115%;
@@ -310,11 +310,11 @@ body {
   border-radius: 10px;
 }
 
-.commenter-style{
+.commenter-style {
   font-weight: bold;
 }
 
-.about-heading{
+.about-heading {
   background-color: #ffbe98;
   color: black;
   font-weight: 500;
@@ -322,7 +322,7 @@ body {
   border-radius: 12px;
 }
 
-.text-date{
+.text-date {
   color: black;
 }
 
@@ -335,7 +335,6 @@ body {
 .error-paragraph {
   padding: 1%;
   font-weight: 500;
-
 }
 
 .error-btn {
@@ -368,14 +367,14 @@ body {
   font-weight: 500;
 }
 
-.contact-text-email{
+.contact-text-email {
   color: black;
   font-size: 102%;
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
-.contact-text-email a{
+.contact-text-email a {
   color: #692d5d;
 }
 
@@ -411,27 +410,26 @@ body {
     left: 22%;
     right: 22%;
     border-radius: 30px;
-    width: auto; 
+    width: auto;
   }
 
   .cover-text > h2 {
-  color: #fef2d8;
-  padding-top: 10px;
-  padding-bottom: 2px;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
+    color: #fef2d8;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
 
   .sign-in-form {
     display: flex;
     justify-content: center;
   }
 
-/* style for edit form on edit_makeover.html */
-  .edit-form{
+  /* style for edit form on edit_makeover.html */
+  .edit-form {
     width: 55%;
   }
-
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -465,11 +463,11 @@ body {
     border-radius: 35px;
   }
 
-.cover-text > h1 {
-  color: #fef2d8;
-  padding-top: 10px;
-  font-size: 1.5rem;
-}
+  .cover-text > h1 {
+    color: #fef2d8;
+    padding-top: 10px;
+    font-size: 1.5rem;
+  }
 
   .brand {
     font-family: Lato, sans-serif;
@@ -525,11 +523,10 @@ body {
     justify-content: center;
   }
 
-/* style for edit form on edit_makeover.html */
-  .edit-form{
+  /* style for edit form on edit_makeover.html */
+  .edit-form {
     width: 50%;
   }
-
 }
 
 /* Very Large devices (large laptop screens and monitors, 1440px and up) */
@@ -549,10 +546,10 @@ body {
   }
 
   .cover-text > h1 {
-  color: #fef2d8;
-  padding-top: 12px;
-  font-size: 1.5rem;
-}
+    color: #fef2d8;
+    padding-top: 12px;
+    font-size: 1.5rem;
+  }
 
   .brand {
     font-family: Lato, sans-serif;
@@ -594,8 +591,8 @@ body {
     padding: 2rem 1rem 2.2rem 1rem;
   }
 
-/* style for edit form on edit_makeover.html */
-  .edit-form{
+  /* style for edit form on edit_makeover.html */
+  .edit-form {
     width: 45%;
   }
 }
