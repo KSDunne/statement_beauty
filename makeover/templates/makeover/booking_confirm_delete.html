@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% load static %}
+
+<!-- credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/templates/recipes/recipe_confirm_delete.html -->
+<!-- customised by: warning the user this cannot be undone -->
+<!-- customised by: using for a booking deletion opposed to the original recipe deletion -->
+{% block title %}Delete booking {{ object.title }}{% endblock %} 
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mt-2">Confirm Booking Deletion</h1>
+    <div class="d-flex justify-content-center pt-3">
+        <form method="post" class="text-center">
+            {% csrf_token %} 
+            <p>Are you sure you want to delete "{{object.title}}"?</p>
+            <p>This cannot be undone</p>
+            <input type="submit" value="Confirm" class="btn btn-primary w-25">
+        </form>
+    </div>
+</div>
+{% endblock %}

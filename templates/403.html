@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Delete Booking{% endblock %} 
+
+<!-- credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/templates/403.html-->
+{% block content %} 
+    <div class="container text-center">
+        <h1>403 - Unauthorized Access</h1>
+        <p>You're not authorized to perform this action</p>
+        <!-- Home is referring to the blog page in this instance -->
+        <a href="{% url 'home' %}" class="btn btn-primary w-25">Home</a>
+    </div>
+{% endblock %}

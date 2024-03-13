@@ -1,12 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.views.generic import UpdateView
+from django.views.generic import UpdateView, DeleteView
 from django.contrib import messages
 
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
 # Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
-from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Makeover, Booking
 from .forms import BookingForm
@@ -68,8 +67,33 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         booking = self.get_object()
         return (self.request.user == booking.username or
                 self.request.user.is_superuser)
-        
 
+
+# Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
+# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L72
+# Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
+class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a recipe"""
+    model = Booking
+    success_url = '/makeover/'
+    
+    #def delete(self, request):
+    #    booking = self.get_object(booking)
+    #    if self.request.user.username:
+    #        messages.success(
+    #       self.request,
+    #       "Your booking has been successfully deleted!",
+    #       extra_tags="alert alert-danger alert-dismissible",
+    #           )
+    #   return super().delete(request)
+    
+    def test_func(self):
+        booking = self.get_object()
+        return (self.request.user == booking.username or
+                self.request.user.is_superuser)
+
+
+'''
 # Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py#L84
 @login_required
 def delete_booking(request, booking_id):
@@ -84,3 +108,4 @@ def delete_booking(request, booking_id):
     else:
         messages.add_message(request, messages.ERROR, 'You can only delete your own booking!')
     return render(request, 'makeover.html')
+'''

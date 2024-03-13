@@ -58,12 +58,10 @@
           <div>Your message:</div>
           <div class="booking-message">{{ booking.message | linebreaks }}</div>
           <hr />
-          <button class="btn btn-delete" data-booking_id="{{ booking.id }}">
-            Delete
-          </button>
-          <div class="btn btn-edit">
-            <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary w-25">Edit</a>
-          </div>
+            <div class="text-center">
+                <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary w-25">Edit</a>
+                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary w-25">Delete</a>
+            </div>
         </div>
         {% endfor %} {% elif not user.is_authenticated %}
         <p>Log in to view your booking</p>
