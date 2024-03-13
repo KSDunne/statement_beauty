@@ -6,7 +6,7 @@
 
 ## Live website
 
-Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.herokuapp.com/about/)
+Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.herokuapp.com)
 
 ## Purpose of the project
 
@@ -318,15 +318,51 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ## Deployment
 
+All code for this project was written in visual studio integrated development environment. Github was used for version control and the application was deployed to heroku from github.
+
 ### Pre Deployment
 
-- To ensure successful deployment with Heroku, it's good practice to make sure that the requirements.txt file is kept up to date so as that imported python modules are configured correctly.
-
-- A Procfile is required to allow Heroku deployment to be configured to a gunicorn web app.
-
+- To ensure successful deployment with heroku, it's good practice to make sure that the requirements.txt file is kept up to date so as that imported python modules are configured correctly.
+- A Procfile is required to allow heroku deployment to be configured to a gunicorn web app.
 - In settings.py configure the ALLOWED_HOSTS list the format ['app_name.heroku.com', 'localhost'], make sure all static files and directories are configured correctly.
-
 - All environment variables on the env.py which gitignored on the repo must be configured correctly with the database url, cloundinary url and secret key.
+
+### Deploying with heroku
+
+After account setup, the steps were as follows:
+
+- Click the "create new app" button on heroku
+- Create a unique name for the app
+- Select region (Europe was selected for this project)
+- Click "create app"
+- Select the deployment method (github was used for this project)
+- Search for the github repository name (it was statement_beauty for this project)
+- Click connect
+- There is an option to use manual deployment or automatic deployment. Make sure main branch is selected
+- In the settings tab select reveal config vars. Input the required hidden variables
+- Select nodejs and python as the buildpack
+- Deploy
+- After the first deployment you will see a message saying "your app was successfully deployed" and there will be a "view" button to take you to your deployed application
+
+The live link for this project can be found here - [Statement Beauty](https://statement-beauty-ec9472f892b1.herokuapp.com)
+
+### Fork this respoitory:
+
+- Go to the GitHub repository
+- Click on the Fork button in the upper right-hand corner
+
+### Clone this repository:
+
+- Go to the GitHub repository
+- Click the Code button near the top of the page
+- Select 'HTTPS', 'SSH', or 'Github CLI', depending on how you would like to clone
+- Click the copy button to copy the URL to your clipboard
+- Open Git Bash
+- Change the current working directory to where you want the cloned directory
+- Type git clone and paste the URL ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+- Press enter to create your clone locally
+
+Note: The difference between clone and fork is, you need permissions to push back to the original from a clone, but not a fork because a fork will be completely your own new project.
 
 ## Credits
 
