@@ -91,21 +91,3 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         booking = self.get_object()
         return (self.request.user == booking.username or
                 self.request.user.is_superuser)
-
-
-'''
-# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/views.py#L84
-@login_required
-def delete_booking(request, booking_id):
-    """
-    view to delete booking
-    """
-    booking = get_object_or_404(Booking, id=booking_id)
-    if booking.username == request.user:
-        booking.delete()
-        messages.add_message(request, messages.SUCCESS, 'Booking deleted!')
-        return redirect('makeover') 
-    else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own booking!')
-    return render(request, 'makeover.html')
-'''
