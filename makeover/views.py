@@ -68,6 +68,7 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
 # Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L72
 # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
+# Customised: using the form valid function here
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete a recipe"""
     model = Booking
