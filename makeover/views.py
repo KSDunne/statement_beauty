@@ -77,16 +77,16 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Booking
     success_url = '/makeover/'
     
-    #def delete(self, request):
-    #    booking = self.get_object(booking)
-    #    if self.request.user.username:
-    #        messages.success(
-    #       self.request,
-    #       "Your booking has been successfully deleted!",
-    #       extra_tags="alert alert-danger alert-dismissible",
-    #           )
-    #   return super().delete(request)
-    
+    def form_valid(self, form):
+        messages.success(
+            self.request,
+            "Your booking has been deleted successfully!",
+            extra_tags="alert alert-success alert-dismissible",
+        )
+
+        return super().form_valid(form)
+
+# Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L312
     def test_func(self):
         booking = self.get_object()
         return (self.request.user == booking.username or

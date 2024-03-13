@@ -12,9 +12,9 @@
 // credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/static/js/comments.js
 // code was adapted for my own use where 'comment' was used originally, 'booking' is used here
 //for (let button of deleteButtons) {
- // button.addEventListener("click", (e) => {
-  //  let bookingId = e.target.getAttribute("data-booking_id");
-  //  deleteConfirm.href = `delete_booking/${bookingId}`;
-  //  deleteModal.show();
- // });
+//  button.addEventListener("click", (e) => {
+//    let bookingId = e.target.getAttribute("data-booking_id");
+//    deleteConfirm.href = `delete_booking/${bookingId}`;
+//    deleteModal.show();
+//  });
 //}
