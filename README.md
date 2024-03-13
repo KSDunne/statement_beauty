@@ -293,6 +293,10 @@ Please find a screenshot of tables below. These tables are in preparation for th
   GitHub was used to store the code files, README files and assets
 - [Heroku](https://id.heroku.com/login "Link to Heroku login")
   Heroku was used to deploy the project
+- [dbdiagram](https://dbdiagram.io/ "Link to dbdiagram")
+  dbdiagram was used to make a diagram of the database schema. The diagram was based off erd tables that were documented in excel
+- [Excel](https://microsoft.com/excel "Link to official microsoft excel website")
+  Used to created entity relationship tables in preparation for the database schema that was made in dbdiagram
 
 ## Testing
 
