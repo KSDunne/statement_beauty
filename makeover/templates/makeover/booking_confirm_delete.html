@@ -9,12 +9,12 @@
 {% block content %}
 <div class="container">
     <h1 class="text-center mt-2">Confirm Booking Deletion</h1>
-    <div class="d-flex justify-content-center pt-3">
+    <div class="d-flex justify-content-center pt-4">
         <form method="post" class="text-center">
             {% csrf_token %} 
-            <p>Are you sure you want to delete "{{ booking.service_type }}, {{ booking.date_of_booking}}, {{ booking.start_time}}"?</p>
-            <p>This cannot be undone!</p>
-            <input type="submit" value="Confirm" class="btn btn-primary w-25">
+            <p class="you-sure">Are you sure you want to delete "{{ booking.service_type }}, {{ booking.date_of_booking}}, {{ booking.start_time}}"?</p>
+            <p class="you-sure">This cannot be undone!</p>
+            <input type="submit" value="Confirm" class="btn btn-primary w-25 deletion-btn">
         </form>
     </div>
 </div>

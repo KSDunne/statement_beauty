@@ -326,6 +326,13 @@ body {
   color: black;
 }
 
+.deletion-btn {
+  font-size: 1rem;
+  font-weight:600;
+  padding: 2px;
+  margin: 4vh;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;
@@ -430,6 +437,11 @@ body {
   .edit-form {
     width: 55%;
   }
+
+  .you-sure {
+  font-size: 1.5rem;
+}
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -527,6 +539,13 @@ body {
   .edit-form {
     width: 50%;
   }
+
+  .deletion-btn {
+  font-size: 1.5rem;
+  font-weight:600;
+  padding: 2px;
+  margin: 4vh;
+}
 }
 
 /* Very Large devices (large laptop screens and monitors, 1440px and up) */
