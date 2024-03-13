@@ -267,11 +267,17 @@ See color palette below for an illustration of all colors mentioned
 
 ![Log Out Monitor](docs/readme_images/Monitor_Logout.png)
 
-## Entity Relationship Diagrams
+## Database schema
 
-Please find a screenshot of tables below. These tables are in preparation for the final entity relationship diagram (ERD)
+In the diagram below it can be seen that User has a relationship to Post, Comment and Booking. Comment has a relationship with both User and Post.
 
-![ERD](docs/readme_images/erd_1_170224.PNG)
+![DBSchema](docs/readme_images/db_schema.PNG)
+
+### Entity Relationship Diagrams
+
+Please find a screenshot of tables below. These tables are in preparation for the final entity relationship diagram (ERD). This excel sheet was my rough work that I prepared before making the database schema using dbdiagram.io, that can be seen above.
+
+![ERD](docs/readme_images/erd_1_130324.PNG)
 
 ## Technology Used
 
