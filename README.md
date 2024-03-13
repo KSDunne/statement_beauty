@@ -10,7 +10,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 ## Purpose of the project
 
-Statement Beauty is a fictitious business that started out as a hair and makeup blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website is aimed at people that are interested in beauty topics. This website provides the user with; a blog, comments sections on posts, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time. The makeover booking form provides the options for a hair or makeup appointment with a Statement Beauty beautician.
+Statement Beauty is a fictitious business that started out as a blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website provides the user with; a blog, comments sections, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time. 
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ Statement Beauty is a fictitious business that started out as a hair and makeup 
 
 ### Target audience
 
-- Users that are enthusiastic about current beauty trends
+- Users that are interested in current beauty trends and topics
 - Users that would like to book to have their hair or makeup done for an upcoming event
 - Users that are professionals in the beauty industry and would like to collaborate on blog posts or offer their own services through our makeover service
 
@@ -320,7 +320,7 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ### Pre Deployment
 
-- To ensure successful deployment on Heroku, it's good practice to make sure that the requirements.txt file is kept up to date so as that imported python modules are configured correctly.
+- To ensure successful deployment with Heroku, it's good practice to make sure that the requirements.txt file is kept up to date so as that imported python modules are configured correctly.
 
 - A Procfile is required to allow Heroku deployment to be configured to a gunicorn web app.
 
