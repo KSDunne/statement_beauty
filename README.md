@@ -300,7 +300,7 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ## Testing
 
-### Accessibility and Lighthouse
+Detailed testing documentation can be found [here.](./TESTING.md)
 
 ### Fixed bugs
 
