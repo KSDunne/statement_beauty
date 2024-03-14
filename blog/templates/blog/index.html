@@ -1,15 +1,17 @@
-{% extends "base.html" %} 
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <!-- index.html content -->
 <!-- call to action button is my own code -->
 <div class="container mt-5 text-center">
   <div class="row">
     <div class="col-md-8 offset-md-2">
-      <a href="{% url 'makeover' %}" class="btn btn-signup"
+      <a
+        href="{% url 'makeover' %}"
+        class="btn btn-signup"
         aria-label="Click button to book a makeover (will direct to 
-        either login page or makeover page)"><h3>Book Makeover</h3></a>
+        either login page or makeover page)"
+        ><h3>Book Makeover</h3></a
+      >
     </div>
   </div>
 </div>
@@ -26,13 +28,19 @@
           <div class="card mb-4">
             <div class="card-body">
               <div class="image-container">
-                  {% if "placeholder" in post.featured_image.url %}
-                  <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                    alt="placeholder image">
-                  {% else %}
-                  <img class="card-img-top" src=" {{ post.featured_image.url }}"
-                    alt="{{ post.title }}">
-                  {% endif %}
+                {% if "placeholder" in post.featured_image.url %}
+                <img
+                  class="card-img-top"
+                  src="{% static 'images/default.jpg' %}"
+                  alt="placeholder image"
+                />
+                {% else %}
+                <img
+                  class="card-img-top"
+                  src=" {{ post.featured_image.url }}"
+                  alt="{{ post.title }}"
+                />
+                {% endif %}
                 <div class="image-flash">
                   <p class="author">Author: {{ post.author }}</p>
                 </div>
@@ -52,9 +60,10 @@
       <div class="row">{% endif %} {% endfor %}</div>
     </div>
   </div>
+</div>
 
-  <!-- pagination -->
-  <!-- credit for pagination: 
+<!-- pagination -->
+<!-- credit for pagination: 
     https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/c592ed45498e440587b764e29891b2fc/ -->
 <div class="container-fluid">
   {% if is_paginated %}
