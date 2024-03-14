@@ -39,10 +39,7 @@
   <!-- Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/templates/blog/post_detail.html#L45 -->
   <div class="row" id="booking-list">
     <div class="col-md-8 card mb-4 mt-3">
-      <div
-        class="card-body"
-        aria-label="list of previous bookings displayed here"
-      >
+      <div class="card-body">
         {% if user.is_authenticated %}
         <h3>List of Your Bookings:</h3>
         <hr />
@@ -58,10 +55,18 @@
           <div>Your message:</div>
           <div class="booking-message">{{ booking.message | linebreaks }}</div>
           <hr />
-            <div class="text-center">
-                <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary w-25">Edit</a>
-                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary w-25">Delete</a>
-            </div>
+          <div class="text-center">
+            <a
+              href="{% url 'edit_booking' booking.id %}"
+              class="btn btn-primary w-25"
+              >Edit</a
+            >
+            <a
+              href="{% url 'delete_booking' booking.id %}"
+              class="btn btn-primary w-25"
+              >Delete</a
+            >
+          </div>
         </div>
         {% endfor %} {% elif not user.is_authenticated %}
         <p>Log in to view your booking</p>
@@ -73,7 +78,7 @@
     <!-- Credit: This section was inspired by the comments code in I think therefore I blog -->
     <!-- Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/blog/templates/blog/post_detail.html#L75 -->
     <div class="col-md-4 card mb-4 mt-3">
-      <div class="card-body" aria-label="booking form">
+      <div class="card-body">
         {% if user.is_authenticated %}
         <h3>Make a booking:</h3>
         <form id="booking-form" method="post" style="margin-top: 1.3em">
@@ -127,5 +132,4 @@
     </div>
   </div>
 </div>
-{% endblock content %} {% block extras %}
-{% endblock %}
+{% endblock content %} {% block extras %} {% endblock %}
