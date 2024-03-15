@@ -1,24 +1,21 @@
 {% extends "base.html" %}
-
 {% load i18n %}
+{% load crispy_forms_tags %}
 
-{% block head_title %}{% trans "Signup" %}{% endblock %}
-
-{% block content %}
-<div class="container signin-bg">
-  <div class="text-center">
-    <div>
-      <h3>{% trans "Sign Up" %}</h3>
-
-      <p>
-        {% blocktrans %} Welcome to the Statement Beauty blog. Where account
-        holders can leave comments or make a booking for a makeover! Do you
-        already have an account? Then you should
-        <a class="link" href="{{ login_url }}">sign in</a>
-        instead. {% endblocktrans %}
-      </p>
-    </div>
-  </div>
+{% block head_title %} {% trans "Sign up" %}{% endblock %} {% block content %}
+<!-- credit: https://github.com/DarrachBarneveld/CoolCoders-PP4/blob/main/templates/account/signup.html#L10-->
+<!-- customisted by: adding my own classes for styling to suit the statement beauty website style -->
+<!-- customisted by: adding a welcome paragraph -->
+<!-- customisted by: removing horizontal rules -->
+<div class="signin-bg text-center text-dark">
+  <h3>{% trans "Sign up" %}</h3>
+  <p>
+    {% blocktrans %} Welcome to the Statement Beauty blog. Where account holders
+    can leave comments or make a booking for a makeover! Do you already have an
+    account? Then you should
+    <a class="link" href="{{ login_url }}">sign in</a>
+    instead. {% endblocktrans %}
+  </p>
   <div class="sign-in-form">
     <div>
       <form
@@ -27,24 +24,18 @@
         method="post"
         action="{% url 'account_signup' %}"
       >
-        {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+        {% csrf_token %} {{ form | crispy }} {% if redirect_field_value %}
         <input
           type="hidden"
           name="{{ redirect_field_name }}"
           value="{{ redirect_field_value }}"
         />
         {% endif %}
-        <button
-          class="btn btn-register right"
-          aria-label="click this button to register after fillng 
-        out the form"
-          type="submit"
-        >
-          {% trans "Sign Up" %} &raquo;
+        <button class="btn btn-register" type="submit">
+          {% trans "Sign up" %}
         </button>
       </form>
     </div>
   </div>
 </div>
-
 {% endblock %}
