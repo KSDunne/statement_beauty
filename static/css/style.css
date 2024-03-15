@@ -114,11 +114,17 @@ body {
   color: lightgray;
 }
 
-.btn-signup,
+.btn-signup {
+  background-color: #ffbe98;
+  color: black;
+  font-weight: 500;
+}
+
 .btn-edit {
   background-color: #ffbe98;
   color: black;
   font-weight: 500;
+  width: 30%;
 }
 
 .btn-signup:hover,
@@ -176,9 +182,11 @@ body {
   color: black;
   background: #fe61a6;
   font-weight: 500;
+  width: 30%;
 }
 
-.btn-delete:hover {
+.btn-delete:hover,
+.btn-edit:hover {
   background: #fcd885;
   border: none;
 }
