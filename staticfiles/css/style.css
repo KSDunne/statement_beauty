@@ -1,3 +1,4 @@
+/*Mobile first styling approach was used*/
 /*Importing Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
@@ -12,8 +13,12 @@ body {
   color: #4a4a4f;
 }
 
-.thin {
+.thin-pink {
   font-weight: 300;
+  color:#fef2d8;
+  background-color: #fe2c89; 
+  padding: 2px 6px;
+  margin-left: 4px;
 }
 
 .light-bg {
@@ -133,7 +138,7 @@ body {
   color: #23bbbb;
 }
 
-/*Custom sign in style*/
+/*Custom button style*/
 .btn-signin,
 .btn-signout,
 .btn-register,
@@ -170,12 +175,6 @@ body {
 .link:active {
   color: #445261;
   text-decoration: underline;
-}
-
-.btn-like {
-  color: #e84610;
-  border: none;
-  background: transparent;
 }
 
 .btn-delete {
@@ -334,6 +333,7 @@ body {
   color: black;
 }
 
+/* button on the booking confirm delete page */
 .deletion-btn {
   font-size: 1rem;
   font-weight:600;
