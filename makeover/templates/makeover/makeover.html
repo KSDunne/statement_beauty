@@ -49,10 +49,10 @@
           id="booking{{ booking.id }}"
         >
           <h4 class="service-type">{{ booking.service_type}}</h4>
-          <h5>Name: {{ booking.username }}</h5>
-          <h5>Date: {{ booking.date_of_booking}}</h5>
-          <h5 class="start-time">Time: {{ booking.start_time}}</h5>
-          <div>Your message:</div>
+          <p><strong>Name:</strong> {{ booking.username }}</p>
+          <p><strong>Date:</strong> {{ booking.date_of_booking}}</p>
+          <p class="start-time"><strong>Time:</strong> {{ booking.start_time}}</p>
+          <div><strong>Your message:</strong></div>
           <div class="booking-message">{{ booking.message | linebreaks }}</div>
           <hr />
           <div class="text-center">
