@@ -312,6 +312,8 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 4. Navbar bug was fixed at the top of base.html 
 
+5. {{ form.as_p }} to {{ form | crispy }}
+
 ### Unfixed bugs
 
 ### Supported screens and browsers
