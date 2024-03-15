@@ -8,7 +8,7 @@
 <!--credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/templates/recipes/edit_recipe.html -->
 <div class="container edit-form">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
-        <h1 class="text-center">Edit Booking</h1>
+        <h3 class="text-center">Edit Booking</h3>
         {% csrf_token %}
         {{ form.media }} 
         {{ form|crispy }}
