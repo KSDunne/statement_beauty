@@ -53,7 +53,7 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 2. Database and admin setup
 3. Register page and form
 4. Login page and form
-5. Home page that looks different when logged in
+5. Navigation bar that looks different when logged in
 6. Blog that has different capabilities when logged in compared to when not logged in
 7. Log out page
 8. About page
