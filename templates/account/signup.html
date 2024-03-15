@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+{% block head_title %}
 
-{% block head_title %} {% trans "Sign up" %}{% endblock %} {% block content %}
+{% trans "Sign up" %}{% endblock %} {% block content %}
 <!-- credit: https://github.com/DarrachBarneveld/CoolCoders-PP4/blob/main/templates/account/signup.html#L10-->
 <!-- customisted by: adding my own classes for styling to suit the statement beauty website style -->
 <!-- customisted by: adding a welcome paragraph -->
@@ -31,7 +32,12 @@
           value="{{ redirect_field_value }}"
         />
         {% endif %}
-        <button class="btn btn-register" type="submit">
+        <button
+          class="btn btn-register"
+          aria-label="click this button to register after fillng 
+        out the form"
+          type="submit"
+        >
           {% trans "Sign up" %}
         </button>
       </form>
