@@ -78,20 +78,22 @@
           {% if not comment.approved and comment.author == user %}
           <p class="approval">This comment is awaiting approval</p>
           {% endif %} {% if user.is_authenticated and comment.author == user %}
-          <div>
-            <a
-              href="{% url 'delete_comment' comment.id %}"
-              class="btn btn-delete"
-              >Delete</a
+          <div class="text-center">
+            <span>
+              <a
+                href="{% url 'delete_comment' comment.id %}"
+                class="btn btn-delete"
+                >Delete</a
+              >
+            </span>
+            <button
+              aria-label="click this button to edit your comment if desired"
+              class="btn btn-edit"
+              data-comment_id="{{ comment.id }}"
             >
+              Edit
+            </button>
           </div>
-          <button
-            aria-label="click this button to edit your comment if desired"
-            class="btn btn-edit"
-            data-comment_id="{{ comment.id }}"
-          >
-            Edit
-          </button>
           {% endif %}
         </div>
         <!-- for loop ends here -->
