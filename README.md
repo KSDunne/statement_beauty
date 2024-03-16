@@ -54,10 +54,10 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 3. Register page and form
 4. Login page and form
 5. Navigation bar that looks different when logged in
-6. Blog that has different capabilities when logged in compared to when not logged in
+6. Blog detail page that has different capabilities when logged in compared to when not logged in
 7. Log out page
 8. About page
-9. Book makeover
+9. Book makeover page that can be only accessed when logged in
 
 ### User stories
 
