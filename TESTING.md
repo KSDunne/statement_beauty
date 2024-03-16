@@ -4,6 +4,8 @@
 
 All HTML pages were tested with the [W3C HTML Validator](https://validator.w3.org/).
 
+#### HTML Result
+
 | page                   | validator                                                                                                                               | result |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | blog                   |  <details><summary>Blog Page</summary><img src="./docs/readme_images/validation/blog_page_html.PNG"></details>                          | PASS   |
@@ -27,3 +29,24 @@ The info messages that were ignored appeared in validation, because I used the [
 
 Custom CSS was put through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 
+#### CSS Result
+
+Pass
+
+![CSS validation](docs/css_validation.PNG)
+
+Explaination of 3 warnings
+
+![CSS validation](docs/css_validation_warnings.PNG)
+
+Warning 1: Imported style sheets are not checked in direct input and file upload modes. This warning can be ignored in this instance.
+
+- [Stack overflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error)
+
+Warning 2: -webkit-transform is a vendor extension. This warning can be ignored in this instance.
+
+- [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions)
+
+Warning 3: -moz-transform is a vendor extension. This warning can be ignored in this instance.
+
+- [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions)
