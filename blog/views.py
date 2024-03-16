@@ -1,8 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
+from django.views.generic import DeleteView
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -110,26 +113,43 @@ def comment_edit(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-@login_required
-def comment_delete(request, slug, comment_id):
-    """
-    Delete an individual comment.
+# Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
+# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L72
+# Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
 
-    **Context**
+class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a comment"""
+    model = Comment
+    
+    def get_success_url(self):
+        comment = self.get_object()
+        return reverse_lazy('post_detail', kwargs={'slug': comment.post.slug})
+    
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user == comment.author
 
-    ``post``
-        An instance of :model:`blog.Post`.
-    ``comment``
-        A single comment related to the post.
-    """
-    queryset = Post.objects.filter(status=1)
-    post = get_object_or_404(queryset, slug=slug)
-    comment = get_object_or_404(Comment, pk=comment_id)
 
-    if comment.author == request.user:
-        comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
-    else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
-
-    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+# @login_required
+# def comment_delete(request, slug, comment_id):
+#    """
+#    Delete an individual comment.
+#
+#    **Context**
+#
+#    ``post``
+#        An instance of :model:`blog.Post`.
+#    ``comment``
+# A single comment related to the post.
+#    """
+#    queryset = Post.objects.filter(status=1)
+#    post = get_object_or_404(queryset, slug=slug)
+#    comment = get_object_or_404(Comment, pk=comment_id)
+#
+#   if comment.author == request.user:
+#        comment.delete()
+#        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+#    else:
+#         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+#
+#    return HttpResponseRedirect(reverse('post_detail', args=[slug]))

@@ -78,13 +78,13 @@
           {% if not comment.approved and comment.author == user %}
           <p class="approval">This comment is awaiting approval</p>
           {% endif %} {% if user.is_authenticated and comment.author == user %}
-          <button
-            aria-label="click this button to delete your comment if desired"
-            class="btn btn-delete"
-            data-comment_id="{{ comment.id }}"
-          >
-            Delete
-          </button>
+          <div>
+            <a
+              href="{% url 'delete_comment' comment.id %}"
+              class="btn btn-delete"
+              >Delete</a
+            >
+          </div>
           <button
             aria-label="click this button to edit your comment if desired"
             class="btn btn-edit"
