@@ -125,7 +125,8 @@ body {
   font-weight: 500;
 }
 
-.btn-edit {
+.btn-edit,
+.btn-edit-makeover {
   background-color: #ffbe98;
   color: black;
   font-weight: 500;
@@ -177,7 +178,8 @@ body {
   text-decoration: underline;
 }
 
-.btn-delete {
+.btn-delete,
+.btn-delete-makeover {
   color: black;
   background: #fe61a6;
   font-weight: 500;
@@ -185,7 +187,9 @@ body {
 }
 
 .btn-delete:hover,
-.btn-edit:hover {
+.btn-edit:hover,
+.btn-delete-makeover:hover,
+.btn-edit-makeover:hover {
   background: #fcd885;
   border: none;
 }
