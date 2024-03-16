@@ -1,6 +1,5 @@
 // credit: blog post comments code taken from I think therefore I blog.
 // credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/static/js/comments.js
-// see booking app for my custom app, js and models
 // constants for comment edit functionality
 const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");

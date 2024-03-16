@@ -297,6 +297,7 @@ Please find a screenshot of tables below. These tables are in preparation for th
   dbdiagram was used to make a diagram of the database schema. The diagram was based off erd tables that were documented in excel
 - [Excel](https://microsoft.com/excel "Link to official microsoft excel website")
   Used to created entity relationship tables in preparation for the database schema that was made in dbdiagram
+- [Prettier](https://prettier.io/)
 
 ## Testing
 

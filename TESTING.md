@@ -50,3 +50,6 @@ Warning 2: -webkit-transform is a vendor extension. This warning can be ignored 
 Warning 3: -moz-transform is a vendor extension. This warning can be ignored in this instance.
 
 - [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions) - vendor-specific extensions (mostly) do adhere to the CSS 2.1 grammar, but since they are not defined in the CSS 2.1 specification, they are marked as invalid in the validator.
+
+### JavaScript
+
