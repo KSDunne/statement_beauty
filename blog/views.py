@@ -128,28 +128,3 @@ class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def test_func(self):
         comment = self.get_object()
         return self.request.user == comment.author
-
-
-# @login_required
-# def comment_delete(request, slug, comment_id):
-#    """
-#    Delete an individual comment.
-#
-#    **Context**
-#
-#    ``post``
-#        An instance of :model:`blog.Post`.
-#    ``comment``
-# A single comment related to the post.
-#    """
-#    queryset = Post.objects.filter(status=1)
-#    post = get_object_or_404(queryset, slug=slug)
-#    comment = get_object_or_404(Comment, pk=comment_id)
-#
-#   if comment.author == request.user:
-#        comment.delete()
-#        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
-#    else:
-#         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
-#
-#    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
