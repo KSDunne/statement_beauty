@@ -54,3 +54,15 @@ Warning 3: -moz-transform is a vendor extension. This warning can be ignored in 
 
 ### JavaScript
 
+JavaScript code in the comment.js file was put through the [JSHint Validator](https://jshint.com/).
+
+#### JS Result
+
+![JS validation](docs/readme_images/validation/comments_js_code.PNG)
+
+### Python
+
+All python code was put through the [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+#### Python Result
+

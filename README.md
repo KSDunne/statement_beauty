@@ -379,6 +379,8 @@ Note: The difference between clone and fork is, you need permissions to push bac
 
 [CI student booking website](https://github.com/DanMorriss/nialls-barbershop/blob/main/templates/base.html#L67) - Niall's Barbarshop footer looked similar to the way I wanted my footer, so their footer code was adapted for my use.
 
+[CI student blog](<https://github.com/DarrachBarneveld/CoolCoders-PP4/blob/main/templates/account/signup.html#L10) - This student's signup page looked how I wanted mine, so this code block was adapted to suit the style of statement beauty.
+
 ### Media
 
 - The hero image is from [shutterstock](https://www.shutterstock.com/image-photo/interior-modern-nail-design-beauty-salon-2370398915)
