@@ -125,6 +125,15 @@ class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         comment = self.get_object()
         return reverse_lazy('post_detail', kwargs={'slug': comment.post.slug})
     
+   # def form_valid(self, form):
+   #     messages.success(
+   #         self.request,
+   #         "Your comment has been deleted successfully!",
+   #         extra_tags="alert alert-success alert-dismissible",
+   #     )
+#
+#        return super().form_valid(form)   
+    
     def test_func(self):
         comment = self.get_object()
         return self.request.user == comment.author
