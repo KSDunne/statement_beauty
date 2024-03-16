@@ -15,8 +15,8 @@ body {
 
 .thin-pink {
   font-weight: 300;
-  color:#fef2d8;
-  background-color: #fe2c89; 
+  color: #fef2d8;
+  background-color: #fe2c89;
   padding: 2px 6px;
   margin-left: 4px;
 }
@@ -138,7 +138,7 @@ body {
   color: #23bbbb;
 }
 
-/*Custom button style*/
+/* custom button style */
 .btn-signin,
 .btn-signout,
 .btn-register,
@@ -205,7 +205,7 @@ body {
   color: rgb(222, 146, 168);
 }
 
-/* style for navbar items*/
+/* style for navbar items */
 .nav-item {
   font-size: 114%;
   font-weight: bold;
@@ -238,7 +238,7 @@ body {
   padding: 1rem 1rem 3rem 1rem;
 }
 
-/* hero image and cover text*/
+/* hero image and cover text */
 #hero-outer {
   height: 54vh;
   width: 100%;
@@ -246,7 +246,7 @@ body {
   position: relative;
 }
 
-/*credit for object-fit: https://www.w3schools.com/csS/css3_object-fit.asp*/
+/* credit for object-fit: https://www.w3schools.com/csS/css3_object-fit.asp */
 .hero-image {
   height: 54vh;
   width: 100%;
@@ -270,7 +270,7 @@ body {
   }
 }
 
-/* cover text on home page with main blog content*/
+/* cover text on home page with main blog content */
 .cover-text {
   background-color: rgba(33, 33, 33, 0.9);
   font-family: "Quicksand", sans-serif;
@@ -336,7 +336,7 @@ body {
 /* button on the booking confirm delete page */
 .deletion-btn {
   font-size: 1rem;
-  font-weight:600;
+  font-weight: 600;
   padding: 2px;
   margin: 4vh;
 }
@@ -362,7 +362,7 @@ body {
   box-shadow: 0.3rem 0.4rem #2a2a2a;
 }
 
-/* Custom footer style */
+/* custom footer style */
 .footer-section {
   background-color: #ffbe98;
 }
@@ -447,12 +447,11 @@ body {
   }
 
   .you-sure {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+  }
 }
 
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
+/* large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .nav-item a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -549,14 +548,14 @@ body {
   }
 
   .deletion-btn {
-  font-size: 1.5rem;
-  font-weight:600;
-  padding: 2px;
-  margin: 4vh;
-}
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2px;
+    margin: 4vh;
+  }
 }
 
-/* Very Large devices (large laptop screens and monitors, 1440px and up) */
+/* very large devices (large laptop screens and monitors, 1440px and up) */
 @media screen and (min-width: 1440px) {
   .cover-text {
     background-color: rgba(33, 33, 33, 0.9);
