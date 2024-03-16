@@ -33,11 +33,11 @@ Custom CSS was put through the [W3C CSS Validator](https://jigsaw.w3.org/css-val
 
 Pass
 
-![CSS validation](docs/css_validation.PNG)
+![CSS validation](docs/readme_images/validation/css_validation.PNG)
 
 Explaination of 3 warnings
 
-![CSS validation](docs/css_validation_warnings.PNG)
+![CSS validation](docs/readme_images/validation/css_validation_warnings.PNG)
 
 Warning 1: Imported style sheets are not checked in direct input and file upload modes. This warning can be ignored in this instance.
 
