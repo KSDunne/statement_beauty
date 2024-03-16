@@ -41,12 +41,12 @@ Explaination of 3 warnings
 
 Warning 1: Imported style sheets are not checked in direct input and file upload modes. This warning can be ignored in this instance.
 
-- [Stack overflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error)
+- [Stack overflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error) - the google style sheet is not checked in the validator
 
 Warning 2: -webkit-transform is a vendor extension. This warning can be ignored in this instance.
 
-- [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions)
+- [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions) - vendor-specific extensions (mostly) do adhere to the CSS 2.1 grammar, but since they are not defined in the CSS 2.1 specification, they are marked as invalid in the validator.
 
 Warning 3: -moz-transform is a vendor extension. This warning can be ignored in this instance.
 
-- [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions)
+- [Stack overflow](https://stackoverflow.com/questions/30607832/w3c-css-validation-error-using-calc-and-vendor-extensions) - vendor-specific extensions (mostly) do adhere to the CSS 2.1 grammar, but since they are not defined in the CSS 2.1 specification, they are marked as invalid in the validator.
