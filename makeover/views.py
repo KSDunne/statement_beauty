@@ -10,7 +10,19 @@ from .forms import BookingForm
 @login_required
 def makeover_deals(request):
     """
-    Renders the Makeover page
+    Renders the Makeover page with booking functionality
+    
+    **Context**
+    
+    ``makeover``
+        The most recent instance of :model:`makeover.Makeover`
+    ``bookings``
+        All bookings made by the current user, ordered by date and time
+    ``booking_form``
+        An instance of :form:`makeover.BookingForm` for submitting booking requests.
+ 
+     **Template**       
+        :template:`makeover/makeover.html`
     """
     makeover = Makeover.objects.all().order_by('-updated_on').first()
     

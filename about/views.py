@@ -6,7 +6,7 @@ from .forms import CollaborateForm
 # Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/13_collaboration_form/02_handle_the_POST_request/about/views.py#L6
 def about_me(request):
     """
-    Renders the most recent information on the website author
+    Renders the most recent information on the business CEO
     and allows user collaboration requests.
 
     Displays an individual instance of :model:`about.About`.

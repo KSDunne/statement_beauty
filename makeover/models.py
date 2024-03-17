@@ -30,7 +30,7 @@ class Makeover(models.Model):
     Fields:
         - `title` (CharField): A heading for the deal of the season
         - `updated_on` (DateTimeField): Date the last deal was updated on the 
-        website so customer knows if the deal is still running.
+        website so customer knows if the deal was added a long time ago, it may be expired.
         - `content` (TextField): A text field for a description of the deal
         of the season
     """
@@ -44,7 +44,7 @@ class Makeover(models.Model):
 
 class Booking(models.Model):
     """
-    Model for bookings.
+    Model for bookings with username related to :model:`auth.User`.
 
     Fields:
         - `username` (ForeignKey): Reference to the user making the booking.

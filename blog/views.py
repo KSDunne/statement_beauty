@@ -27,6 +27,7 @@ class PostList(generic.ListView):
 
     :template:`blog/index.html`
     """
+    
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 6
@@ -84,7 +85,9 @@ def post_detail(request, slug):
 @login_required
 def comment_edit(request, slug, comment_id):
     """
-    Display an individual comment for edit.
+    Display an individual comment for edit and handles its update
+    
+    Uses :model: `comment.Comment` and :model: `blog.Post`
 
     **Context**
 
@@ -94,6 +97,10 @@ def comment_edit(request, slug, comment_id):
         A single comment related to the post.
     ``comment_form``
         An instance of :form:`blog.CommentForm`
+    
+    **Template:**
+
+    :template:`blog/post_detail.html`
     """
     if request.method == "POST":
 
@@ -118,7 +125,21 @@ def comment_edit(request, slug, comment_id):
 # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
 
 class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    """Delete a comment"""
+    """
+    Displays a new page to confirm deletion of a comment
+    
+    Uses :model: `comment.Comment`
+
+    **Context**
+    ``comment``
+        A single comment related to the post.
+    ``form``
+        An instance of :form:`blog.CommentForm`
+    
+    **Template:**
+
+    :template:`blog/comment_confirm_delete.html`
+    """
     model = Comment
     
     def get_success_url(self):
