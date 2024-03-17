@@ -13,12 +13,14 @@ def about_me(request):
     Displays an individual instance of :model:`about.About`.
 
     **Context**
+    
     ``about``
         The most recent instance of :model:`about.About`.
-        ``collaborate_form``
+    ``collaborate_form``
             An instance of :form:`about.CollaborateForm`.
 
     **Template**
+    
     :template:`about/about.html`
     """
 

@@ -19,6 +19,7 @@ def makeover_deals(request):
         The most recent instance of :model:`makeover.Makeover`
     ``bookings``
         All bookings made by the current user, ordered by date and time
+        from :model:`makeover.Booking`
     ``booking_form``
         An instance of :form:`makeover.BookingForm` for submitting booking requests.
 
@@ -68,11 +69,13 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     Uses :model: `booking.Booking`
 
     **Context**
+
     ``booking``
         represents the booking instance to be edited
 
      **Template**
-        :template:`makeover/edit_makeover.html`
+
+    :template:`makeover/edit_makeover.html`
 
     """
 
@@ -109,10 +112,12 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     Uses :model: `booking.Booking`
 
     **Context**
+
     ``booking``
         Represents the booking instance to be deleted. Comes from :model:`makeover.Booking`
 
     **Template**
+
     :template:`blog/comment_confirm_delete.html`
 
     Redirects to success url which is "/makeover/"
