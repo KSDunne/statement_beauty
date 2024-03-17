@@ -3,6 +3,8 @@ from django.contrib import messages
 from .models import About
 from .forms import CollaborateForm
 
+# Views
+
 """
 Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/13_
 collaboration_form/02_handle_the_POST_request/about/views.py#L6

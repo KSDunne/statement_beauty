@@ -11,7 +11,7 @@ class CollaborateForm(forms.ModelForm):
         """
         Uses :model:`about.CollaborationRequest`. This form
         collects information from users who want to collaborate.
-        It includes fields for the user's name, email, their area of 
+        It includes fields for the user's name, email, their area of
         interest for collaboration and a message.
         """
 

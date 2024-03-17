@@ -7,6 +7,9 @@ from .models import Makeover, Booking
 from .forms import BookingForm
 
 
+# Views
+
+
 # Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/about/views.py#L8
 @login_required
 def makeover_deals(request):
