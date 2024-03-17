@@ -5,11 +5,15 @@ from .models import Comment
 class CommentForm(forms.ModelForm):
     """
     Form class for users to comment on a post
+
+    **Fields:**
+
+    `body`: Text area where logged in users can write their comments
     """
 
     class Meta:
         """
-        Specify the django model and order of the fields
+        Uses :model: `blog.Comment`
         """
 
         model = Comment
