@@ -65,8 +65,10 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Edit a booking
 
+    Uses :model: `booking.Booking`
+
     **Context**
-    ``object``
+    ``booking``
         represents the booking instance to be edited
 
      **Template**
