@@ -8,8 +8,12 @@ from .forms import BookingForm
 
 # Views
 
+"""
+# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_
+views_part_3/05_edit_delete/about/views.py#L8
+"""
 
-# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/about/views.py#L8
+
 @login_required
 def makeover_deals(request):
     """
@@ -23,7 +27,8 @@ def makeover_deals(request):
         All bookings made by the current user, ordered by date and time
         from :model:`makeover.Booking`
     ``booking_form``
-        An instance of :form:`makeover.BookingForm` for submitting booking requests.
+        An instance of :form:`makeover.BookingForm` for submitting
+        booking requests.
 
      **Template**
         :template:`makeover/makeover.html`
@@ -39,7 +44,8 @@ def makeover_deals(request):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                "Booking submitted! It will appear faded until confirmed. Phone us if you would like a short-notice appointment.",
+                "Booking submitted! It will appear faded until confirmed."
+                + " Phone us if you would like a short-notice appointment.",
             )
 
     else:
@@ -62,8 +68,18 @@ def makeover_deals(request):
     )
 
 
-# Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
-# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61
+"""
+Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfi
+LNb2f1FOs8viArjWy&index=14
+Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes
+/views.py#L61
+Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/
+booking_system/views.py#L234
+Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/
+booking_system/views.py#L242
+"""
+
+
 class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Edit a booking
@@ -86,7 +102,6 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     form_class = BookingForm
     success_url = "/makeover/"
 
-    # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L234
     def form_valid(self, form):
         form.instance.confirmed = False
         messages.success(
@@ -97,16 +112,25 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
         return super().form_valid(form)
 
-    # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L242
     def test_func(self):
         booking = self.get_object()
-        return self.request.user == booking.username or self.request.user.is_superuser
+        return (self.request.user == booking.username or
+                self.request.user.is_superuser)
 
 
-# Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
-# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L72
-# Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
-# Customised: using the form valid function here
+"""
+Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCS
+fiLNb2f1FOs8viArjWy&index=14
+Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes
+/views.py#L72
+Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/
+booking_system/views.py#L272
+Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/
+booking_system/views.py#L312
+Customised: using the form valid function here
+"""
+
+
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     Displays a new page to confirm deletion of a booking
@@ -116,7 +140,8 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     **Context**
 
     ``booking``
-        Represents the booking instance to be deleted. Comes from :model:`makeover.Booking`
+        Represents the booking instance to be deleted.
+        Comes from :model:`makeover.Booking`
 
     **Template**
 
@@ -137,7 +162,7 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
         return super().form_valid(form)
 
-    # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L312
     def test_func(self):
         booking = self.get_object()
-        return self.request.user == booking.username or self.request.user.is_superuser
+        return (self.request.user == booking.username or
+                self.request.user.is_superuser)
