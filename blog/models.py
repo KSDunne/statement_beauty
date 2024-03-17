@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
-# Create your models here.
+# Models
 class Post(models.Model):
     """
     Stores a single blog post entry related to :model:`auth.User`.
@@ -36,8 +36,10 @@ class Comment(models.Model):
     and :model:`blog.Post`.
     """
 
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commenter")
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+                             related_name="comments")
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               related_name="commenter")
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)

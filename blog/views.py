@@ -71,7 +71,9 @@ def post_detail(request, slug):
             comment.post = post
             comment.save()
             messages.add_message(
-                request, messages.SUCCESS, "Comment submitted and awaiting approval"
+                request,
+                messages.SUCCESS,
+                "Comment submitted and" + " awaiting approval",
             )
 
     comment_form = CommentForm()
@@ -122,14 +124,20 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, "Comment Updated!")
         else:
-            messages.add_message(request, messages.ERROR, "Error updating comment!")
+            messages.add_message(request, messages.ERROR, "Error updating"
+                                 + "comment!")
 
     return HttpResponseRedirect(reverse("post_detail", args=[slug]))
 
 
-# Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
-# Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L72
-# Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
+"""
+Credit: https://www.youtube.com/
+watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
+Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/
+recipes/views.py#L72
+Credit: https://github.com/DanMorriss/nialls-barbershop/blob/
+main/booking_system/views.py#L272
+"""
 
 
 class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
