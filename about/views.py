@@ -3,6 +3,7 @@ from django.contrib import messages
 from .models import About
 from .forms import CollaborateForm
 
+
 # Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/13_collaboration_form/02_handle_the_POST_request/about/views.py#L6
 def about_me(request):
     """
@@ -16,7 +17,7 @@ def about_me(request):
         The most recent instance of :model:`about.About`.
         ``collaborate_form``
             An instance of :form:`about.CollaborateForm`.
-    
+
     **Template**
     :template:`about/about.html`
     """
@@ -25,17 +26,17 @@ def about_me(request):
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
             collaborate_form.save()
-            messages.add_message(request, messages.SUCCESS, 
-"Collaboration request received! I try to respond within 2 working days.")
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "Collaboration request received! I try to respond within 2 working days.",
+            )
 
-    about = About.objects.all().order_by('-updated_on').first()
+    about = About.objects.all().order_by("-updated_on").first()
     collaborate_form = CollaborateForm()
 
     return render(
         request,
         "about/about.html",
-        {
-            "about": about,
-            "collaborate_form": collaborate_form
-        },
+        {"about": about, "collaborate_form": collaborate_form},
     )

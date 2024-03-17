@@ -6,39 +6,47 @@ from django.contrib import messages
 from .models import Makeover, Booking
 from .forms import BookingForm
 
+
 # Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/about/views.py#L8
 @login_required
 def makeover_deals(request):
     """
     Renders the Makeover page with booking functionality
-    
+
     **Context**
-    
+
     ``makeover``
         The most recent instance of :model:`makeover.Makeover`
     ``bookings``
         All bookings made by the current user, ordered by date and time
     ``booking_form``
         An instance of :form:`makeover.BookingForm` for submitting booking requests.
- 
-     **Template**       
+
+     **Template**
         :template:`makeover/makeover.html`
     """
-    makeover = Makeover.objects.all().order_by('-updated_on').first()
-    
+    makeover = Makeover.objects.all().order_by("-updated_on").first()
+
     if request.method == "POST":
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
             bookings = booking_form.save(commit=False)
             bookings.username = request.user
             bookings.save()
-            messages.add_message(request, messages.SUCCESS, 
-"Booking submitted! It will appear faded until confirmed. Phone us if you would like a short-notice appointment.")
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "Booking submitted! It will appear faded until confirmed. Phone us if you would like a short-notice appointment.",
+            )
 
     else:
         booking_form = BookingForm()
 
-    bookings = Booking.objects.all().filter(username=request.user).order_by('date_of_booking', 'start_time')
+    bookings = (
+        Booking.objects.all()
+        .filter(username=request.user)
+        .order_by("date_of_booking", "start_time")
+    )
 
     return render(
         request,
@@ -49,16 +57,18 @@ def makeover_deals(request):
             "booking_form": booking_form,
         },
     )
-    
+
+
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
 # Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61
 class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit a booking"""
+
     model = Booking
-    template_name = 'makeover/edit_makeover.html'
+    template_name = "makeover/edit_makeover.html"
     form_class = BookingForm
-    success_url = '/makeover/'
-    
+    success_url = "/makeover/"
+
     # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L234
     def form_valid(self, form):
         form.instance.confirmed = False
@@ -69,12 +79,11 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         )
 
         return super().form_valid(form)
-    
+
     # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L242
     def test_func(self):
         booking = self.get_object()
-        return (self.request.user == booking.username or
-                self.request.user.is_superuser)
+        return self.request.user == booking.username or self.request.user.is_superuser
 
 
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
@@ -83,9 +92,10 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 # Customised: using the form valid function here
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete a recipe"""
+
     model = Booking
-    success_url = '/makeover/'
-    
+    success_url = "/makeover/"
+
     def form_valid(self, form):
         messages.success(
             self.request,
@@ -95,8 +105,7 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
         return super().form_valid(form)
 
-# Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L312
+    # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L312
     def test_func(self):
         booking = self.get_object()
-        return (self.request.user == booking.username or
-                self.request.user.is_superuser)
+        return self.request.user == booking.username or self.request.user.is_superuser
