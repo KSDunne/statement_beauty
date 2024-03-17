@@ -3,8 +3,12 @@ from django.contrib import messages
 from .models import About
 from .forms import CollaborateForm
 
+"""
+Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/13_
+collaboration_form/02_handle_the_POST_request/about/views.py#L6
+"""
 
-# Credit: https://github.com/Code-Institute-Solutions/blog/blob/main/13_collaboration_form/02_handle_the_POST_request/about/views.py#L6
+
 def about_me(request):
     """
     Renders the most recent information on the business CEO
@@ -31,7 +35,8 @@ def about_me(request):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                "Collaboration request received! I try to respond within 2 working days.",
+                "Collaboration request received! I try to respond within"
+                + " 2 working days.",
             )
 
     about = About.objects.all().order_by("-updated_on").first()
