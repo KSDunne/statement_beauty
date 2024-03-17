@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Makeover, Booking
 from django_summernote.admin import SummernoteModelAdmin
+from .models import Makeover, Booking
 
 
 @admin.register(Makeover)

@@ -49,7 +49,8 @@ class BookingForm(forms.ModelForm):
         if date_of_booking < date.today():
             raise ValidationError("Please select a date in the future.")
 
-        if date_of_booking == date.today() and start_time < datetime.now().time():
+        if (date_of_booking == date.today()
+                and start_time < datetime.now().time()):
             raise ValidationError("Please select a time in the future.")
 
         existing_bookings = Booking.objects.filter(
@@ -58,5 +59,6 @@ class BookingForm(forms.ModelForm):
 
         if existing_bookings:
             raise ValidationError(
-                "That time is already taken, " "please select a different time."
+                "That time is already taken, "
+                "please select a different time."
             )
