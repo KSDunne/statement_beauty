@@ -66,3 +66,24 @@ All python code was put through the [CI Python Linter](https://pep8ci.herokuapp.
 
 #### Python Result
 
+| File            | Validator                                                                                                                | Result |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------ | ------ |
+| About models    |  <details><summary>About Models</summary><img src="./docs/readme_images/validation/about_models_py.PNG"></details>       | PASS   |
+| About views     |  <details><summary>About Views</summary><img src="./docs/readme_images/validation/about_views_py.PNG"></details>         | PASS   |
+| About forms     |  <details><summary>About Forms</summary><img src="./docs/readme_images/validation/about_forms_py.PNG"></details>         | PASS   |
+| About urls      |  <details><summary>About urls</summary><img src="./docs/readme_images/validation/about_urls_py.PNG"></details>           | PASS   |
+| About admin     |  <details><summary>About Admin</summary><img src="./docs/readme_images/validation/about_admin_py.PNG"></details>         | PASS   |
+| Blog models     |  <details><summary>Blog Models</summary><img src="./docs/readme_images/validation/about_models_py.PNG"></details>        | PASS   |
+| Blog views      |  <details><summary>Blog Views</summary><img src="./docs/readme_images/validation/about_views_py.PNG"></details>          | PASS   |
+| Blog forms      |  <details><summary>Blog Forms</summary><img src="./docs/readme_images/validation/about_forms_py.PNG"></details>          | PASS   |
+| Blog urls       |  <details><summary>Blog urls</summary><img src="./docs/readme_images/validation/about_urls_py.PNG"></details>            | PASS   |
+| Blog admin      |  <details><summary>Blog Admin</summary><img src="./docs/readme_images/validation/about_admin_py.PNG"></details>          | PASS   |
+| Makeover models |  <details><summary>Makeover Models</summary><img src="./docs/readme_images/validation/makeover_models_py.PNG"></details> | PASS   |
+| Makeover views  |  <details><summary>Makeover Views</summary><img src="./docs/readme_images/validation/makeover_views_py.PNG"></details>   | PASS   |
+| Makeover forms  |  <details><summary>Makeover Forms</summary><img src="./docs/readme_images/validation/makeover_forms_py.PNG"></details>   | PASS   |
+| Makeover urls   |  <details><summary>Makeover urls</summary><img src="./docs/readme_images/validation/makeover_urls_py.PNG"></details>     | PASS   |
+| Makeover admin  |  <details><summary>Makeover Admin</summary><img src="./docs/readme_images/validation/makeover_admin_py.PNG"></details>   | PASS   |
+| Settings        |  <details><summary>Settings</summary><img src="./docs/readme_images/validation/settings_py.PNG"></details>               | PASS   |
+
+There were 4 'line too long' results left in the settings file. It was left without refactoring because this is Django specific code for password validation.
+
