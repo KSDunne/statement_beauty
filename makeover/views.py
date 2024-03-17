@@ -6,7 +6,6 @@ from django.contrib import messages
 from .models import Makeover, Booking
 from .forms import BookingForm
 
-
 # Views
 
 
