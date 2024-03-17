@@ -17,6 +17,7 @@ class PostList(generic.ListView):
     """
     Returns all published posts in :model:`blog.Post`
     and displays them in a page of six posts.
+
     **Context**
 
     ``queryset``
@@ -36,7 +37,7 @@ class PostList(generic.ListView):
 
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
+    Display an individual item from :model:`blog.Post`.
 
     **Context**
 
@@ -88,7 +89,7 @@ def comment_edit(request, slug, comment_id):
     """
     Display an individual comment for edit and handles its update
 
-    Uses :model: `comment.Comment` and :model: `blog.Post`
+    Uses :model: `blog.Comment` and :model: `blog.Post`
 
     **Context**
 
@@ -131,7 +132,7 @@ class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     Displays a new page to confirm deletion of a comment
 
-    Uses :model: `comment.Comment`
+    Uses :model: `blog.Comment`
 
     **Context**
     ``comment``
