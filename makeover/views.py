@@ -62,7 +62,17 @@ def makeover_deals(request):
 # Credit: https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
 # Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61
 class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    """Edit a booking"""
+    """
+    Edit a booking
+
+    **Context**
+    ``object``
+        represents the booking instance to be edited
+
+     **Template**
+        :template:`makeover/edit_makeover.html`
+
+    """
 
     model = Booking
     template_name = "makeover/edit_makeover.html"
@@ -91,7 +101,20 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 # Credit: https://github.com/DanMorriss/nialls-barbershop/blob/main/booking_system/views.py#L272
 # Customised: using the form valid function here
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    """Delete a recipe"""
+    """
+    Displays a new page to confirm deletion of a booking
+
+    Uses :model: `booking.Booking`
+
+    **Context**
+    ``booking``
+        Represents the booking instance to be deleted. Comes from :model:`makeover.Booking`
+
+    **Template**
+    :template:`blog/comment_confirm_delete.html`
+
+    Redirects to success url which is "/makeover/"
+    """
 
     model = Booking
     success_url = "/makeover/"
