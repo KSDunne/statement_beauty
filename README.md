@@ -314,7 +314,13 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 4. Navbar bug was fixed at the top of base.html 
 
+![Navbar bug](docs/readme_images/bugs/bug_navbar.PNG)
+
 5. {{ form.as_p }} to {{ form | crispy }}
+
+6. Cloudinary warning bug
+
+![Cloudinary warning bug](docs/readme_images/bugs/bug_mixed_content.PNG)
 
 ### Unfixed bugs
 
