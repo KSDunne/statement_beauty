@@ -152,6 +152,7 @@ MESSAGE_TAGS = {
 # Add cloudinary config due to image links using http instead of https
 cloudinary.config(
     secure=True,
+    SameSite=None,
 )
 
 # Static files (CSS, JavaScript, Images)
