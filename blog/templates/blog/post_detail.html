@@ -76,7 +76,10 @@
             {{ comment.body | linebreaks }}
           </div>
           {% if not comment.approved and comment.author == user %}
-          <p class="approval"><i class="fa-solid fa-circle-exclamation"></i> This comment is awaiting approval!</p>
+          <p class="approval">
+            <i class="fa-solid fa-circle-exclamation"></i> This comment is
+            awaiting approval!
+          </p>
           {% endif %} {% if user.is_authenticated and comment.author == user %}
           <div class="text-center">
             <span>
@@ -105,7 +108,12 @@
       <div class="card-body">
         {% if user.is_authenticated %}
         <h3>Leave a comment:</h3>
-        <p>Posting as: {{ user.username }}</p>
+        <p class="pt-3"><strong>Posting as:</strong> {{ user.username }}</p>
+        <p class="pt-2">
+          <i class="fa-regular fa-clipboard"></i>
+          <strong>Please note:</strong> Comments will turn from colored text to
+          black when approved.
+        </p>
         <form id="commentForm" method="post" style="margin-top: 1.3em">
           {{ comment_form | crispy }} {% csrf_token %}
           <button
