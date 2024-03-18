@@ -320,7 +320,17 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 6. Cloudinary warning bug
 
+Here is a screenshot of the warnings I was getting:
+
 ![Cloudinary warning bug](docs/readme_images/bugs/bug_mixed_content.PNG)
+
+Here is a screenshot of the solution:
+
+![Cloudinary bug solution](docs/readme_images/bugs/bug_mixed_content_solution.PNG)
+
+Here is a screenshot after it was fixed:
+
+![Cloudinary bug fixed](docs/readme_images/bugs/bug_mixed_content_fixed.PNG)
 
 ### Unfixed bugs
 
