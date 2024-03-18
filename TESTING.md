@@ -106,5 +106,5 @@ Performance is fluctuating between 70-80 everytime it is tested. [Documentation]
 
 The very first performance score I got on lighthouse was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. I will submit the project in this state. However, if time allowed there is one more solution that could be tried and that would be the following:
 
-If time allowed, the image fields coule be switched to [django resized fields](https://pypi.org/project/django-resized/).
+If time allowed, the image fields coule be switched to [django resized fields](https://pypi.org/project/django-resized/). For further instructions on this. Codu have a [blog](https://www.codu.co/articles/resizing-images-and-converting-formats-in-django-1rj9kdho) about resizing images and converting formats in Django.
 
