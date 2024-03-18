@@ -205,9 +205,12 @@ body {
   color: rgb(129,52,223);
 }
 
+
 .approval {
-  color: rgb(222, 146, 168);
+  color: rgb(129,52,223);
+  font-weight: 500;
 }
+
 
 /* style for navbar items */
 .nav-item {
