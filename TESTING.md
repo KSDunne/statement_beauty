@@ -99,6 +99,8 @@ I have explained below how I tried to improve this score and other ways it could
 
 ### Lighthouse result explanation
 
+#### What I did to imporve performance
+
 Performance is fluctuating between 70-80 every time it is tested. [Documentation](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/#fluctuations) says this is normal. The following was done during testing to try and improve the performance score:
 
 - The hero image size was reduced and image type was changed to webp
@@ -106,7 +108,11 @@ Performance is fluctuating between 70-80 every time it is tested. [Documentation
 - The cloudinary settings in the profile specific to me and this project were changed. I went to the optimization page of settings and I went to 'default image quality'. I changed this setting from 'good quality' to 'economy mode'.
 - There were also console warnings saying that the image urls were not secure so a configuration of secure=True was added to settings.py.
 
-The very first performance score I got on lighthouse was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. I will submit the project in this state. However, if time allowed there is one more solution that could be tried and that would be the following:
+The very first performance score I got on lighthouse was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. I will submit the project in this state. However, if time allowed there is one more solution that could be tried. It is explained below.
+
+#### If time allowed, this could have been done to improve performance
 
 If time allowed, the image fields could be switched to [django resized fields](https://pypi.org/project/django-resized/). For further instructions on this. Codu have a [blog](https://www.codu.co/articles/resizing-images-and-converting-formats-in-django-1rj9kdho) about resizing images and converting formats in Django.
+
+If there is a blog with different superusers uploading images they can be uploaded in lots of different file formats and sizes so what this solution essentially does is force all images to convert to webp and resize them all to a certain quality.
 
