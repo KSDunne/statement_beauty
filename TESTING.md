@@ -91,6 +91,20 @@ There were 4 'line too long' results left in the settings file. It was left with
 
 ### Lighthouse result
 
+| page                   | performance | accessibility | best practices | seo | screenshot                                                                                                                                 | result |
+| ---------------------- | ----------- | ------------- | -------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| blog                   | 78          | 100           | 100            | 100 |  <details><summary>Blog Page</summary><img src="./docs/readme_images/testing/blog_lighthouse.PNG"></details>                               | PASS   |
+| about                  | 80          | 100           | 100            | 100 |  <details><summary>About Page</summary><img src="./docs/readme_images/testing/about_lighthouse.PNG"></details>                             | PASS   |
+| makeover               | 76          | 100           | 100            | 100 |  <details><summary>Makeover Page</summary><img src="./docs/readme_images/testing/makeover_lighthouse.PNG"></details>                       | PASS   |
+| post detail logged out | 81          | 100           | 100            | 100 |  <details><summary>Post Detail Logged Out</summary><img src="./docs/readme_images/testing/post_detail_loggedout_lighthouse.PNG"></details> | PASS   |
+| post detail logged in  | 70          | 100           | 100            | 100 |  <details><summary>Post Detail Logged In</summary><img src="./docs/readme_images/testing/post_detail_loggedin_lighthouse.PNG"></details>   | PASS   |
+| sign up page           | 84          | 100           | 100            | 100 |  <details><summary>Register</summary><img src="./docs/readme_images/testing/signup_lighthouse.PNG"></details>                              | PASS   |
+| sign in page           | 85          | 100           | 100            | 100 |  <details><summary>Sign In</summary><img src="./docs/readme_images/testing/login_lighthouse.PNG"></details>                                | PASS   |
+| logout page            | 84          | 100           | 100            | 100 |  <details><summary>Sign Out</summary><img src="./docs/readme_imagestesting/signout_lighthouse.PNG"></details>                              | PASS   |
+| edit booking page      | 84          | 100           | 100            | 100 |  <details><summary>Edit Booking</summary><img src="./docs/readme_images/testing/edit_makeover_lighthouse.PNG"></details>                   | PASS   |
+| delete booking page    | 84          | 100           | 100            | 100 |  <details><summary>Delete Booking</summary><img src="./docs/readme_images/testing/delete_makeover_lighthouse.PNG"></details>               | PASS   |
+| delete comment page    | 84          | 100           | 100            | 100 |  <details><summary>Delete Comment</summary><img src="./docs/readme_images/testing/delete_comment_lighthouse.PNG"></details>                | PASS   |
+
 This website's landing blog page got 100% score for accessibility, best practices and seo. Performance score is between 70-80, which is a 'PASS' because it is orange. This score is acceptable in the current context.
 
 I have explained below how I tried to improve this score and other ways it could have been improved if time allowed.
