@@ -43,6 +43,7 @@
         {% if user.is_authenticated %}
         <h3>List of Your Bookings:</h3>
         <hr />
+        <p><i class="fa-regular fa-clipboard"></i> <strong>Please note:</strong> Booking will turn from colored text to black when confirmed.</p>
         {% for booking in bookings %}
         <div
           class="col-12 col-md-8 booking-item {% if not booking.confirmed %} faded{% endif %}"

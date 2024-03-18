@@ -44,7 +44,7 @@ def makeover_deals(request):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                "Booking submitted! It will appear faded until confirmed."
+                "Booking submitted! It will turn from colored to black when confirmed."
                 + " Phone us if you would like a short-notice appointment.",
             )
 
