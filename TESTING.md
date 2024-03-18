@@ -95,9 +95,9 @@ This website's landing blog page got 100% score for accessibility, best practice
 
 ![Lighthouse result](docs/readme_images/testing/lighthouse_result.PNG)
 
-### Lighthouse result explaination
+### Lighthouse result explanation
 
-Performance is fluctuating between 70-80 everytime it is tested. [Documentation](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/#fluctuations) says this is normal. The following was done during testing to try and imporve the performance score:
+Performance is fluctuating between 70-80 every time it is tested. [Documentation](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/#fluctuations) says this is normal. The following was done during testing to try and improve the performance score:
 
 - The hero image size was reduced and image type was changed to webp
 - The placeholder image for blogs was reduced in size and the type was changed from jpg to webp
@@ -106,5 +106,5 @@ Performance is fluctuating between 70-80 everytime it is tested. [Documentation]
 
 The very first performance score I got on lighthouse was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. I will submit the project in this state. However, if time allowed there is one more solution that could be tried and that would be the following:
 
-If time allowed, the image fields coule be switched to [django resized fields](https://pypi.org/project/django-resized/). For further instructions on this. Codu have a [blog](https://www.codu.co/articles/resizing-images-and-converting-formats-in-django-1rj9kdho) about resizing images and converting formats in Django.
+If time allowed, the image fields could be switched to [django resized fields](https://pypi.org/project/django-resized/). For further instructions on this. Codu have a [blog](https://www.codu.co/articles/resizing-images-and-converting-formats-in-django-1rj9kdho) about resizing images and converting formats in Django.
 
