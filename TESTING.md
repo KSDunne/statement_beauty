@@ -89,7 +89,9 @@ There were 4 'line too long' results left in the settings file. It was left with
 
 ## Lighthouse
 
-### Lighthouse result
+Performance, accessibility, best practices and seo were tested using [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in Chrome DevTools.
+
+### Lighthouse results table
 
 | page                   | performance | accessibility | best practices | seo | screenshot                                                                                                                                 | result |
 | ---------------------- | ----------- | ------------- | -------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
@@ -105,13 +107,13 @@ There were 4 'line too long' results left in the settings file. It was left with
 | delete booking page    | 84          | 100           | 100            | 100 |  <details><summary>Delete Booking</summary><img src="./docs/readme_images/testing/delete_makeover_lighthouse.PNG"></details>               | PASS   |
 | delete comment page    | 84          | 100           | 100            | 100 |  <details><summary>Delete Comment</summary><img src="./docs/readme_images/testing/delete_comment_lighthouse.PNG"></details>                | PASS   |
 
+### Lighthouse result explanation
+
 This website's landing blog page got 100% score for accessibility, best practices and seo. Performance score is between 70-80, which is a 'PASS' because it is orange. This score is acceptable in the current context.
 
 I have explained below how I tried to improve this score and other ways it could have been improved if time allowed.
 
 ![Lighthouse result](docs/readme_images/testing/lighthouse_result.PNG)
-
-### Lighthouse result explanation
 
 #### What I did to imporve performance
 
