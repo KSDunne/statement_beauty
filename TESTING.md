@@ -91,7 +91,9 @@ There were 4 'line too long' results left in the settings file. It was left with
 
 ### Lighthouse result
 
-This website's landing blog page got 100% score for accessibility, best practices and seo. Performance score is between 70-80.
+This website's landing blog page got 100% score for accessibility, best practices and seo. Performance score is between 70-80, which is a 'PASS' because it is orange. This score is acceptable in the current context.
+
+I have explained below how I tried to improve this score and other ways it could have been improved if time allowed.
 
 ![Lighthouse result](docs/readme_images/testing/lighthouse_result.PNG)
 
