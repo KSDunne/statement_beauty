@@ -58,6 +58,8 @@ JavaScript code in the comment.js file was put through the [JSHint Validator](ht
 
 #### JS Result
 
+The js code passed. There is 1 undefined variable: bootstrap. However, this warning can be ignored in this instance because the variable is imported with the CDN connection in the base.html file.
+
 ![JS validation](docs/readme_images/validation/comments_js_code.PNG)
 
 ### Python
@@ -131,4 +133,6 @@ The first performance score I got on the blog page was 69% and after doing all o
 If time allowed, the image fields could be switched to [django resized fields](https://pypi.org/project/django-resized/). For further instructions on this. Codu have a [blog](https://www.codu.co/articles/resizing-images-and-converting-formats-in-django-1rj9kdho) about resizing images and converting formats in Django.
 
 If there is a blog with different superusers uploading images they can be uploaded in lots of different file formats and sizes so what this solution essentially does is force all images to convert to webp and resize them all to a certain quality.
+
+## Manual testing
 
