@@ -143,3 +143,13 @@ If there is a blog with different superusers uploading images they can be upload
 | User selects a date < today                | Please select a date in the future.                         | PASS                      |
 | User selects a time today < now            | Please select a time in the future.                         | PASS                      |
 | User selects a time and date already taken | That time is already taken, please select a different time. | PASS                      |
+
+### Notifications and feedback testing for booking a makoever
+
+| Action                                | Notification feedback for booking                                                                                            | Does it work as expected? |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| Book a valid makeover                 | Booking submitted! It will turn from colored to black when confirmed. Phone us if you would like a short-notice appointment. | PASS                      |
+| Edit a makeover                       | Your booking has been updated!                                                                                               | PASS                      |
+| Edit a makeover (back to unconfirmed) | Goes back to unconfirmed with a color change                                                                                 | PASS                      |
+| Delete a makeover                     | Your booking has been deleted successfully!                                                                                  | PASS                      |
+| When confirmed in admin panel         | Booking changes from purple to black                                                                                         | PASS                      |
