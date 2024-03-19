@@ -6,6 +6,7 @@ const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
 const submitButton = document.getElementById("submitButton");
+const editModal = new bootstrap.Modal(document.getElementById("editModal"));
 
 // edit comment functionality here. it shows the targeted comment in the form box
 for (let button of editButtons) {
@@ -17,5 +18,13 @@ for (let button of editButtons) {
     commentText.value = commentContent;
     submitButton.innerText = "Update";
     commentForm.setAttribute("action", `edit_comment/${commentId}`);
+  });
+}
+
+// Add event listener to each edit button
+for (let button of editButtons) {
+  button.addEventListener("click", (e) => {
+    // Trigger the modal to show
+    editModal.show();
   });
 }
