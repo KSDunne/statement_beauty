@@ -112,6 +112,9 @@ def comment_edit(request, slug, comment_id):
     """
     if request.method == "POST":
 
+        if "reset-button-comments" in request.POST:
+            return HttpResponseRedirect(reverse("post_detail", args=[slug]))
+
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
@@ -124,8 +127,7 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, "Comment Updated!")
         else:
-            messages.add_message(request, messages.ERROR, "Error updating"
-                                 + "comment!")
+            messages.add_message(request, messages.ERROR, "Error updating" + "comment!")
 
     return HttpResponseRedirect(reverse("post_detail", args=[slug]))
 

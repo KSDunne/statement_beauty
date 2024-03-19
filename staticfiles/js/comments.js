@@ -12,6 +12,7 @@ const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
 const submitButton = document.getElementById("submitButton");
 const editModal = new bootstrap.Modal(document.getElementById("editModal"));
+const resetButton = document.getElementById("reset-button-comments");
 
 // edit comment functionality here. it shows the targeted comment in the form box
 for (let button of editButtons) {
@@ -33,3 +34,25 @@ for (let button of editButtons) {
     editModal.show();
   });
 }
+
+/*
+* The reset function does the following:
+* clear the comment text area
+* reset the submit button text
+* reset the action attribute of the form to its original state
+* close the edit modal if it's open
+*/
+
+// reset function
+function reset() {
+  commentText.value = '';
+  submitButton.innerText = "Submit";
+  commentForm.setAttribute("action", "");
+  editModal.hide();
+}
+
+// add event listener to reset button reset comment form
+resetButton.addEventListener("click", (e) => {
+  // call reset function
+  reset();
+});
