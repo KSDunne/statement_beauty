@@ -117,14 +117,14 @@ I have explained below how I tried to improve this score and other ways it could
 
 #### What I did to imporve performance
 
-Performance is fluctuating between 70-80 every time it is tested. [Documentation](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/#fluctuations) says this is normal. The following was done during testing to try and improve the performance score:
+Performance on the blog page is fluctuating between 70-80 every time it is tested. [Documentation](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/#fluctuations) says this is normal. The following was done during testing to try and improve the performance score:
 
 - The hero image size was reduced and image type was changed to webp
 - The placeholder image for blogs was reduced in size and the type was changed from jpg to webp
 - The cloudinary settings in the profile specific to me and this project were changed. I went to the optimization page of settings and I went to 'default image quality'. I changed this setting from 'good quality' to 'economy mode'.
 - There were also console warnings saying that the image urls were not secure so a configuration of secure=True was added to settings.py.
 
-The very first performance score I got on lighthouse was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. I will submit the project in this state. However, if time allowed there is one more solution that could be tried. It is explained below.
+The first performance score I got on the blog page was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. The project will be submitted in the state it is in currently. However, if time allowed there is one more solution that could be tried. It is explained below.
 
 #### If time allowed, the following could have been done to improve performance
 
