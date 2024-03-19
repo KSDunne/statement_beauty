@@ -1,5 +1,10 @@
-// credit: blog post comments code taken from I think therefore I blog.
-// credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/static/js/comments.js
+// The js code in this file is for the edit button on blog comments
+
+/* 
+* credit: blog post comments code taken from I think therefore I blog.
+* credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/static/js/comments.js#L21
+* credit: https://github.com/Code-Institute-Solutions/blog/blob/main/12_views_part_3/05_edit_delete/static/js/comments.js#L45
+*/
 
 // constants for comment edit functionality
 const editButtons = document.getElementsByClassName("btn-edit");
@@ -21,10 +26,10 @@ for (let button of editButtons) {
   });
 }
 
-// Add event listener to each edit button
+// add event listener to each edit button to show a modal
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
-    // Trigger the modal to show
+    // trigger the modal to show
     editModal.show();
   });
 }
