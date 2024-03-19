@@ -43,16 +43,25 @@
         {% if user.is_authenticated %}
         <h3>List of Your Bookings:</h3>
         <hr />
-        <p><i class="fa-regular fa-clipboard"></i> <strong>Please note:</strong> Booking will turn from colored text to black when confirmed.</p>
+        <p>
+          <i class="fa-regular fa-clipboard"></i>
+          <strong>Please note:</strong> Booking will turn from colored text to
+          black when confirmed.
+        </p>
         {% for booking in bookings %}
         <div
           class="col-12 col-md-8 booking-item {% if not booking.confirmed %} faded{% endif %}"
           id="booking{{ booking.id }}"
         >
           <h4 class="service-type">{{ booking.service_type}}</h4>
+          {% if not booking.confirmed %}
+          <p><i class="fa-solid fa-circle-exclamation"></i><strong> UNCONFIRMED</strong></p>
+          {% endif %}
           <p><strong>Name:</strong> {{ booking.username }}</p>
           <p><strong>Date:</strong> {{ booking.date_of_booking}}</p>
-          <p class="start-time"><strong>Time:</strong> {{ booking.start_time}}</p>
+          <p class="start-time">
+            <strong>Time:</strong> {{ booking.start_time}}
+          </p>
           <div><strong>Your message:</strong></div>
           <div class="booking-message">{{ booking.message | linebreaks }}</div>
           <hr />
