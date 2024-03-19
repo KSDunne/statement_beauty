@@ -124,7 +124,7 @@ Performance on the blog page is fluctuating between 70-80 every time it is teste
 - The cloudinary settings in the profile specific to me and this project were changed. I went to the optimization page of settings and I went to 'default image quality'. I changed this setting from 'good quality' to 'economy mode'.
 - There were also console warnings saying that the image urls were not secure so a configuration of secure=True was added to settings.py.
 
-The first performance score I got on the blog page was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. The project will be submitted in the state it is in currently. However, if time allowed there is one more solution that could be tried. It is explained below.
+The first performance score I got on the blog page was 69% and after doing all of these steps, it went up to a score of 81% during one test, so I think these steps did make an improvement. The project will be submitted in the state it is in currently (shown in screenshots). However, if time allowed there is one more solution that could be tried. It is explained below.
 
 #### If time allowed, the following could have been done to improve performance
 
