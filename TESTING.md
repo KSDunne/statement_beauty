@@ -140,6 +140,6 @@ If there is a blog with different superusers uploading images they can be upload
 
 | User action                                | Validation Error                                            | Does it work as expected? |
 | ------------------------------------------ | ----------------------------------------------------------- | ------------------------- |
-| User selects a date < today                | Please select a date in the future                          | PASS                      |
+| User selects a date < today                | Please select a date in the future.                         | PASS                      |
 | User selects a time today < now            | Please select a time in the future.                         | PASS                      |
 | User selects a time and date already taken | That time is already taken, please select a different time. | PASS                      |
