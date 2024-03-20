@@ -132,7 +132,8 @@ body {
   background-color: #ffbe98;
   color: black;
   font-weight: 500;
-  width: 30%;
+  width: 32%;
+  font-size: 0.8rem;
 }
 
 .btn-signup:hover,
@@ -185,7 +186,8 @@ body {
   color: black;
   background: #fe61a6;
   font-weight: 500;
-  width: 30%;
+  font-size: 0.8rem;
+  width: 32%;
 }
 
 .btn-delete:hover,
@@ -416,6 +418,24 @@ body {
     font-size: 1.7rem;
     font-weight: 900;
     color: #4a4a4f;
+  }
+
+  .btn-delete,
+  .btn-delete-makeover {
+    color: black;
+    background: #fe61a6;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 32%;
+  }
+
+  .btn-edit,
+  .btn-edit-makeover {
+    background-color: #ffbe98;
+    color: black;
+    font-weight: 500;
+    width: 32%;
+    font-size: 1rem;
   }
 }
 

@@ -202,10 +202,27 @@ If there is a blog with different superusers uploading images they can be upload
 
 ## Browser compatibility
 
- - All pages were tested for intended appearance and responsiveness on the following browsers, Chrome, Firefox, Safari, Edge and Opera
+ - All pages were tested for 'intended appearance' and 'responsiveness' on the following browsers; Chrome, Firefox, Safari, Edge and Opera
 
 - See browser compatibility testing results in the table below
 
+### Intended appearance on different browsers
+
+| intended appearance (on monitor) | chrome | edge | firefox | safari | opera |
+| -------------------------------- | ------ | ---- | ------- | ------ | ----- |
+| blog                             | pass   | pass | pass    | pass   | pass  |
+| about                            | pass   | pass | pass    | pass   | pass  |
+| makeover                         | pass   | pass | pass    | pass   | pass  |
+| post detail logged out           | pass   | pass | pass    | pass   | pass  |
+| post detail logged in            | pass   | pass | pass    | pass   | pass  |
+| sign up page                     | pass   | pass | pass    | pass   | pass  |
+| sign in page                     | pass   | pass | pass    | pass   | pass  |
+| logout page                      | pass   | pass | pass    | pass   | pass  |
+| edit booking page                | pass   | pass | pass    | pass   | pass  |
+| delete booking page              | pass   | pass | pass    | pass   | pass  |
+| delete comment page              | pass   | pass | pass    | pass   | pass  |
+
+### Intended responsiveness on different browsers
 
 
 
