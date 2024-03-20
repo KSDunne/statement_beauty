@@ -128,7 +128,8 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, "Comment Updated!")
         else:
-            messages.add_message(request, messages.ERROR, "Error updating" + "comment!")
+            messages.add_message(request, messages.ERROR, "Error updating"
+                                 + "comment!")
 
     return HttpResponseRedirect(reverse("post_detail", args=[slug]))
 
