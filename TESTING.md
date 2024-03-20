@@ -213,7 +213,7 @@ If there is a blog with different superusers uploading images they can be upload
 | 13 | footer facebook icon                                   | sends user to facebook login                                  | PASS                      |
 | 14 | footer instagram icon                                  | sends user to instagram login                                 | PASS                      |
 | 15 | footer youtube icon                                    | sends user to youtube                                         | PASS                      |
-| 16 | footer github icon                                     | sends user to github the developers github profile            | PASS                      |
+| 16 | footer github icon                                     | sends user to the developers github profile                   | PASS                      |
 | 17 | post detail edit button                                | changes submit to update and populates comment box            | PASS                      |
 | 18 | post detail delete button                              | sends user to a defensive are you sure page                   | PASS                      |
 | 19 | post detail submit button                              | submits a comment for approval                                | PASS                      |
@@ -221,7 +221,7 @@ If there is a blog with different superusers uploading images they can be upload
 | 21 | collaborate submit button                              | submits the collaborate form                                  | PASS                      |
 | 22 | edit button on makeover page                           | sends user to an edit booking page                            | PASS                      |
 | 23 | delete button on makeover page                         | sends user to a defensive deletion page                       | PASS                      |
-| 24 | book makeover submit button                            | submits a booking                                             | PASS                      |
+| 24 | book makeover submit button                            | submits a booking                                             | PASS                      |     
 
 ### Feature testing table
 
