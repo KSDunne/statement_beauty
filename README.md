@@ -118,13 +118,35 @@ A responsive navigation bar is in place. Concentrating on 'mobile first' design,
 
 The hero image was chosen to convey the main topic of the blog site. It is a beauty blog so an image of a brightly colored nail salon was used.
 
+![Hero image](docs/readme_images/hero_image.PNG)
+
 ### Django alert messages
 
 Every time there is a change in data the user is alerted. For example when a comment is posted, when a comment is edited, when a comment is deleted, when a booking is created, when a booking is edited or when a booking is deleted. There is also an alert message displayed when a collaboration request is made.
 
+#### Django alert message example 1
+
+![Django alert message 1](docs/readme_images/django_alert_1.PNG)
+
+#### Django alert message example 2
+
+![Django alert message 2](docs/readme_images/django_alert_2.PNG)
+
+#### Django alert message example 3
+
+![Django alert message 3](docs/readme_images/django_alert_3.PNG)
+
 ### Clear indication as to whether the user is logged in or out at all times
 
 The base html contains for whether the user is logged in or not and will display "You are logged in as username" or "You are not logged in" depending on the boolean state of authentication.
+
+#### Clear indication for when the user is logged in
+
+![Logged in indication](docs/readme_images/loggedin_indication.PNG)
+
+#### Clear indication for when the user is logged out
+
+![Logged out indication](docs/readme_images/loggedout_indication.PNG)
 
 ### Call to action button
 
