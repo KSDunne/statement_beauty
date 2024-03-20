@@ -225,6 +225,20 @@ If there is a blog with different superusers uploading images they can be upload
 
 ### Feature testing table
 
+|    | feature                         | action                                                 | effect                                                      |
+| -- | ------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------- |
+| 1  | nav bar home >768px             | hover items with mouse                                 | underlines and shows the correct destination for a click    |
+| 2  | drop down nav menu on 320 px    | when burger is clicked                                 | drops down and makes active page bold                       |
+| 3  | drop down nav menu on 768 px    | when burger is clicked                                 | drops down and makes active page bold                       |
+| 4  | zoom of hero image on all pages | on page load / refresh                                 | works as intended, checked on personal iphone and dev tools |
+| 5  | unconfirmed bookings            | are purple with and unconfirmed notice on them         | works as intended                                           |
+| 6  | confirmed bookings              | turn black and the word unconfirmed disappears         | works as intended                                           |
+| 7  | unconfirmed comments            | are purple with an awating approval notice on them     | works as intended                                           |
+| 8  | confirmed comments              | turn black and the awaiting approval notice disappears | works as intended                                           |
+| 9  | blog comments form              | submit successfully when the form is valid             | works as intended                                           |
+| 10 | about collaboration form        | submit successfully when the form is valid             | works as intended                                           |
+| 11 | book makeover form              | submit successfully when the form is valid             | works as intended                                           |
+
 ## Responsiveness
 
 ## Browser compatibility
