@@ -224,7 +224,7 @@ If there is a blog with different superusers uploading images they can be upload
 
 ### Intended responsiveness on different browsers
 
-Intended responsiveness was tested on a monitor while constantly changing window sizes
+Intended responsiveness was tested on a monitor using different browsers while constantly changing window sizes
 
 | intended responsiveness (on monitor) | chrome | edge | firefox | safari | opera |
 | ------------------------------------ | ------ | ---- | ------- | ------ | ----- |
