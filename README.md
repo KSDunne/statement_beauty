@@ -68,34 +68,34 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 3. View a list of blogs that this site contains, so that I can find the posts I am interested in (Part of epic 1)
 4. View the date a blog post was created, so that it is obvious which blogs are recent (Part of epic 1)
 5. View the number of likes on blogs, so that it's easy to see which ones are popular (Part of epic 1)
-6. Click on a blog post of interest that will then send the user to the login page, so that they can log in if not already logged in (Part of epic 4)
+6. Click on a blog post title of interest that opens up that specific post in more detail (Part of epic 4)
 7. Register for an account, so that they can avail of the services offered to members (Part of epic 3)
-8. Navigate to an about page, so that the user can view the overall mission statement of the website (Part of epic 8)
+8. Navigate to an about page, so that the user can view the overall summary of the website capabilities and information on the CEO (Part of epic 8)
+9. Read other users comments, so that I feel connected to a community (Part of epic 6)
+
+- As a potential blog or makeover collaborator, I can:
+
+10. Fill out a contact form to request collaboration on my project or idea (Part of epic 8)
 
 - As logged in website user, I can:
 
-1. Like and unlike blog posts, so that I can show other users which posts are interesting (Part of epic 6)
-2. Comment on blog posts, so that I can give my opinion and feel lots of interactivity with the website (Part of epic 6)
-3. Read other users comments, so that I feel connected to a community (Part of epic 6)
-4. Edit comments I made, so that I feel in control of the content I add to the website (Part of epic 6)
-5. Delete my comments, so that I do not have to leave comments on the website forever (Part of epic 6)
-6. Logout from the website, so that when I'm finished on the website, my comments are protected from editing by other computer users (Part of epic 7)
-7. View deals of the season on makeovers, so that I can save some money by booking the makeover that is trending (Part of epic 9)
-8. Fill in a form to book a makeover (part of epic 9)
-9. When I am logged in the 'register' and 'login' buttons disappear on the navbar and the 'logout' button appears instead (Part of epic 5)
+11. Comment on blog posts, so that I can give my opinion and feel lots of interactivity with the website (Part of epic 6)
+12. Edit comments I made, so that I feel in control of the content I add to the website (Part of epic 6)
+13. Delete my comments, so that I do not have to leave comments on the website forever (Part of epic 6)
+14. Logout from the website, so that when I'm finished on the website, my comments are protected from editing or deleting by other website users (Part of epic 7)
+15. View deals of the season on makeovers, so that I can save some money by booking the makeover that is trending (Part of epic 9)
+16. Fill in a form to book a makeover (part of epic 9)
+17. When I am logged I can see that the 'register' and 'login' buttons disappear on the navbar and the 'logout' button appears instead (Part of epic 5)
+18. Like and unlike blog posts, so that I can show other users which posts are interesting (Part of epic 6)
 
 - As a logged in superuser, I can:
 
-1. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2 and 6)
-2. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
-3. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
-4. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 6)
-5. Allow comments to be shown to the casual website user, only if they have been approved (epic 6)
-6. I can mark collaboration requests as read, so that I can see how many still need to be processed (epic 2)
-
-- As a potential collaborator, I can:
-
-1. Fill out a contact form to request collaboration on my project or idea (Part of epic 8)
+19. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2 and 6)
+20. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
+21. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
+22. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 6)
+23. Allow comments to be shown to the casual website user, only if they have been approved (epic 6)
+24. I can mark collaboration requests as read, so that I can see how many still need to be processed (epic 2)
 
 ## Features
 
