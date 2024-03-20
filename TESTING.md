@@ -174,6 +174,14 @@ If there is a blog with different superusers uploading images they can be upload
 | ------------------------------ | ----------------------------------------------------------------------- | ------------------------- |
 | Submit a collaboration request | Collaboration request received! I try to respond within 2 working days. | PASS                      |
 
+### Notifications and feedback testing for register, signin and signout
+
+| Action   | Notifications and feedback for signin and out | Does it work as expected? |
+| -------- | --------------------------------------------- | ------------------------- |
+| signin   | Successfully signed in as username.           | PASS                      |
+| signout  | You have signed out.                          | PASS                      |
+| register | Successfully signed in as username.           | PASS                      |
+
 ### Notifications and feedback testing for admin panel
 
 | Action                                                | Notifications and feedback for comments                                                         | Does it work as expected? |
@@ -193,6 +201,13 @@ If there is a blog with different superusers uploading images they can be upload
 ## Responsiveness
 
 ## Browser compatibility
+
+ - All pages were tested for intended appearance and responsiveness on the following browsers, Chrome, Firefox, Safari, Edge and Opera
+
+- See browser compatibility testing results in the table below
+
+
+
 
 ## Device compatibility
 
