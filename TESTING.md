@@ -168,3 +168,32 @@ If there is a blog with different superusers uploading images they can be upload
 | Wrote a comment you don’t want to submit, can click reset | Resets comment box                                     | PASS                      |
 | Edit a comment successfully                               | Comment Updated! Notification appears                  | PASS                      |
 
+### Notifications and feedback testing for collaboration form
+
+| Action                         | Notifications and feedback for comments                                 | Does it work as expected? |
+| ------------------------------ | ----------------------------------------------------------------------- | ------------------------- |
+| Submit a collaboration request | Collaboration request received! I try to respond within 2 working days. | PASS                      |
+
+### Notifications and feedback testing for admin panel
+
+| Action                                                | Notifications and feedback for comments                                                         | Does it work as expected? |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------- |
+| When collaboration request is marked as read in admin | The collaborate request “Collaboration request from username” was changed successfully.         | PASS                      |
+| When a comment has been approved in admin             | The comment “Comment 'test' by 'username'” was changed successfully.                            | PASS                      |
+| When a comment is deleted by admin                    | Successfully deleted 1 comment.                                                                 | PASS                      |
+| When more than 1 comment is deleted by admin          | Successfully deleted 2 comments.                                                                | PASS                      |
+| When a booking is confirmed in admin                  | The booking “Hair Appointment for username on 2024-05-24 at 09:00:00” was changed successfully. | PASS                      |
+| When a booking is deleted by admin                    | Successfully deleted 1 booking.                                                                 | PASS                      |
+| When admin deletes more than 1 booking                | Successfully deleted 2 bookings.                                                                | PASS                      |
+
+### Testing all links on website
+
+### Feature testing table
+
+## Responsiveness
+
+## Browser compatibility
+
+## Device compatibility
+
+## User story testing
