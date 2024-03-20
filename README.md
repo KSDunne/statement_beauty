@@ -57,7 +57,7 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 6. Blog detail page that has different capabilities when logged in compared to when not logged in
 7. Log out page
 8. About page
-9. Book makeover page that can be only accessed when logged in
+9. Book makeover page, that can be only accessed when logged in. This includes full front-end CRUD functionality for the user
 
 ### User stories
 
@@ -69,7 +69,7 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 4. View the date a blog post was created, so that it is obvious which blogs are recent (Part of epic 1)
 5. View the number of likes on blogs, so that it's easy to see which ones are popular (Part of epic 1)
 6. Click on a blog post title of interest that opens up that specific post in more detail (Part of epic 4)
-7. Register for an account, so that they can avail of the services offered to members (Part of epic 3)
+7. Register for an account, so that I can avail of the services offered to members (Part of epic 3)
 8. Navigate to an about page, so that the user can view the overall summary of the website capabilities and information on the CEO (Part of epic 8)
 9. Read other users comments, so that I feel connected to a community (Part of epic 6)
 
@@ -84,18 +84,21 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 13. Delete my comments, so that I do not have to leave comments on the website forever (Part of epic 6)
 14. Logout from the website, so that when I'm finished on the website, my comments are protected from editing or deleting by other website users (Part of epic 7)
 15. View deals of the season on makeovers, so that I can save some money by booking the makeover that is trending (Part of epic 9)
-16. Fill in a form to book a makeover (part of epic 9)
+16. Book a makeover by filling in a form (part of epic 9)
 17. See that the 'register' and 'login' buttons disappear on the navbar and the 'logout' button appears instead (Part of epic 5)
 18. Like and unlike blog posts, so that I can show other users which posts are interesting (Part of epic 6)
+19. Have full front-end CRUD on booking a makeover
 
 - As a logged in superuser, I can:
 
-19. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2)
-20. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
-21. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 6)
-22. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 6)
-23. Allow comments to be shown to the casual website user, only if they have been approved (epic 6)
-24. I can mark collaboration requests as read, so that I can see how many still need to be processed (epic 2)
+20. Full backend CRUD on makeover bookings
+21. Can approve bookings so that they turn from colored to black for the user
+22. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2)
+23. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
+24. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 6)
+25. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 6)
+26. Approve comments to be shown to the casual website user, only if they have been approved (epic 6)
+27. I can mark collaboration requests as read, so that I can see how many still need to be processed (epic 2)
 
 ## Features
 
