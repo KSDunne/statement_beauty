@@ -146,10 +146,25 @@ If there is a blog with different superusers uploading images they can be upload
 
 ### Notifications and feedback testing for booking a makoever
 
-| Action                                | Notification feedback for booking                                                                                            | Does it work as expected? |
+| Action                                | Notifications and feedback for booking                                                                                       | Does it work as expected? |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | Book a valid makeover                 | Booking submitted! It will turn from colored to black when confirmed. Phone us if you would like a short-notice appointment. | PASS                      |
 | Edit a makeover                       | Your booking has been updated!                                                                                               | PASS                      |
 | Edit a makeover (back to unconfirmed) | Goes back to unconfirmed with a color change                                                                                 | PASS                      |
 | Delete a makeover                     | Your booking has been deleted successfully!                                                                                  | PASS                      |
 | When confirmed in admin panel         | Booking changes from purple to black                                                                                         | PASS                      |
+
+### Notifications and feedback testing for comments
+
+| Action                                                    | Notifications and feedback for comments                | Does it work as expected? |
+| --------------------------------------------------------- | ------------------------------------------------------ | ------------------------- |
+| Logged out and looking at comments                        | It should say "log in to leave a comment"              | PASS                      |
+| Submit a comment                                          | Comment submitted and awaiting approval                | PASS                      |
+| Delete a comment                                          | Your comment has been deleted successfully!            | PASS                      |
+| Edit a comment modal                                      | Modal pops up with directions on how to edit a comment | PASS                      |
+| Comment text in box on click of edit                      | Targeted text appears in comment box                   | PASS                      |
+| When edit button is clicked                               | The word submit changes to update                      | PASS                      |
+| Change mind about editing, can click reset                | Resets update back to submit and clears comment box    | PASS                      |
+| Wrote a comment you don’t want to submit, can click reset | Resets comment box                                     | PASS                      |
+| Edit a comment successfully                               | Comment Updated! Notification appears                  | PASS                      |
+
