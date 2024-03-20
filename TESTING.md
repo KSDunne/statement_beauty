@@ -313,4 +313,6 @@ Intended responsiveness was tested on a monitor using different browsers while c
 
 ## Device compatibility
 
+Throughout development the website was tested consistently using a laptop with screen size of 14 inches, a 23 inch monitor and my own in-hand iPhone 12 Pro. Multiple different devices were selected on Chrome DevTools and the window was periodically resized to check responsiveness.
+
 ## User story testing
