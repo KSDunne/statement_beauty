@@ -119,7 +119,8 @@ body {
   color: lightgray;
 }
 
-.btn-signup {
+.btn-signup,
+ .btn-reset {
   background-color: #ffbe98;
   color: black;
   font-weight: 500;
