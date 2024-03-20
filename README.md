@@ -87,12 +87,12 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 16. Book a makeover by filling in a form (part of epic 9)
 17. See that the 'register' and 'login' buttons disappear on the navbar and the 'logout' button appears instead (Part of epic 5)
 18. Like and unlike blog posts, so that I can show other users which posts are interesting (Part of epic 6)
-19. Have full front-end CRUD on booking a makeover (Epic 9)
+19. Have full front-end CRUD on booking a makeover (epic 9)
 
 - As a logged in superuser, I can:
 
-20. Full backend CRUD on makeover bookings (Epic 2)
-21. Can approve bookings so that they turn from colored to black for the user (Epic 2)
+20. Full backend CRUD on makeover bookings (epic 2)
+21. Can approve bookings so that they turn from colored to black for the user (epic 2)
 22. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2)
 23. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
 24. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 6)
