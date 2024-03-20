@@ -90,10 +90,8 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 3. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
 4. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 2 and 6)
 
-- As a site owner, I can:
-
-1. Allow comments to be shown to the casual website user, only if they have been approved
-2. I can mark collaboration requests as read, so that I can see how many still need to be processed
+5. Allow comments to be shown to the casual website user, only if they have been approved (epic 6)
+6. I can mark collaboration requests as read, so that I can see how many still need to be processed (epic 2)
 
 - As a potential collaborator, I can:
 
@@ -176,6 +174,12 @@ Full front end CRUD functionality is available on comments if the user is logged
 ### Footer
 
 This includes social media icons, contact details (email and phone number) and copyright.
+
+### MoSCoW
+
+This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
+
+- MoSCoW SCREENSHOT
 
 ## Future features
 
