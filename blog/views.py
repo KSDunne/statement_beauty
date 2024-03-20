@@ -75,8 +75,9 @@ def post_detail(request, slug):
                 messages.SUCCESS,
                 "Comment submitted and" + " awaiting approval",
             )
-
-    comment_form = CommentForm()
+            return HttpResponseRedirect(reverse("post_detail", args=[slug]))
+    else:
+        comment_form = CommentForm()
 
     return render(
         request,
