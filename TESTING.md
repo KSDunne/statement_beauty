@@ -224,7 +224,21 @@ If there is a blog with different superusers uploading images they can be upload
 
 ### Intended responsiveness on different browsers
 
+Intended responsiveness was tested on a monitor while constantly changing window sizes
 
+| intended responsiveness (on monitor) | chrome | edge | firefox | safari | opera |
+| ------------------------------------ | ------ | ---- | ------- | ------ | ----- |
+| blog                                 | pass   | pass | pass    | pass   | pass  |
+| about                                | pass   | pass | pass    | pass   | pass  |
+| makeover                             | pass   | pass | pass    | pass   | pass  |
+| post detail logged out               | pass   | pass | pass    | pass   | pass  |
+| post detail logged in                | pass   | pass | pass    | pass   | pass  |
+| sign up page                         | pass   | pass | pass    | pass   | pass  |
+| sign in page                         | pass   | pass | pass    | pass   | pass  |
+| logout page                          | pass   | pass | pass    | pass   | pass  |
+| edit booking page                    | pass   | pass | pass    | pass   | pass  |
+| delete booking page                  | pass   | pass | pass    | pass   | pass  |
+| delete comment page                  | pass   | pass | pass    | pass   | pass  |
 
 ## Device compatibility
 
