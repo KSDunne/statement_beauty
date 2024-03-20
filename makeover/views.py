@@ -45,7 +45,8 @@ def makeover_deals(request):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                "Booking submitted! It will turn from colored to black when confirmed."
+                "Booking submitted! It will turn from"
+                + " colored to black when confirmed."
                 + " Phone us if you would like a short-notice appointment.",
             )
         return HttpResponseRedirect("/makeover/")
@@ -115,7 +116,8 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         booking = self.get_object()
-        return self.request.user == booking.username or self.request.user.is_superuser
+        return (self.request.user == booking.username or
+                self.request.user.is_superuser)
 
 
 """
@@ -164,4 +166,5 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         booking = self.get_object()
-        return self.request.user == booking.username or self.request.user.is_superuser
+        return (self.request.user == booking.username or
+                self.request.user.is_superuser)
