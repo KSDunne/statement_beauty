@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.views.generic import UpdateView, DeleteView
@@ -49,7 +50,7 @@ def makeover_deals(request):
                 + " colored to black when confirmed."
                 + " Phone us if you would like a short-notice appointment.",
             )
-        return HttpResponseRedirect("/makeover/")
+            return HttpResponseRedirect(reverse("makeover"))
     else:
         booking_form = BookingForm()
 
