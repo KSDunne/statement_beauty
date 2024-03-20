@@ -85,7 +85,7 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 14. Logout from the website, so that when I'm finished on the website, my comments are protected from editing or deleting by other website users (Part of epic 7)
 15. View deals of the season on makeovers, so that I can save some money by booking the makeover that is trending (Part of epic 9)
 16. Fill in a form to book a makeover (part of epic 9)
-17. When I am logged I can see that the 'register' and 'login' buttons disappear on the navbar and the 'logout' button appears instead (Part of epic 5)
+17. See that the 'register' and 'login' buttons disappear on the navbar and the 'logout' button appears instead (Part of epic 5)
 18. Like and unlike blog posts, so that I can show other users which posts are interesting (Part of epic 6)
 
 - As a logged in superuser, I can:
