@@ -90,9 +90,9 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 
 - As a logged in superuser, I can:
 
-19. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2 and 6)
+19. Create blog posts, so that I can share my opinion on certain beauty products and looks (Part of epic 2)
 20. Read other users blog posts, so that I research what is trendy in the beauty community (Part of epic 6)
-21. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 2 and 6)
+21. Edit blogs I made, so that I don't feel like the content I post has gone out of date (Part of epic 6)
 22. Delete my blog posts if I wish to do so, so that I do not have to leave posts on the website forever (Part of epic 6)
 23. Allow comments to be shown to the casual website user, only if they have been approved (epic 6)
 24. I can mark collaboration requests as read, so that I can see how many still need to be processed (epic 2)
