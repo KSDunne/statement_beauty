@@ -269,6 +269,7 @@ If there is a blog with different superusers uploading images they can be upload
 | booking form                                      | na    | na    | PASS          | na                     | na                    | na           | na           | na          | na                | na                  | na                  |
 | sign up form                                      | na    | na    | na            | na                     | na                    | PASS         | na           | na          | na                | na                  | na                  |
 | sign in form                                      | na    | na    | na            | na                     | na                    | na           | PASS         | na          | na                | na                  | na                  |
+| edit booking form                                 | na    | na    | na            | na                     | na                    | na           | na           | na          | PASS              | na                  | na                  |
 
 ## Browser compatibility
 
