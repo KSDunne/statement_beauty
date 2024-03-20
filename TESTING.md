@@ -1,6 +1,6 @@
 ## User story testing
 
-See user story testing table below. All 27 user stories have passed the criteria for being met. Two won't be live for assessment but it's still a pass because the like feature was classified as a 'could have'.
+See user story testing table below. All 25 'must have' and 'should have' user stories have passed the criteria for being met. Two user stories won't be live for assessment but it's still a pass because these were part of the like-feature and the like-feature was classified as a 'could have'.
 
 |    | user story                                                                                                                                               | was it the need met?                                                         | screenshot                                                                                          | result           |
 | -- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------- |
