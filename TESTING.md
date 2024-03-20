@@ -194,7 +194,34 @@ If there is a blog with different superusers uploading images they can be upload
 | When a booking is deleted by admin                    | Successfully deleted 1 booking.                                                                 | PASS                      |
 | When admin deletes more than 1 booking                | Successfully deleted 2 bookings.                                                                | PASS                      |
 
-### Testing all links on website
+### Testing all links and buttons on website
+
+|    | clickable link                                         | what does it do?                                              | does it work as expected? |
+| -- | ------------------------------------------------------ | ------------------------------------------------------------- | ------------------------- |
+| 1  | clickable statement beauty brand in top left of screen | returns to blog/index page                                    | PASS                      |
+| 2  | navbar blog link                                       | brings user to blog page                                      | PASS                      |
+| 3  | navbar about link                                      | brings user to about page                                     | PASS                      |
+| 4  | navbar book makeover link when logged in               | brings user to book makeover page                             | PASS                      |
+| 5  | navbar book makeover link when logged out              | sends user to login page                                      | PASS                      |
+| 6  | navbar register button                                 | brings user to signup page                                    | PASS                      |
+| 7  | navbar login button                                    | brings user to login page                                     | PASS                      |
+| 8  | navbar logout button                                   | brings user to a signout page                                 | PASS                      |
+| 9  | clickable blog title                                   | sends user to post detail page                                | PASS                      |
+| 10 | clickable exerpt                                       | sends user to post detail page                                | PASS                      |
+| 11 | next button                                            | sends user to next 6 blog items                               | PASS                      |
+| 12 | prev button                                            | sends user to previous 6 blog items                           | PASS                      |
+| 13 | footer facebook icon                                   | sends user to facebook login                                  | PASS                      |
+| 14 | footer instagram icon                                  | sends user to instagram login                                 | PASS                      |
+| 15 | footer youtube icon                                    | sends user to youtube                                         | PASS                      |
+| 16 | footer github icon                                     | sends user to github the developers github profile            | PASS                      |
+| 17 | post detail edit button                                | changes submit to update and populates comment box            | PASS                      |
+| 18 | post detail delete button                              | sends user to a defensive are you sure page                   | PASS                      |
+| 19 | post detail submit button                              | submits a comment for approval                                | PASS                      |
+| 20 | post detail reset button                               | resets the update button to submit and resets the comment box | PASS                      |
+| 21 | collaborate submit button                              | submits the collaborate form                                  | PASS                      |
+| 22 | edit button on makeover page                           | sends user to an edit booking page                            | PASS                      |
+| 23 | delete button on makeover page                         | sends user to a defensive deletion page                       | PASS                      |
+| 24 | book makeover submit button                            | submits a booking                                             | PASS                      |
 
 ### Feature testing table
 
