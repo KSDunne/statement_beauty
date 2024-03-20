@@ -115,8 +115,7 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         booking = self.get_object()
-        return (self.request.user == booking.username or
-                self.request.user.is_superuser)
+        return self.request.user == booking.username or self.request.user.is_superuser
 
 
 """
@@ -165,5 +164,4 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         booking = self.get_object()
-        return (self.request.user == booking.username or
-                self.request.user.is_superuser)
+        return self.request.user == booking.username or self.request.user.is_superuser
