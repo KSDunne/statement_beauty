@@ -502,10 +502,23 @@ Note: The difference between clone and fork is, you need permissions to push bac
 ### Media
 
 - The hero image is from [shutterstock](https://www.shutterstock.com/image-photo/interior-modern-nail-design-beauty-salon-2370398915)
-- Blog image for peach blush is from [unsplash](https://unsplash.com/photos/woman-with-red-lipstick-and-black-mascara-7tz7I7naQ8c)
+- Blog image for highlighter that can be seen from space is from [pexels](https://www.pexels.com/photo/close-up-photo-of-woman-with-pink-eyeshadow-3912572/)
+- Blog image for hollywood waves is from [pexels](https://www.pexels.com/photo/studio-portrait-of-a-young-brunette-woman-14673998/)
+- Blog image for clipin hair extensions is from [unsplash](https://unsplash.com/photos/woman-in-black-and-gray-checked-tank-dress-stands-near-sunflower-HMPAXs9irhI)
+- Blog image for eyeshadow palette is from [unsplash](https://unsplash.com/photos/white-and-brown-eyeshadow-palette-5Us84s7blq8)
+- Blog image for makeup brushes is from [unsplash](https://unsplash.com/photos/brass-colored-and-black-makeup-brush-kit-b_pSSMpQgLI)
 - Blog image for body brush is from [pixabay](https://pixabay.com/photos/bath-brush-spa-bad-tvaga-hygiene-6279441/)
-- Blog image for winter tanning is from [pixabay](https://pixabay.com/photos/woman-beach-people-sea-bikini-909323/)
+- Blog image for caring for colored hair (pink hair pic) is from [picjumbo](https://picjumbo.com/scared-and-surprised-woman-with-an-open-mouth-and-pink-hair/)
+- Blog image for contour like a pro is from [pexels](https://www.pexels.com/photo/woman-with-black-hair-doing-her-makeup-4006693/)
+- Blog image for threading is from [unsplash](https://unsplash.com/photos/closeup-photography-of-womans-face-cowLgyb63c4)
 - Blog image for laser hair removal is from [pixabay](https://pixabay.com/photos/model-dark-skin-cosmetology-5973472/)
+- Blog image for heatless curls is from [unsplash](https://unsplash.com/photos/woman-wearing-white-shirt-standing-RrD8ypt8cjY)
+- Blog image for french manicure is from [stockvault](https://www.stockvault.net/photo/185100/une-belle-french-manucure)
+- Blog image for dewy makeup is from [pixabay](https://pixabay.com/photos/face-portrait-woman-girl-asian-7148051/)
+- Blog image for peach blush is from [unsplash](https://unsplash.com/photos/woman-with-red-lipstick-and-black-mascara-7tz7I7naQ8c)
+- Blog image for winter tanning is from [pixabay](https://pixabay.com/photos/woman-beach-people-sea-bikini-909323/)
+- Blog image for eyeliner flick is from [unsplash](https://unsplash.com/photos/woman-in-black-crew-neck-shirt-smiling-LgftFZJe_oQ)
+- Default image for blogs and for makeover deals is a bed in a salon and thats from []()
 
 ### Inspiration from real world beauty blogs
 
