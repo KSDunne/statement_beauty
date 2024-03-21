@@ -391,7 +391,23 @@ Here is a screenshot after it was fixed:
 
 ### Unfixed bugs
 
+To my knowledge there are no unfixed bugs on submission of this project for assessment.
+
 ### Supported screens and browsers
+
+#### Screens
+
+- iPhone SE, 375px wide. Also looks good down to 300px according to devtools
+- iPad Mini, 768px wide
+- Nest Hub Max, 1280px wide
+
+#### Browsers
+
+- Chrome
+- Firefox
+- Safari
+- Edge
+- Opera
 
 ## Deployment
 
