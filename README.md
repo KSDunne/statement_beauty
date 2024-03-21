@@ -337,7 +337,7 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 1. Admin message for makeover booking
 
-In the screen shot below is showing the 'after' of the fix. Where is underlined is how it should be. However, previous to this it just had interger, such as "0" indiicating "makeup appointment" or "1" indicating "hair appointment", but this would not have been good UX for the superusers because it was not explicit, so it would have been easy to get confused. It was changed from an integer to text. When the data type change was done the makeup model had to be zero'd.
+In the screen shot below is showing the 'after' of the fix. Where is underlined is how it should be. However, previous to this it just displayed an interger, such as "0" indicating "makeup appointment" or "1" indicating "hair appointment", but this would not have been good UX for the superusers, because it was not explicit, so it would have been easy to get confused. It was changed from an integer to text. When the data type change was done the makeup model had to be zero'd.
 
 #### How the admin message looks now that it's fixed
 
@@ -371,9 +371,11 @@ I was on the makeover page but the navbar was showing the about page as bold. Th
 
 ![bug_navbar_b](docs/readme_images/bugs/bug_navbar_b.PNG)
 
-5. {{ form.as_p }} to {{ form | crispy }}
+4. Cloudinary warning bug
 
-6. Cloudinary warning bug
+The warnings that can be seen in the screenshot were appearing in the console. The warnings say that insecure elements were requested with http instead of https. These are the blog images that are hosted on cloudinary. When I encountered this problem I looked in the 'project-portfolio-4' channel on slack and another student had encountered this problem also. They used the following code in settings.py and this worked for removing the console warnings for them: 'cloudinary.config(secure=True)'. It worked to remove warnings for me too.
+
+I was also having a problem with my cloudinary images being large so I changed a setting under the 'optimization' tab on cloudinary to 'economy mode' for default image quality.
 
 Here is a screenshot of the warnings I was getting:
 
