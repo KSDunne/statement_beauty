@@ -3,7 +3,7 @@
 ## Table of contents 
 
 - [User story testing](#user-story-testing)
-- [Code Validation](#code-validation)
+- [Code validation](#code-validation)
    * [CSS](#css)
    * [JavaScript](#javascript)
    * [Python](#python)
@@ -57,7 +57,7 @@ See user story testing table below. All 25 'must have' and 'should have' user st
 | 26 | Approve comments to be shown to the casual website user, only if they have been approved (loggedin superuser)                                            | yes, need met                                                                |  <details><summary>US26</summary><img src="./docs/readme_images/userstories_ss/us26.PNG"></details> | PASS             |
 | 27 | I can mark collaboration requests as read, so that I can see how many still need to be processed (loggedin superuser)                                    | yes, need met                                                                |  <details><summary>US27</summary><img src="./docs/readme_images/userstories_ss/us27.PNG"></details> | PASS             |
 
-## Code Validation
+## Code validation
 
 ### HTML
 
@@ -95,7 +95,7 @@ Pass
 
 ![CSS validation](docs/readme_images/validation/css_validation.PNG)
 
-Explaination of 3 warnings
+Explanation of 3 warnings
 
 ![CSS validation](docs/readme_images/validation/css_validation_warnings.PNG)
 
@@ -176,7 +176,7 @@ I have explained below how I tried to improve this score and other ways it could
 
 ![Lighthouse result](docs/readme_images/testing/lighthouse_result.PNG)
 
-#### What I did to imporve performance
+#### What I did to improve performance
 
 Performance on the blog page is fluctuating between 70-80 every time it is tested. [Documentation](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/#fluctuations) says this is normal. The following was done during testing to try and improve the performance score:
 
@@ -203,7 +203,7 @@ If there is a blog with different superusers uploading images they can be upload
 | User selects a time today < now            | Please select a time in the future.                         | PASS                      |
 | User selects a time and date already taken | That time is already taken, please select a different time. | PASS                      |
 
-### Notifications and feedback testing for booking a makoever
+### Notifications and feedback testing for booking a makeover
 
 | Action                                | Notifications and feedback for booking                                                                                       | Does it work as expected? |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
@@ -354,7 +354,7 @@ If there is a blog with different superusers uploading images they can be upload
 
 ### Intended responsiveness on different browsers
 
-Intended responsiveness was tested on a monitor using different browsers while constantly changing window sizes
+Intended responsiveness was tested on a monitor using different browsers while constantly changing window sizes.
 
 | intended responsiveness (on monitor) | chrome | edge | firefox | safari | opera |
 | ------------------------------------ | ------ | ---- | ------- | ------ | ----- |
