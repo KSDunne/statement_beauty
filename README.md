@@ -381,7 +381,7 @@ Here is a screenshot of the warnings I was getting:
 
 ![Cloudinary warning bug](docs/readme_images/bugs/bug_mixed_content.PNG)
 
-Here is a screenshot of the solution:
+Here is a screenshot of the solution to the http issue:
 
 ![Cloudinary bug solution](docs/readme_images/bugs/bug_mixed_content_solution.PNG)
 
