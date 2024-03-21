@@ -1,3 +1,28 @@
+# Testing markdown file (linked in README)
+
+## Table of contents 
+
+- [User story testing](#user-story-testing)
+- [Code Validation](#code-validation)
+   * [CSS](#css)
+   * [JavaScript](#javascript)
+   * [Python](#python)
+- [Lighthouse](#lighthouse)
+- [Manual testing](#manual-testing)
+   * [Makeover booking date and time validation](#makeover-booking-date-and-time-validation)
+   * [Notifications and feedback testing for booking a makoever](#notifications-and-feedback-testing-for-booking-a-makoever)
+   * [Notifications and feedback testing for comments](#notifications-and-feedback-testing-for-comments)
+   * [Notifications and feedback testing for collaboration form](#notifications-and-feedback-testing-for-collaboration-form)
+   * [Notifications and feedback testing for register, signin and signout](#notifications-and-feedback-testing-for-register-signin-and-signout)
+   * [Notifications and feedback testing for admin panel](#notifications-and-feedback-testing-for-admin-panel)
+   * [Testing all links and buttons on website](#testing-all-links-and-buttons-on-website)
+   * [Feature testing table](#feature-testing-table)
+- [Responsiveness](#responsiveness)
+- [Browser compatibility](#browser-compatibility)
+   * [Intended appearance on different browsers](#intended-appearance-on-different-browsers)
+   * [Intended responsiveness on different browsers](#intended-responsiveness-on-different-browsers)
+- [Device compatibility](#device-compatibility)
+
 ## User story testing
 
 See user story testing table below. All 25 'must have' and 'should have' user stories have passed the criteria for being met. Two user stories won't be live for assessment but it's still a pass because these were part of the like-feature and the like-feature was classified as a 'could have'.
