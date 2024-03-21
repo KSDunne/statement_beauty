@@ -335,15 +335,41 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 ### Fixed bugs
 
-1. Had to 'zero' the makeup models due to a data type change of integer field to text field.
+1. Admin message for makeover booking
 
-2. Booking query was in the wrong place in the makeover_deals function in the makeover view.
+In the screen shot below is showing the 'after' of the fix. Where is underlined is how it should be. However, previous to this it just had interger, such as "0" indiicating "makeup appointment" or "1" indicating "hair appointment", but this would not have been good UX for the superusers because it was not explicit, so it would have been easy to get confused. It was changed from an integer to text. When the data type change was done the makeup model had to be zero'd.
 
-3. Filter bookings bug
+#### How the admin message looks now that it's fixed
 
-4. Navbar bug was fixed at the top of base.html 
+![bug1a](docs/readme_images/bugs/bug1a.PNG)
 
-![Navbar bug](docs/readme_images/bugs/bug_navbar.PNG)
+#### What was changed to fix the admin messgae
+
+![bug1b](docs/readme_images/bugs/bug1b.PNG)
+
+2. Filter bookings bug
+
+When I was logged in as username 'katiedunne' I was still being shown bookings from another user called 'Sophie. This can be seen in the screenshot below. This was fixed in 2 ways; by adding a login required decorator to the view, like this one '@login_required', and by adding a filter for the username to the query, i.e. '.filter(username=request.user)'.
+
+#### What booking filter problem looked like
+
+![bug_booking_filter_a](docs/readme_images/bugs/bug_booking_filter_a.PNG)
+
+#### The code that was altered for the fix is in this screenshot
+
+![bug_booking_filter_b](docs/readme_images/bugs/bug_booking_filter_b.PNG)
+
+3. Navbar bug 
+
+I was on the makeover page but the navbar was showing the about page as bold. This was fixed by altering code at the top of base.html 
+
+#### What navbar problem looked like is in this screenshot
+
+![bug_navbar_a](docs/readme_images/bugs/bug_navbar_a.PNG)
+
+#### The code that was altered for the fix is in this screenshot
+
+![bug_navbar_b](docs/readme_images/bugs/bug_navbar_b.PNG)
 
 5. {{ form.as_p }} to {{ form | crispy }}
 
