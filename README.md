@@ -196,31 +196,43 @@ An original custom model is contained in this original custom app. The app is ca
 
 This is the text at the top of the 'book makeover' page. When 'makeovers' is clicked in the Django admin panel. A superuser can go there and edit the deal that the business is offering on makeovers at the moment. I made this so it can be edited from the admin panel because the deal will change often so it's handy that a superuser can change it as often as necessary. One of the first deals that was offered on the website is a 10% discount on a makeup makeover if the code SPRING10 is used in the message field when booking.
 
+![Makeover deals](docs/readme_images/makeover_deals_ss.PNG)
+
 ### Form with CRUD functionality to book a makeover when logged in
 
 The whole 'book makeover' page is behind an authentication wall, where login is required.  Django 'login required' decorators were added to the makeover views. Under a 'make a booking' heading, there are 4 fields. These 4 fields are as follows; date, service type, time and message. There was validation added to the date and time fields of this form. If a user chooses a date that is before today, a notification message appears saying 'Please select a date in the future'. If a user chooses today but the time is now or earlier, a notification message appears saying 'Please select a time in the future'.
+
+![Booking crud screenshot](docs/readme_images/booking_crud_ss.PNG)
 
 ### View the bookings I have made when I am logged in
 
 When the user is logged in they can view a list of bookings they have already made. This list is ordered from the nearest date to furthest away date.
 
+![List of my bookings](docs/readme_images/my_bookings_list.PNG)
+
 ### View comments on posts
 
 A list of comments can be seen on individual posts when not logged in. However there is a note directing the user to 'Log in to leave a comment'. The user can create, read, edit and delete comments if they are logged in.
+
+![Comments on blogs](docs/readme_images/comments_on_blogs.PNG)
 
 ### CRUD functionality on comments when logged in
 
 Full front end CRUD functionality is available on comments if the user is logged in. Every time data is created, edited or deleted a notification message pops up to give the user feedback.
 
+![Comment crud screenshot](docs/readme_images/comment_crud_ss.PNG)
+
 ### Footer
 
 This includes social media icons, contact details (email and phone number) and copyright.
+
+![Footer screenshot](docs/readme_images/footer_ss.PNG)
 
 ### MoSCoW
 
 This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
 
-- MoSCoW SCREENSHOT
+![MoSCoW screenshot](docs/readme_images/moscow_ss.PNG)
 
 ## Future features
 
