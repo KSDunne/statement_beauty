@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.contrib import messages
-from django.http import HttpResponseRedirect
 from .models import About
 from .forms import CollaborateForm
 
@@ -41,8 +40,6 @@ def about_me(request):
                 "Collaboration request received! I try to respond within"
                 + " 2 working days.",
             )
-
-        return HttpResponseRedirect("/about/")
 
     about = About.objects.all().order_by("-updated_on").first()
     collaborate_form = CollaborateForm()
