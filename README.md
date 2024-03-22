@@ -258,6 +258,16 @@ This includes social media icons, contact details (email and phone number) and c
 
 ![Footer screenshot](docs/readme_images/footer_ss.PNG)
 
+### Custom 404 page
+
+I implemented a custom 404 page in this project to ensure users stay engaged even when encountering errors.
+
+![404 screenshot](docs/readme_images/404_screenshot.PNG)
+
+### Custom 403 page
+
+A 403 page was implemented to assist with the UserPassesTestMixin. This page enhances security by informing users when they attempt an unauthorized action.
+
 ### MoSCoW
 
 This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
@@ -270,6 +280,7 @@ This project used the "MoSCoW" method to classify its features and requirements 
 - Sticky navbar
 - Email confirmation sent to the user when there collaboration request is either recieved or read
 - Email confirmation when a booking is confirmed
+- Merge 'static' and 'staticfiles' folders and implement the appropriate settings so that I only need the static folder instead of both
 
 ## Design
 
