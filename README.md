@@ -228,6 +228,18 @@ When the user is logged in they can view a list of bookings they have already ma
 
 ![List of my bookings](docs/readme_images/my_bookings_list.PNG)
 
+### Edit the bookings I have made when I am logged in
+
+When the user is logged in they can edit bookings they have already made. The edit button sends the user to a new template within the makeover app. It is a template specifically for editing a booking, called 'edit_makeover.html'.
+
+![Edit makeover booking form](docs/readme_images/edit_makeover_form.PNG)
+
+### Delete the bookings I have made when I am logged in
+
+When the user is logged in they can delete bookings they have already made. The delete button sends the user to a new template within the makeover app. It is a template specifically for deleting a booking, called 'booking_confirm_delete.html'. This is a defensive page, as it asks the user 'Are you sure you want to delete booking?'. This page also warns the user that this action 'cannot be undone'.
+
+![Delete booking](docs/readme_images/delete_booking_page.PNG)
+
 ### View comments on posts
 
 A list of comments can be seen on individual posts when not logged in. However there is a note directing the user to 'Log in to leave a comment'. The user can create, read, edit and delete comments if they are logged in.
