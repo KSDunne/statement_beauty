@@ -135,12 +135,15 @@ def comment_edit(request, slug, comment_id):
 
 
 """
-Credit: https://www.youtube.com/
+Credits for delete class below
+Credit 1: https://www.youtube.com/
 watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14
-Credit: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/
+Credit 2: https://github.com/Dee-McG/Recipe-Tutorial/blob/main/
 recipes/views.py#L72
-Credit: https://github.com/DanMorriss/nialls-barbershop/blob/
+Credit 3: https://github.com/DanMorriss/nialls-barbershop/blob/
 main/booking_system/views.py#L272
+Note: The test function below needed to be added,
+because you cannot use the UserPassesTestMixin without it
 """
 
 
@@ -159,6 +162,12 @@ class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     **Template:**
 
     :template:`blog/comment_confirm_delete.html`
+
+    The test function is needed for the UserPassesTestMixin.
+    It returns True or False.
+    If True, the item will delete as intended.
+    If False, it will throw a 403 error. A 403 template
+    was made for this instance.
     """
 
     model = Comment
@@ -177,5 +186,12 @@ class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return super().form_valid(form)
 
     def test_func(self):
+        """
+        Checks if the logged-in user is the author of the comment.
+
+        Returns:
+            bool: True if the logged in user is the author of the comment
+            False otherwise.
+        """
         comment = self.get_object()
         return self.request.user == comment.author
