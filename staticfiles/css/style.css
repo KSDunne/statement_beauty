@@ -364,7 +364,7 @@ body {
 }
 
 .includes {
-  padding: 10px 0px;
+  padding: 8px 0px 10px 0px;
 }
 
 .makeover-cost ul {
@@ -381,6 +381,10 @@ body {
 
 .note-div {
   margin: 4px 20px 4px 20px;
+}
+
+.cost-heading {
+  padding-top: 10px;
 }
 
 /* style for 404 page */
