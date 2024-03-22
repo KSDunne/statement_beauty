@@ -417,6 +417,24 @@ Here is a screenshot after it was fixed:
 
 ![Cloudinary bug fixed](docs/readme_images/bugs/bug_mixed_content_fixed.PNG)
 
+5. About page reload bug (The collaboration request form is sent again on page reload)
+
+When a collaboration form is filled out, everything worked as it should and I got a confirmation message at the top of the screen, but during testing I noticed that if the page is refreshed it sends the collaboration request again. This is not very good for a couple of reasons. One reason is that multiple of the same request end up displaying in the admin panel. Another reason it is not best practice is that the user gets confused about whether they have indeed sent their request or not. The user just expects the page to do very little on refresh, or to clear the form.
+
+![About reload bug 1](docs/readme_images/bugs/about_reload_bug_1.PNG)
+
+I fixed this by adding the code in the screenshot below "return HttpResponseRedirect("/about/")". This seemed to fix the problem. However when I asked for feedback from a peer, I was told the message isnt displaying after a request is sent. 
+
+![About reload bug 2](docs/readme_images/bugs/about_reload_bug_2.PNG)
+
+I then took the "return HttpResponseRedirect("/about/")" code back out of the view because it is not necessary to have this fixed for mvp. 
+
+![About reload bug 3](docs/readme_images/bugs/about_reload_bug_3.PNG)
+
+It is better that the feedback to the user is present. This reload issue, can be solved at a later date if it is proven to be a problem. Please see the screenshot below that shows the confirmation message for collaboration requests does indeed display to the user.
+
+![About reload bug 4](docs/readme_images/bugs/about_reload_bug_4.PNG)
+
 ### Unfixed bugs
 
 To my knowledge there are no unfixed bugs on submission of this project for assessment.
