@@ -120,7 +120,7 @@ body {
 }
 
 .btn-signup,
- .btn-reset {
+.btn-reset {
   background-color: #ffbe98;
   color: black;
   font-weight: 500;
@@ -206,15 +206,13 @@ body {
 }
 
 .faded {
-  color: rgb(129,52,223);
+  color: rgb(129, 52, 223);
 }
-
 
 .approval {
-  color: rgb(129,52,223);
+  color: rgb(129, 52, 223);
   font-weight: 500;
 }
-
 
 /* style for navbar items */
 .nav-item {
@@ -354,25 +352,35 @@ body {
 
 .price-div {
   height: auto;
-  text-align: center; 
+  text-align: center;
 }
-  
+
 .makeover-cost {
   padding: 18px 0px 30px 0px;
-  margin: 0 auto; 
-  max-width: 400px;
+  margin: 15px auto;
+  max-width: 500px;
+  background-color: #fef2d8;
+  border-radius: 35px;
 }
 
 .includes {
-  padding-bottom: 10px;
+  padding: 10px 0px;
 }
 
 .makeover-cost ul {
   text-align: left;
 }
 
+.offer-items {
+  font-size: 1.1rem;
+}
+
 .offer-items li {
   list-style-type: none;
+}
+
+.note-div {
+  margin: 4px 20px 4px 20px;
 }
 
 /* style for 404 page */
@@ -672,5 +680,13 @@ body {
   /* style for edit form on edit_makeover.html */
   .edit-form {
     width: 45%;
+  }
+
+  .makeover-cost {
+  padding: 18px 0px 30px 0px;
+  margin: 15px auto;
+  max-width: 680px;
+  background-color: #fef2d8;
+  border-radius: 35px;
   }
 }
