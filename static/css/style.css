@@ -368,8 +368,11 @@ body {
 }
 
 .makeover-cost ul {
-  list-style-type: none;
   text-align: left;
+}
+
+.offer-items li {
+  list-style-type: none;
 }
 
 /* style for 404 page */
