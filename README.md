@@ -437,7 +437,7 @@ It is better that the feedback to the user is present. This reload issue, can be
 
 In conclusion for this "collaboration form bug". The user is warned on Chrome, that if they refresh their page, the form submission action may be repeated. The user is warned with the following message: "The page that you're looking for used information that you entered. Returning to that page might cause any action that you took to be repeated. Do you want to continue?". Therefore, this is acceptable behaviour for now.
 
-![About reload bug 4](docs/readme_images/bugs/about_reload_bug_5.PNG)
+![About reload bug 5](docs/readme_images/bugs/about_reload_bug_5.PNG)
 
 ### Unfixed bugs
 
