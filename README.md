@@ -186,11 +186,23 @@ This is located at the bottom of the about page. I changed the model that was in
 
 ![Collaboration form](docs/readme_images/collaboration_form.PNG)
 
+### Sign in form
+
+This is a crispy form that asks for username and password. It was styled with a yellow background.
+
+![Sign in form](docs/readme_images/sign_in_form.PNG)
+
 ### Register Form (Sign up)
 
 This is a crispy form. I styled it with a light yellow background and I removed the bullet point dots that are normally present on the password instructions (e.g. your password must contain at least 8 characters). The username and password (x2) are required fields and the email is optional.
 
 ![Register form](docs/readme_images/register_form_ss.PNG)
+
+### Sign out page
+
+The signout page is defensive. It asks the user 'Are you sure you would like to sign out?'
+
+![Sign out page](docs/readme_images/sign_out_page.PNG)
 
 ### Book a makeover page
 
