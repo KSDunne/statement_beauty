@@ -387,6 +387,10 @@ body {
   padding-top: 10px;
 }
 
+#signup_form li {
+  list-style-type: none;
+}
+
 /* style for 404 page */
 .error-image {
   width: 80%;
