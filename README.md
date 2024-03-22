@@ -186,6 +186,12 @@ This is located at the bottom of the about page. I changed the model that was in
 
 ![Collaboration form](docs/readme_images/collaboration_form.PNG)
 
+### Register Form (Sign up)
+
+This is a crispy form. I styled it with a light yellow background and I removed the bullet point dots that are normally present on the password instructions (e.g. your password must contain at least 8 characters). The username and password (x2) are required fields and the email is optional.
+
+![Register form](docs/readme_images/register_form_ss.PNG)
+
 ### Book a makeover page
 
 An original custom model is contained in this original custom app. The app is called 'makeover' and it has its own template, models, form and views.
