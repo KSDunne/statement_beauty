@@ -116,6 +116,13 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return super().form_valid(form)
 
     def test_func(self):
+        """
+        Checks if the logged-in user is the owner of the booking.
+
+        Returns:
+            bool: True if the logged in user is the owner of the booking
+            False otherwise.
+        """
         booking = self.get_object()
         return (self.request.user == booking.username or
                 self.request.user.is_superuser)
@@ -166,6 +173,13 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return super().form_valid(form)
 
     def test_func(self):
+        """
+        Checks if the logged-in user is the owner of the booking.
+
+        Returns:
+            bool: True if the logged in user is the owner of the booking
+            False otherwise.
+        """
         booking = self.get_object()
         return (self.request.user == booking.username or
                 self.request.user.is_superuser)
