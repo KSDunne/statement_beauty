@@ -34,28 +34,38 @@
     </div>
   </div>
 
-  <div>
-    <h3>Makeup Appointment</h3>
-    <h4>Cost: 25 euro</h4>
-    <div>Includes:</div>
-    <ul>
-      <li>a consultation</li>
-      <li>skin preparation with a cleanse</li>
-      <li>moisturise</li>
-      <li>primer</li>
-      <li>the makeup look of your choice</li>
-    </ul>
-    <div>This appointment is for a full face of makeup that is appropriate for an event.</div>
-  </div>
+  <div class="price-div">
+    <div class="makeover-cost">
+      <h3>Makeup Appointment</h3>
+      <h4>Cost: 25 euro</h4>
+      <h4 class="includes">Includes:</h4>
+      <ul class="offer-items">
+        <li><i class="fa-solid fa-paintbrush"></i> a consultation</li>
+        <li><i class="fa-solid fa-paintbrush"></i> cleanse</li>
+        <li><i class="fa-solid fa-paintbrush"></i> moisturize</li>
+        <li><i class="fa-solid fa-paintbrush"></i> primer</li>
+        <li>
+          <i class="fa-solid fa-paintbrush"></i> makeup look of your choice
+        </li>
+      </ul>
+      <div>
+        This appointment offers a full face of makeup! A 'full face' might be
+        appropriate for an upcoming event, e.g. a birthday or wedding.
+      </div>
+    </div>
 
-  <div>
-    <h3>Hair Appointment</h3>
-    <h4>Cost: 20 euro</h4>
-    <div>Includes:</div>
-    <ul>
-      <li>a styling appointment e.g curling, upstyling</li>
-    </ul>
-    <div><strong>Note:</strong> We do not wash your hair on premises.</div>
+    <div class="makeover-cost">
+      <h3>Hair Appointment</h3>
+      <h4>Cost: 20 euro</h4>
+      <h4 class="includes">Includes:</h4>
+      <ul class="offer-items">
+        <li>
+          <i class="fa-solid fa-scissors"></i> a styling appointment e.g
+          curling, upstyling
+        </li>
+      </ul>
+      <div><strong>Note:</strong> We do not wash your hair on premises.</div>
+    </div>
   </div>
 
   <!-- Displaying Bookings -->
@@ -79,7 +89,10 @@
         >
           <h4 class="service-type">{{ booking.service_type}}</h4>
           {% if not booking.confirmed %}
-          <p><i class="fa-solid fa-circle-exclamation"></i><strong> UNCONFIRMED</strong></p>
+          <p>
+            <i class="fa-solid fa-circle-exclamation"></i
+            ><strong> UNCONFIRMED</strong>
+          </p>
           {% endif %}
           <p><strong>Name:</strong> {{ booking.username }}</p>
           <p><strong>Date:</strong> {{ booking.date_of_booking}}</p>
