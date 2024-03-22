@@ -387,7 +387,8 @@ body {
   padding-top: 10px;
 }
 
-#signup_form li {
+#hint_id_password1 ul {
+  padding: 0px;
   list-style-type: none;
 }
 
