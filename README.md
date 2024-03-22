@@ -427,7 +427,7 @@ I fixed this by adding the code in the screenshot below "return HttpResponseRedi
 
 ![About reload bug 2](docs/readme_images/bugs/about_reload_bug_2.PNG)
 
-I then took the "return HttpResponseRedirect("/about/")" code back out of the view because it is not necessary to have this fixed for mvp. 
+I then took the "return HttpResponseRedirect("/about/")" code back out of the view, because it is not necessary to have this 'reload issue' addressed for mvp. However, it is neccessary that the feedback message displays to the user.
 
 ![About reload bug 3](docs/readme_images/bugs/about_reload_bug_3.PNG)
 
@@ -435,13 +435,13 @@ It is better that the feedback to the user is present. This reload issue, can be
 
 ![About reload bug 4](docs/readme_images/bugs/about_reload_bug_4.PNG)
 
-In conclusion for this "collaboration form bug". The user is warned on Chrome, that if they refresh their page, the form submission action may be repeated. The user is warned with the following message: "The page that you're looking for used information that you entered. Returning to that page might cause any action that you took to be repeated. Do you want to continue?". Therefore, this is acceptable behaviour for now.
+In conclusion for this 'collaboration form bug'. The user is warned on Chrome, that if they refresh their page, the form submission action may be repeated. The user is warned with the following message: "The page that you're looking for used information that you entered. Returning to that page might cause any action that you took to be repeated. Do you want to continue?". Therefore, this is acceptable behaviour for now.
 
 ![About reload bug 5](docs/readme_images/bugs/about_reload_bug_5.PNG)
 
 ### Unfixed bugs
 
-To my knowledge there are no unfixed bugs on submission of this project for assessment.
+To my knowledge, on submission of this project for assessment, there are no unfixed bugs.
 
 ### Supported screens and browsers
 
