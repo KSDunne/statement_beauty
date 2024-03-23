@@ -272,7 +272,13 @@ A 403 page was implemented to assist with the UserPassesTestMixin. This page enh
 
 This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
 
-![MoSCoW screenshot](docs/readme_images/moscow_ss.PNG)
+In the screenshot below it can be seen where must have and should have labels have been used and in the second screenshot underneat that one it can be seen where could have and won't have labels were used.
+
+![MoSCoW screenshot 1](docs/readme_images/moscow_ss_1.PNG)
+
+See in the screenshot below that the 'could have' labels and 'wont have' labels ended up on the same issues. This is because they were just classified as 'could have' until I got near to the deadline. Then I realised I wouldn't have time to implement the like-feature so it was moved to won't have. This was acceptable because the like-feature was not necessary for mvp. Normal agile project dynamics were demonstrated here.
+
+![MoSCoW screenshot 2](docs/readme_images/moscow_ss_2.PNG)
 
 ## Future features
 
