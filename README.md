@@ -391,11 +391,13 @@ Please find a screenshot of tables below. These tables are in preparation for th
   Used to add custom styles
 - [Django](https://www.djangoproject.com/ "link to django docs homepage")
   The python framework used to develop the site
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) Was used as the PostgreSQL database in this project
 - [VS Code](https://code.visualstudio.com/) Was used as the ide for this whole project
 - [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage")
   Used to host images
 - [GitHub](https://github.com/ "Link to github webpage")
   GitHub was used to store the code files, README files and assets
+- [Git](https://git-scm.com/) Was used as a version control software to commit and push the code to the GitHub repository
 - [Heroku](https://id.heroku.com/login "Link to Heroku login")
   Heroku was used to deploy the project
 - [dbdiagram](https://dbdiagram.io/ "Link to dbdiagram")
@@ -406,6 +408,16 @@ Please find a screenshot of tables below. These tables are in preparation for th
 - [Black Formatter for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) Used as the default formatter in Visual Studio Code IDE, for python files. The setting 'format on save' was used.
 - [Bootstrap](https://getbootstrap.com/) Used to quickly layout, position and size critical website features
 - [Balsamiq](https://balsamiq.com/wireframes/) Used in early planning to map out wireframes
+- [Google Fonts](https://fonts.google.com/) Was used to import fonts
+- [Favicon Generator](https://favicon.io/favicon-generator/) Was used to make an 'S' shaped favicon 
+- [Font Awesome](https://fontawesome.com/) Was used for all icons
+- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) Was used for lighthouse testing, debugging and consistently checking responsiveness
+- [W3C Markup Validator](https://validator.w3.org/) Was used to validate all live html
+- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Was used to validate CSS code
+- [JS Hint](https://jshint.com/) Was used to validate JavaScript code
+- [Code Institute Python Linter](https://pep8ci.herokuapp.com/) Was used to validate all python code
+
+
 
 ## Testing
 
