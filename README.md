@@ -601,15 +601,23 @@ Note: The difference between clone and fork is, you need permissions to push bac
 
 ### Code
 
-[CI walkthrough I think therefore I blog](https://github.com/Code-Institute-Solutions/blog/tree/main/12_views_part_3/05_edit_delete) - The CI walkthrough repo was relied upon heavily, however I created 1 whole custom app with associated custom models to suit the beauty theme of the website. The app I added was a makeover app where the user could make a booking for hair or makeup if they were logged in. This custom app has full front end CRUD functionality.
+[CI walkthrough I think therefore I blog](https://github.com/Code-Institute-Solutions/blog/tree/main/12_views_part_3/05_edit_delete) - The CI walkthrough repo was relied upon heavily, however I additionally created 1 whole custom app with associated custom models to suit the beauty theme of the website. The app I added was a makeover app where the user could make a booking for hair or makeup if they were logged in. This custom app has full front end CRUD functionality.
 
 [Daisy's Recipe Edit Tutorial Repository](https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L61) - Daisy uses an EditRecipe class to update a recipe. I adapted this class for my purpose which was to edit a booking.
 
-[Daisy's Recipe Edit Tutorial YouTube Video](https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14) - Daisy explains how she uses the edit class in this video. I followed along with this video to write my EditBooking view in the makeover app.
+[Daisy's Recipe Edit Tutorial YouTube Video](https://www.youtube.com/watch?v=JzDBCZTgVyw&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=14) - Daisy explains how she creates the edit class in this video. I followed along with this video to write my EditBooking view in the makeover app.
+
+[Daisy's Recipe Delete Tutorial Repository](https://github.com/Dee-McG/Recipe-Tutorial/blob/main/recipes/views.py#L72) - Daisy uses an DeleteRecipe class to delete a recipe. I adapted this class for my purpose which was to delete a booking.
+
+[Daisy's Recipe Delete Tutorial YouTube Video](https://www.youtube.com/watch?v=nFa3lC105dM&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=13) - Daisy explains how she creates the delete class in this video. I followed along with this video to write my DeleteBooking view in the makeover app.
 
 [CI student booking website](https://github.com/DanMorriss/nialls-barbershop/blob/main/templates/base.html#L67) - Niall's Barbarshop footer looked similar to the way I wanted my footer, so their footer code was adapted for my use.
 
 [CI student blog](https://github.com/DarrachBarneveld/CoolCoders-PP4/blob/main/templates/account/signup.html#L10) - This student's signup page looked how I wanted mine, so this code block was adapted to suit the style of statement beauty.
+
+[Love Running Project August 2023](https://github.com/Code-Institute-Solutions/love-running-v3) - Head code and inspiration to use font awesome icons throughout the website
+
+[Depreciated Love Running Project July 2023](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main) - Structure for hero image and tagline, animating zoom effect on the hero image when loading page
 
 ### Media
 
@@ -634,9 +642,11 @@ Note: The difference between clone and fork is, you need permissions to push bac
 
 ### Inspiration from real world beauty blogs
 
-[Sosueme beauty blog](https://sosueme.ie/)
+[Caroline Hirons beauty blog](https://www.carolinehirons.com/)
 
-[Joanne Larby beauty](https://joannelarby.com/category/beauty/)
+[Really Ree beauty blog](https://reallyree.com/)
+
+[Sosueme beauty blog](https://sosueme.ie/)
 
 ## Acknowledgements
 
