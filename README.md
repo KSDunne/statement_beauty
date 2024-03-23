@@ -126,7 +126,7 @@ Every time there is a change in data the user is alerted. For example when a com
 
 #### Django alert message example 1
 
-The first example is a feedback notification that shows "successfully signed in as username" staight after signing in.
+The first example is a feedback notification that shows "successfully signed in as username" straight after signing in.
 
 ![Django alert message 1](docs/readme_images/django_alert_1.PNG)
 
@@ -168,7 +168,7 @@ Individual blog posts are displayed under one another on mobile screens. On tabl
 
 ### See an individual blog post in detail
 
-When a blog title or exerpt is clicked the post detail html is rendered displaying the same hero image that is on all pages, but also a mast head underneath the hero image with the blog title and an image that has been uploaded by a superuser. Underneath this the blog text can be seen. Underneat the blog text is a comment count, comments section and a form to add your own comment if you are a logged in user.
+When a blog title or excerpt is clicked the post detail html is rendered displaying the same hero image that is on all pages, but also a mast head underneath the hero image with the blog title and an image that has been uploaded by a superuser. Underneath this the blog text can be seen. Underneath the blog text is a comment count, comments section and a form to add your own comment if you are a logged in user.
 
 ![Individual blog post 1](docs/readme_images/individual_blog_post_1.PNG)
 
@@ -284,7 +284,7 @@ A 403 page was implemented to assist with the UserPassesTestMixin. This page enh
 
 This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
 
-In the screenshot below it can be seen where 'must have' and 'should have' labels have been used and in the second screenshot underneat that one, it can be seen where 'could have' and 'won't have' labels were used.
+In the screenshot below it can be seen where 'must have' and 'should have' labels have been used and in the second screenshot underneath that one, it can be seen where 'could have' and 'won't have' labels were used.
 
 ![MoSCoW screenshot 1](docs/readme_images/moscow_ss_1.PNG)
 
@@ -297,7 +297,7 @@ See in the screenshot below that the 'could have' labels and 'wont have' labels 
 - A 'like' feature on the blog posts, with 'like' counter. This was on the project's kanban board as a 'could have'. However, it was moved to 'won't have' in the allowed timeframe for project submission. A like feature is something that can be implemented in future when time allows
 - A search feature in the navigation bar to allow users to search for specific topics they are interested in
 - Password reset so that if a user forgets their password they can regain access to their account
-- Email confirmation sent to the user when their collaboration request is either recieved or read
+- Email confirmation sent to the user when their collaboration request is either received or read
 - Email confirmation when a booking is confirmed
 - Sticky navbar
 - Merge 'static' and 'staticfiles' folders and implement the appropriate settings so that I only need the static folder instead of both
@@ -331,7 +331,7 @@ All colors that were used in the end were generated as 'close to' the colors men
 
 ## Wireframes
 
-The overall structure was kept from initial inception of wireframes to the result of the website on submission for assessment. Three simple extra templates were added for; 1. editing a makeover booking, 2. deleteing a makeover booking and for 3. deleting a comment. One extra button for reseting the comments form 'reset' was added. The price card feature was added to the book makeover page. These features all added value and contributed to better flow of the website. See all initial wireframes that were created early in the project timeline below.
+The overall structure was kept from initial inception of wireframes to the result of the website on submission for assessment. Three simple extra templates were added for; 1. editing a makeover booking, 2. deleting a makeover booking and for 3. deleting a comment. One extra button for resetting the comments form 'reset' was added. The price card feature was added to the book makeover page. These features all added value and contributed to better flow of the website. See all initial wireframes that were created early in the project timeline below.
 
 ### Index page wireframes
 
@@ -449,13 +449,13 @@ Detailed testing documentation can be found [here.](./TESTING.md)
 
 1. Admin message for makeover booking
 
-In the screen shot below is showing the 'after' of the fix. Where is underlined is how it should be. However, previous to this it just displayed an interger, such as "0" indicating "makeup appointment" or "1" indicating "hair appointment", but this would not have been good UX for the superusers, because it was not explicit, so it would have been easy to get confused. It was changed from an integer to text. When the data type change was done the makeup model had to be zero'd.
+In the screen shot below is showing the 'after' of the fix. Where is underlined is how it should be. However, previous to this it just displayed an integer, such as "0" indicating "makeup appointment" or "1" indicating "hair appointment", but this would not have been good UX for the superusers, because it was not explicit, so it would have been easy to get confused. It was changed from an integer to text. When the data type change was done the makeup model had to be zero'd.
 
 #### How the admin message looks now that it's fixed
 
 ![bug1a](docs/readme_images/bugs/bug1a.PNG)
 
-#### What was changed to fix the admin messgae
+#### What was changed to fix the admin message
 
 ![bug1b](docs/readme_images/bugs/bug1b.PNG)
 
@@ -507,11 +507,11 @@ When a collaboration form is filled out, everything worked as it should and I go
 
 ![About reload bug 1](docs/readme_images/bugs/about_reload_bug_1.PNG)
 
-I fixed this by adding the code in the screenshot below "return HttpResponseRedirect("/about/")". This seemed to fix the problem. However when I asked for feedback from a peer, I was told the message isnt displaying after a request is sent.
+I fixed this by adding the code in the screenshot below "return HttpResponseRedirect("/about/")". This seemed to fix the problem. However, when I asked for feedback from a peer, I was told the message is not displaying after a request is sent.
 
 ![About reload bug 2](docs/readme_images/bugs/about_reload_bug_2.PNG)
 
-I then took the "return HttpResponseRedirect("/about/")" code back out of the view, because it is not necessary to have this 'reload issue' addressed for mvp. However, it is neccessary that the feedback message displays to the user.
+I then took the "return HttpResponseRedirect("/about/")" code back out of the view, because it is not necessary to have this 'reload issue' addressed for mvp. However, it is necessary that the feedback message displays to the user.
 
 ![About reload bug 3](docs/readme_images/bugs/about_reload_bug_3.PNG)
 
@@ -589,7 +589,7 @@ After account setup, the steps were as follows:
 
 The live link for this project can be found here - [Statement Beauty](https://statement-beauty-ec9472f892b1.herokuapp.com)
 
-### Fork this respoitory:
+### Fork this repository:
 
 - Go to the GitHub repository
 - Click on the Fork button in the upper right-hand corner
@@ -648,7 +648,7 @@ Note: The difference between clone and fork is, you need permissions to push bac
 - Blog image for peach blush is from [unsplash](https://unsplash.com/photos/woman-with-red-lipstick-and-black-mascara-7tz7I7naQ8c)
 - Blog image for winter tanning is from [pixabay](https://pixabay.com/photos/woman-beach-people-sea-bikini-909323/)
 - Blog image for eyeliner flick is from [unsplash](https://unsplash.com/photos/woman-in-black-crew-neck-shirt-smiling-LgftFZJe_oQ)
-- Default image for blogs and static image for makeover deals is a bed in a salon and thats from [pexels](https://www.pexels.com/photo/massage-table-in-modern-cosmetology-salon-6899551/)
+- Default image for blogs and static image for makeover deals is a bed in a salon and that's from [pexels](https://www.pexels.com/photo/massage-table-in-modern-cosmetology-salon-6899551/)
 
 ### Inspiration from real world beauty blogs
 
