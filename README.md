@@ -385,13 +385,22 @@ Please find a screenshot of tables below. These tables are in preparation for th
 
 ## Technology Used
 
+### Languages and framework
+
 - [HTML5](https://developer.mozilla.org/en-US/docs/Learn/HTML "link to html mozilla documentation")
   Used to create content and structure
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS "link to css mozilla documentation")
   Used to add custom styles
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) Was used to dynamically reset the comment form if the reset button was clicked and to show a modal when the edit comment button was clicked
 - [Django](https://www.djangoproject.com/ "link to django docs homepage")
   The python framework used to develop the site
+
+### Database
+
 - [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) Was used as the PostgreSQL database in this project
+
+### Technologies and Tools
+
 - [VS Code](https://code.visualstudio.com/) Was used as the ide for this whole project
 - [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage")
   Used to host images
