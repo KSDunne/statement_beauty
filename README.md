@@ -10,7 +10,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
 
 ## Purpose of the project
 
-Statement Beauty is a fictitious business that started out as a blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website provides the user with; a blog, comments sections, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time. 
+Statement Beauty is a fictitious business that started out as a blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website provides the user with; a blog, comments sections, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time.
 
 ## Table of contents
 
@@ -18,9 +18,9 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 
 ### Key project goals
 
--	Increase awareness of the Statement Beauty business, through a feel-good and accessible website that offers information of all things beauty through blogs
--	Encourage beauty professionals to get in contact if they would like to collaborate on blog posts or offer their services for our makeovers
--	Build a website that encourages and directs the site users to book a makeover with us
+- Increase awareness of the Statement Beauty business, through a feel-good and accessible website that offers information of all things beauty through blogs
+- Encourage beauty professionals to get in contact if they would like to collaborate on blog posts or offer their services for our makeovers
+- Build a website that encourages and directs the site users to book a makeover with us
 
 ### Target audience
 
@@ -218,7 +218,7 @@ This is the text at the top of the 'book makeover' page. When 'makeovers' is cli
 
 ### Form with CRUD functionality to book a makeover when logged in
 
-The whole 'book makeover' page is behind an authentication wall, where login is required.  Django 'login required' decorators were added to the makeover views. Under a 'make a booking' heading, there are 4 fields. These 4 fields are as follows; date, service type, time and message. There was validation added to the date and time fields of this form. If a user chooses a date that is before today, a notification message appears saying 'Please select a date in the future'. If a user chooses today but the time is now or earlier, a notification message appears saying 'Please select a time in the future'.
+The whole 'book makeover' page is behind an authentication wall, where login is required. Django 'login required' decorators were added to the makeover views. Under a 'make a booking' heading, there are 4 fields. These 4 fields are as follows; date, service type, time and message. There was validation added to the date and time fields of this form. If a user chooses a date that is before today, a notification message appears saying 'Please select a date in the future'. If a user chooses today but the time is now or earlier, a notification message appears saying 'Please select a time in the future'.
 
 ![Booking crud screenshot](docs/readme_images/booking_crud_ss.PNG)
 
@@ -388,45 +388,39 @@ Please find a screenshot of tables below. These tables are in preparation for th
 ### Languages and framework
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Learn/HTML "link to html mozilla documentation")
-  Used to create content and structure
+  was used to create content and structure
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS "link to css mozilla documentation")
-  Used to add custom styles
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) Was used to dynamically reset the comment form if the reset button was clicked and to show a modal when the edit comment button was clicked
-- [Django](https://www.djangoproject.com/ "link to django docs homepage")
-  The python framework used to develop the site
+  was used to add custom styles
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript "link to javascript mozilla documentation") was used to dynamically reset the comment form if the reset button was clicked and to show a modal when the edit comment button was clicked
+- [Django](https://www.djangoproject.com/ "link to django docs homepage") was the python framework used to develop the site
 
 ### Database
 
-- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) Was used as the PostgreSQL database in this project
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/ "link to postgresql from code institute") was used as the PostgreSQL database for this project
 
-### Technologies and Tools
+### Technologies and tools
 
-- [VS Code](https://code.visualstudio.com/) Was used as the ide for this whole project
-- [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage")
-  Used to host images
-- [GitHub](https://github.com/ "Link to github webpage")
-  GitHub was used to store the code files, README files and assets
-- [Git](https://git-scm.com/) Was used as a version control software to commit and push the code to the GitHub repository
-- [Heroku](https://id.heroku.com/login "Link to Heroku login")
-  Heroku was used to deploy the project
-- [dbdiagram](https://dbdiagram.io/ "Link to dbdiagram")
-  dbdiagram was used to make a diagram of the database schema. The diagram was based off erd tables that were documented in excel
-- [Excel](https://microsoft.com/excel "Link to official microsoft excel website")
-  Used to created entity relationship tables in preparation for the database schema that was made in dbdiagram
-- [Prettier](https://prettier.io/) Used as the default formatter in Visual Studio Code IDE, for html and css files. The setting 'format on save' was used.
-- [Black Formatter for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) Used as the default formatter in Visual Studio Code IDE, for python files. The setting 'format on save' was used.
-- [Bootstrap](https://getbootstrap.com/) Used to quickly layout, position and size critical website features
-- [Balsamiq](https://balsamiq.com/wireframes/) Used in early planning to map out wireframes
-- [Google Fonts](https://fonts.google.com/) Was used to import fonts
-- [Favicon Generator](https://favicon.io/favicon-generator/) Was used to make an 'S' shaped favicon 
-- [Font Awesome](https://fontawesome.com/) Was used for all icons
-- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) Was used for lighthouse testing, debugging and consistently checking responsiveness
-- [W3C Markup Validator](https://validator.w3.org/) Was used to validate all live html
-- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Was used to validate CSS code
-- [JS Hint](https://jshint.com/) Was used to validate JavaScript code
-- [Code Institute Python Linter](https://pep8ci.herokuapp.com/) Was used to validate all python code
-
-
+- [VS Code](https://code.visualstudio.com/ "link to visual studio code webpage") was used as the ide for this whole project
+- [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage") was used to host images
+- [GitHub](https://github.com/ "link to github webpage") was used to store the code files, README files and assets
+- [Git](https://git-scm.com/ "link to official git website") was used as a version control software to commit and push the code to the GitHub repository
+- [Heroku](https://id.heroku.com/login "link to Heroku login") was used to deploy the project
+- [dbdiagram](https://dbdiagram.io/ "link to dbdiagram") was used to make a diagram of the database schema. The diagram was based off erd tables that were documented in excel
+- [Excel](https://microsoft.com/excel "link to official microsoft excel website") was used to created entity relationship tables in preparation for the database schema that was made in dbdiagram
+- [Prettier](https://prettier.io/ "link to official prettier website") was used as the default formatter in Visual Studio Code IDE, for html and css files. The setting 'format on save' was used.
+- [Black Formatter for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter "link to official black formatter website") was used as the default formatter in Visual Studio Code IDE, for python files. The setting 'format on save' was used.
+- [Bootstrap](https://getbootstrap.com/ "link to official bootstrap website") was used to quickly layout, position and size critical website features
+- [Balsamiq](https://balsamiq.com/wireframes/ "link to official balsamiq website") was used in early planning to map out wireframes
+- [Google Fonts](https://fonts.google.com/ "link to official google fonts website") was used to import fonts
+- [Favicon Generator](https://favicon.io/favicon-generator/ "link to official favicon generator website") was used to make an 'S' shaped favicon
+- [Font Awesome](https://fontawesome.com/ "link to official font awesome website") Was used for all icons
+- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/ "Link to official chrome developer tools website") was used for lighthouse testing, debugging and consistently checking responsiveness
+- [W3C Markup Validator](https://validator.w3.org/ "link to official html validator") was used to validate all live html
+- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/ "link to official css validator") was used to validate CSS code
+- [JS Hint](https://jshint.com/ "link to official javascript validator") Was used to validate JavaScript code
+- [Code Institute Python Linter](https://pep8ci.herokuapp.com/ "link to official python validator") was used to validate all python code
+- [Django Summernote](https://pypi.org/project/django-summernote/ "link to official summernote website") was used. This is a rich text editor plugin for Django
+- [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/ "link to official crispy forms website") were used throughout the project to quickly create forms
 
 ## Testing
 
@@ -458,9 +452,9 @@ When I was logged in as username 'katiedunne' I was still being shown bookings f
 
 ![bug_booking_filter_b](docs/readme_images/bugs/bug_booking_filter_b.PNG)
 
-3. Navbar bug 
+3. Navbar bug
 
-I was on the makeover page but the navbar was showing the about page as bold. This was fixed by altering code at the top of base.html 
+I was on the makeover page but the navbar was showing the about page as bold. This was fixed by altering code at the top of base.html
 
 #### What navbar problem looked like is in this screenshot
 
@@ -494,7 +488,7 @@ When a collaboration form is filled out, everything worked as it should and I go
 
 ![About reload bug 1](docs/readme_images/bugs/about_reload_bug_1.PNG)
 
-I fixed this by adding the code in the screenshot below "return HttpResponseRedirect("/about/")". This seemed to fix the problem. However when I asked for feedback from a peer, I was told the message isnt displaying after a request is sent. 
+I fixed this by adding the code in the screenshot below "return HttpResponseRedirect("/about/")". This seemed to fix the problem. However when I asked for feedback from a peer, I was told the message isnt displaying after a request is sent.
 
 ![About reload bug 2](docs/readme_images/bugs/about_reload_bug_2.PNG)
 
