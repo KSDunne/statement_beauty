@@ -18,9 +18,9 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 
 ### Key project goals
 
-- Increase awareness of the Statement Beauty business, through a feel-good and accessible website that offers information of all things beauty through blogs
-- Encourage beauty professionals to get in contact if they would like to collaborate on blog posts or offer their services for our makeovers
-- Build a website that encourages and directs the site users to book a makeover with us
+- Increase awareness of the Statement Beauty business, through a feel-good and accessible website that offers information of all things beauty through blogs (maps to epic 1 which has its associated user stories in issues, also see closed milestones)
+- Encourage beauty professionals to get in contact if they would like to collaborate on blog posts or offer their services for our makeovers (maps to epic 8 which has its associated user stories in issues, also see closed milestones)
+- Build a website that encourages and directs the site users to book a makeover with us (maps to epic 9 which has its associated user stories in issues, also see closed milestones)
 
 ### Target audience
 
