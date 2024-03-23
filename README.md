@@ -505,6 +505,22 @@ In conclusion for this 'collaboration form bug'. The user is warned on Chrome, t
 
 ![About reload bug 5](docs/readme_images/bugs/about_reload_bug_5.PNG)
 
+6. Makeover deals image
+
+On mobile the makeover deals image was taking up a third of the page and this looked very small. So the bootstrap code was changed to make the image full width (12/12) on mobile and 4/12 on midsize screens upwards.
+
+#### Before it was fixed it looked like this
+
+![Bug deals image 1](docs/readme_images/bugs/bug_deals_image_1.png)
+
+#### After it was fixed it looked like this
+
+![Bug deals image 2](docs/readme_images/bugs/bug_deals_image_2.png)
+
+#### This is the code that was altered
+
+![Bug deals image 3](docs/readme_images/bugs/bug_deals_image_3.PNG)
+
 ### Unfixed bugs
 
 To my knowledge, on submission of this project for assessment, there are no unfixed bugs.
