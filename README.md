@@ -413,14 +413,15 @@ Please find a screenshot of tables below. These tables are in preparation for th
 - [Balsamiq](https://balsamiq.com/wireframes/ "link to official balsamiq website") was used in early planning to map out wireframes
 - [Google Fonts](https://fonts.google.com/ "link to official google fonts website") was used to import fonts
 - [Favicon Generator](https://favicon.io/favicon-generator/ "link to official favicon generator website") was used to make an 'S' shaped favicon
-- [Font Awesome](https://fontawesome.com/ "link to official font awesome website") Was used for all icons
+- [Font Awesome](https://fontawesome.com/ "link to official font awesome website") was used for all icons
 - [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/ "Link to official chrome developer tools website") was used for lighthouse testing, debugging and consistently checking responsiveness
 - [W3C Markup Validator](https://validator.w3.org/ "link to official html validator") was used to validate all live html
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/ "link to official css validator") was used to validate CSS code
-- [JS Hint](https://jshint.com/ "link to official javascript validator") Was used to validate JavaScript code
+- [JS Hint](https://jshint.com/ "link to official javascript validator") was used to validate JavaScript code
 - [Code Institute Python Linter](https://pep8ci.herokuapp.com/ "link to official python validator") was used to validate all python code
 - [Django Summernote](https://pypi.org/project/django-summernote/ "link to official summernote website") was used. This is a rich text editor plugin for Django
 - [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/ "link to official crispy forms website") were used throughout the project to quickly create forms
+- [Chat-GPT](https://chat.openai.com/ "link to chat gpt") was used to create the text blog content. There are 18 blogs published on the Statement Beauty website and for each the following query was written into Chat-GPT: "Write 250 words on "blog title I have chosen" in a positive tone for a beauty blog". The blog text was edited slightly after it was taken from Chat-GPT
 
 ## Testing
 
@@ -605,7 +606,7 @@ Note: The difference between clone and fork is, you need permissions to push bac
 - Blog image for peach blush is from [unsplash](https://unsplash.com/photos/woman-with-red-lipstick-and-black-mascara-7tz7I7naQ8c)
 - Blog image for winter tanning is from [pixabay](https://pixabay.com/photos/woman-beach-people-sea-bikini-909323/)
 - Blog image for eyeliner flick is from [unsplash](https://unsplash.com/photos/woman-in-black-crew-neck-shirt-smiling-LgftFZJe_oQ)
-- Default image for blogs and for makeover deals is a bed in a salon and thats from []()
+- Default image for blogs and for makeover deals is a bed in a salon and thats from [pexels](https://www.pexels.com/photo/massage-table-in-modern-cosmetology-salon-6899551/)
 
 ### Inspiration from real world beauty blogs
 
