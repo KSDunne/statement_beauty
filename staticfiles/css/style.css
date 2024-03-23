@@ -397,13 +397,18 @@ body {
 
 /* style for password directions on register form */
 #hint_id_password1 ul {
-  padding: 0px;
+  padding: 4px 0px 0px 0px;
+  list-style-type: none;
+}
+
+#signup_form li {
+  padding: 4px 0px 0px 0px;
   list-style-type: none;
 }
 
 /* style for book makeover call to action button */
 .cta-btn {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 /* style for 404 page */

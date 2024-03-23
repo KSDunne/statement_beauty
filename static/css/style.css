@@ -397,7 +397,12 @@ body {
 
 /* style for password directions on register form */
 #hint_id_password1 ul {
-  padding: 0px;
+  padding: 4px 0px 0px 0px;
+  list-style-type: none;
+}
+
+#signup_form li {
+  padding: 4px 0px 0px 0px;
   list-style-type: none;
 }
 
