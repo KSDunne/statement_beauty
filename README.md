@@ -258,6 +258,12 @@ This includes social media icons, contact details (email and phone number) and c
 
 ![Footer screenshot](docs/readme_images/footer_ss.PNG)
 
+### Price of makeup and hair appointments
+
+These are card like features that quote the price of the 2 different services offered (makeup appointment and hair appointment). There is an 'includes' section on the light yellow cards that explains in bullet point form what the appointment entails. This was a feature that was overlooked for mvp. It was suggested at the very end of the project when I put the statement beauty website on a slack channel for 'peer code review'. It makes a lot of sense to add a price to the service offerings and to explain what is involved in them so it was added in the final few days of the project. Therefore, this price feature was not in initial wireframes.
+
+![Price screenshot](docs/readme_images/price_ss.PNG)
+
 ### Custom 404 page
 
 I implemented a custom 404 page in this project to ensure users stay engaged even when encountering errors.
@@ -314,6 +320,8 @@ See color palette below for an illustration of all colors mentioned
 ![Accessible color palette](docs/readme_images/color_palette_peachfuzz.PNG)
 
 ## Wireframes
+
+The overall structure was kept from initial inception of wireframes to the result of the website on submission for assessment. Three simple extra templates were added for; 1. editing a makeover booking, 2. deleteing a makeover booking and for 3. deleting a comment. One extra button for reseting the comments form 'reset' was added. The price card feature was added to the book makeover page. These features all added value and contributed to better flow of the website. See all initial wireframes that were created early in the project timeline below.
 
 ### Index page wireframes
 
