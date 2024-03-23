@@ -104,9 +104,9 @@ Statement Beauty is a fictitious business that started out as a blog and had so 
 
 ### Logo and navigation bar
 
-A responsive navigation bar is in place. Concentrating on 'mobile first' design, the navigation bar incorporates a clickable burger icon with a drop down menu on mobile. There is a burger icon at tablet size too, but when moving to monitor size the burger disappears and a navigation bar appears with options to navigate to pages; 'Blog' which is essentially the home page, 'About' or 'Book Makeover'. There is a clickable brand logo for all screen sizes that loads the blog page.
+A responsive navigation bar is in place. Concentrating on 'mobile first' design, the navigation bar incorporates a clickable burger icon with a drop down menu on mobile. There is a burger icon at tablet size too, but when moving to monitor size the burger disappears and a navigation bar appears with options to navigate to pages; 'Blog' which is essentially the home page, 'About' or 'Book Makeover'. There is a clickable brand logo for all screen sizes that loads the blog page. See mobile and monitor screenshots below.
 
-#### Mobile navigation bar with burger menu
+#### Mobile navigation using burger menu
 
 ![Mobile navbar with burger menu](docs/readme_images/navbar_burger.PNG)
 
@@ -116,23 +116,29 @@ A responsive navigation bar is in place. Concentrating on 'mobile first' design,
 
 ### Hero Image
 
-The hero image was chosen to convey the main topic of the blog site. It is a beauty blog so an image of a brightly colored nail salon was used.
+The hero image was chosen to convey the main topic of the blog site. It is a beauty blog, so an image of a brightly colored nail salon was used.
 
 ![Hero image](docs/readme_images/hero_image.PNG)
 
 ### Django alert messages
 
-Every time there is a change in data the user is alerted. For example when a comment is posted, when a comment is edited, when a comment is deleted, when a booking is created, when a booking is edited or when a booking is deleted. There is also an alert message displayed when a collaboration request is made.
+Every time there is a change in data the user is alerted. For example when a comment is posted, when a comment is edited, when a comment is deleted, when a booking is created, when a booking is edited or when a booking is deleted. There is also an alert message displayed when a collaboration request is made. Below are 3 examples of alert messages, but there are many more shown throughout the site.
 
 #### Django alert message example 1
+
+The first example is a feedback notification that shows "successfully signed in as username" staight after signing in.
 
 ![Django alert message 1](docs/readme_images/django_alert_1.PNG)
 
 #### Django alert message example 2
 
+The second example states "booking submitted! it will turn from colored to black when confirmed. phone us if you would like a short notice appointment." The is an example of a data change being conveyed to the user.
+
 ![Django alert message 2](docs/readme_images/django_alert_2.PNG)
 
 #### Django alert message example 3
+
+The third example states "your booking has been deleted successfully!" This is another example of a data change being conveyed to the user.
 
 ![Django alert message 3](docs/readme_images/django_alert_3.PNG)
 
@@ -176,7 +182,7 @@ Pagination makes a long list of blog posts more manageable for users. It is comp
 
 ### About page
 
-The user does not need to be logged in to view the about page. Here there is the hero image at the top. Then the div that tells the user whether they are logged in or not. Followed by; the about title (so that the user can confirm what page they are on), a portrait of the business owner, the content title and the about content. The about content tells the user about the business CEO and also directs the user depending on whether they are a beauty 'enthusiast' or beauty 'professional'. It states "Enthusiast? Read our blog, register to leave comments or book a makeover!". Also it states, "Professional? Please fill in our form below if you would like to offer your services or if you would like to collaborate on a blog post!". Underneath this is a collaboration form targeted at beauty professionals that would like to collaborate on blog posts or offer their services for our makeovers.
+The user does not need to be logged in to view the about page. The hero image at the top. Then the div that tells the user whether they are logged in or not. Followed by; the about title (so that the user can confirm what page they are on), a portrait of the business owner, the content title and the about content. The about content tells the user about the business CEO and directs the user depending on whether they are a beauty 'enthusiast' or beauty 'professional'. It states "Enthusiast? Read our blog, register to leave comments or book a makeover!". Also it states, "Professional? Please fill in our form below if you would like to offer your services or if you would like to collaborate on a blog post!". Underneath this is a collaboration form targeted at beauty professionals that would like to collaborate on blog posts or offer their services for our makeovers.
 
 ![About page](docs/readme_images/about_page_ss.PNG)
 
@@ -278,20 +284,22 @@ A 403 page was implemented to assist with the UserPassesTestMixin. This page enh
 
 This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
 
-In the screenshot below it can be seen where must have and should have labels have been used and in the second screenshot underneat that one it can be seen where could have and won't have labels were used.
+In the screenshot below it can be seen where 'must have' and 'should have' labels have been used and in the second screenshot underneat that one, it can be seen where 'could have' and 'won't have' labels were used.
 
 ![MoSCoW screenshot 1](docs/readme_images/moscow_ss_1.PNG)
 
-See in the screenshot below that the 'could have' labels and 'wont have' labels ended up on the same issues. This is because they were just classified as 'could have' until I got near to the deadline. Then I realised I wouldn't have time to implement the like-feature so it was moved to won't have. This was acceptable because the like-feature was not necessary for mvp. Normal agile project dynamics were demonstrated here.
+See in the screenshot below that the 'could have' labels and 'wont have' labels ended up on the same issues. This is because they were just classified as 'could have' until I got near to the deadline. Then I realised I wouldn't have time to implement the like-feature, so it was moved to 'won't have'. This was acceptable, because the like-feature was not necessary for mvp. Normal agile project dynamics were demonstrated here.
 
 ![MoSCoW screenshot 2](docs/readme_images/moscow_ss_2.PNG)
 
 ## Future features
 
-- A 'like' feature on the blog posts, with 'like' counter
-- Sticky navbar
-- Email confirmation sent to the user when there collaboration request is either recieved or read
+- A 'like' feature on the blog posts, with 'like' counter. This was on the project's kanban board as a 'could have'. However, it was moved to 'won't have' in the allowed timeframe for project submission. A like feature is something that can be implemented in future when time allows
+- A search feature in the navigation bar to allow users to search for specific topics they are interested in
+- Password reset so that if a user forgets their password they can regain access to their account
+- Email confirmation sent to the user when their collaboration request is either recieved or read
 - Email confirmation when a booking is confirmed
+- Sticky navbar
 - Merge 'static' and 'staticfiles' folders and implement the appropriate settings so that I only need the static folder instead of both
 
 ## Design
@@ -318,6 +326,8 @@ Only if further colors needed - Mustard, Green
 See color palette below for an illustration of all colors mentioned
 
 ![Accessible color palette](docs/readme_images/color_palette_peachfuzz.PNG)
+
+All colors that were used in the end were generated as 'close to' the colors mentioned here, but were slightly changed due to either 'look' or 'lighthouse results' in the end. The colors mentioned here were the initial inspiration for the website - which was retained to a large extent with slight deviation.
 
 ## Wireframes
 
@@ -638,7 +648,7 @@ Note: The difference between clone and fork is, you need permissions to push bac
 - Blog image for peach blush is from [unsplash](https://unsplash.com/photos/woman-with-red-lipstick-and-black-mascara-7tz7I7naQ8c)
 - Blog image for winter tanning is from [pixabay](https://pixabay.com/photos/woman-beach-people-sea-bikini-909323/)
 - Blog image for eyeliner flick is from [unsplash](https://unsplash.com/photos/woman-in-black-crew-neck-shirt-smiling-LgftFZJe_oQ)
-- Default image for blogs and for makeover deals is a bed in a salon and thats from [pexels](https://www.pexels.com/photo/massage-table-in-modern-cosmetology-salon-6899551/)
+- Default image for blogs and static image for makeover deals is a bed in a salon and thats from [pexels](https://www.pexels.com/photo/massage-table-in-modern-cosmetology-salon-6899551/)
 
 ### Inspiration from real world beauty blogs
 
