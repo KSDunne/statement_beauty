@@ -391,6 +391,7 @@ Please find a screenshot of tables below. These tables are in preparation for th
   Used to add custom styles
 - [Django](https://www.djangoproject.com/ "link to django docs homepage")
   The python framework used to develop the site
+- [VS Code](https://code.visualstudio.com/) Was used as the ide for this whole project
 - [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage")
   Used to host images
 - [GitHub](https://github.com/ "Link to github webpage")
@@ -401,8 +402,10 @@ Please find a screenshot of tables below. These tables are in preparation for th
   dbdiagram was used to make a diagram of the database schema. The diagram was based off erd tables that were documented in excel
 - [Excel](https://microsoft.com/excel "Link to official microsoft excel website")
   Used to created entity relationship tables in preparation for the database schema that was made in dbdiagram
-- [Prettier](https://prettier.io/)
-- [Black Formatter for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+- [Prettier](https://prettier.io/) Used as the default formatter in Visual Studio Code IDE, for html and css files. The setting 'format on save' was used.
+- [Black Formatter for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) Used as the default formatter in Visual Studio Code IDE, for python files. The setting 'format on save' was used.
+- [Bootstrap](https://getbootstrap.com/) Used to quickly layout, position and size critical website features
+- [Balsamiq](https://balsamiq.com/wireframes/) Used in early planning to map out wireframes
 
 ## Testing
 
