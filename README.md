@@ -8,6 +8,10 @@
 
 Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.herokuapp.com)
 
+## Purpose of the project
+
+Statement Beauty is a fictitious business that started out as a blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website provides the user with; a blog, comments sections, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time.
+
 ## Table of contents
 
 - [User experience (UX)](#user-experience-ux)
@@ -19,7 +23,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
    * [User stories](#user-stories)
 - [Features](#features)
    * [Logo and navigation bar](#logo-and-navigation-bar)
-   * [Hero Image](#hero-image)
+   * [Hero image](#hero-image)
    * [Django alert messages](#django-alert-messages)
    * [Clear indication as to whether the user is logged in or out at all times](#clear-indication-as-to-whether-the-user-is-logged-in-or-out-at-all-times)
    * [Call to action button](#call-to-action-button)
@@ -29,7 +33,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
    * [About page](#about-page)
    * [Collaboration request form](#collaboration-request-form)
    * [Sign in form](#sign-in-form)
-   * [Register Form (Sign up)](#register-form-sign-up)
+   * [Register form (Sign up)](#register-form-sign-up)
    * [Sign out page](#sign-out-page)
    * [Book a makeover page](#book-a-makeover-page)
    * [Makeover deals](#makeover-deals)
@@ -51,14 +55,14 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
    * [Index page wireframes](#index-page-wireframes)
    * [About page wireframes](#about-page-wireframes)
    * [Book makeover page wireframes](#book-makeover-page-wireframes)
-   * [Blog Post Detail Page](#blog-post-detail-page)
-   * [Register Page](#register-page)
-   * [Log In Page](#log-in-page)
-   * [Log Out Page](#log-out-page)
+   * [Blog post detail page](#blog-post-detail-page)
+   * [Register page](#register-page)
+   * [Log in page](#log-in-page)
+   * [Log out page](#log-out-page)
 - [Database schema](#database-schema)
-   * [Entity Relationship Diagram](#entity-relationship-diagram)
-   * [Entity Relationship Tables](#entity-relationship-tables)
-- [Technology Used](#technology-used)
+   * [Entity relationship diagram](#entity-relationship-diagram)
+   * [Entity relationship tables](#entity-relationship-tables)
+- [Technology used](#technology-used)
    * [Languages and framework](#languages-and-framework)
    * [Database](#database)
    * [Technologies and tools](#technologies-and-tools)
@@ -67,7 +71,7 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
    * [Unfixed bugs](#unfixed-bugs)
    * [Supported screens and browsers](#supported-screens-and-browsers)
 - [Deployment](#deployment)
-   * [Pre Deployment](#pre-deployment)
+   * [Pre deployment](#pre-deployment)
    * [Deploying with heroku](#deploying-with-heroku)
    * [Fork this repository:](#fork-this-repository)
    * [Clone this repository:](#clone-this-repository)
@@ -76,79 +80,6 @@ Link to live website: [Statement Beauty](https://statement-beauty-ec9472f892b1.h
    * [Media](#media)
    * [Inspiration from real world beauty blogs](#inspiration-from-real-world-beauty-blogs)
 - [Acknowledgements](#acknowledgements)
-
-## Purpose of the project
-
-Statement Beauty is a fictitious business that started out as a blog and had so much interest from expert beauticians that they were able to start offering makeover appointments (hair or makeup), which could be booked on the same site as the blog. This is a full stack website built using the Django web framework, with the aim of converting blog readers into makeover customers. This website provides the user with; a blog, comments sections, an about page to read about the business owner and the business itself, a form for users that are not registered to make collaboration requests, and an app for registered website users to make bookings for a makeover. The makeover app also describes whatever deal we have on makeovers, trending at that time.
-
-## Table of contents
-
-- [Statement Beauty Blog](#statement-beauty-blog)
-   * [User experience (UX)](#user-experience-ux)
-      + [Key project goals](#key-project-goals)
-      + [Target audience](#target-audience)
-      + [User requirements and expectations](#user-requirements-and-expectations)
-   * [Epics and user stories](#epics-and-user-stories)
-      + [Epics](#epics)
-      + [User stories](#user-stories)
-   * [Features](#features)
-      + [Logo and navigation bar](#logo-and-navigation-bar)
-      + [Hero Image](#hero-image)
-      + [Django alert messages](#django-alert-messages)
-      + [Clear indication as to whether the user is logged in or out at all times](#clear-indication-as-to-whether-the-user-is-logged-in-or-out-at-all-times)
-      + [Call to action button](#call-to-action-button)
-      + [A list of blog posts](#a-list-of-blog-posts)
-      + [See an individual blog post in detail](#see-an-individual-blog-post-in-detail)
-      + [Pagination](#pagination)
-      + [About page](#about-page)
-      + [Collaboration request form](#collaboration-request-form)
-      + [Sign in form](#sign-in-form)
-      + [Register Form (Sign up)](#register-form-sign-up)
-      + [Sign out page](#sign-out-page)
-      + [Book a makeover page](#book-a-makeover-page)
-      + [Makeover deals](#makeover-deals)
-      + [Form with CRUD functionality to book a makeover when logged in](#form-with-crud-functionality-to-book-a-makeover-when-logged-in)
-      + [View the bookings I have made when I am logged in](#view-the-bookings-i-have-made-when-i-am-logged-in)
-      + [Edit the bookings I have made when I am logged in](#edit-the-bookings-i-have-made-when-i-am-logged-in)
-      + [Delete the bookings I have made when I am logged in](#delete-the-bookings-i-have-made-when-i-am-logged-in)
-      + [View comments on posts](#view-comments-on-posts)
-      + [CRUD functionality on comments when logged in](#crud-functionality-on-comments-when-logged-in)
-      + [Footer](#footer)
-      + [Price of makeup and hair appointments](#price-of-makeup-and-hair-appointments)
-      + [Custom 404 page](#custom-404-page)
-      + [Custom 403 page](#custom-403-page)
-      + [MoSCoW](#moscow)
-   * [Future features](#future-features)
-   * [Design](#design)
-      + [Color](#color)
-   * [Wireframes](#wireframes)
-      + [Index page wireframes](#index-page-wireframes)
-      + [About page wireframes](#about-page-wireframes)
-      + [Book makeover page wireframes](#book-makeover-page-wireframes)
-      + [Blog Post Detail Page](#blog-post-detail-page)
-      + [Register Page](#register-page)
-      + [Log In Page](#log-in-page)
-      + [Log Out Page](#log-out-page)
-   * [Database schema](#database-schema)
-      + [Entity Relationship Diagrams](#entity-relationship-diagrams)
-   * [Technology Used](#technology-used)
-      + [Languages and framework](#languages-and-framework)
-      + [Database](#database)
-      + [Technologies and tools](#technologies-and-tools)
-   * [Testing](#testing)
-      + [Fixed bugs](#fixed-bugs)
-      + [Unfixed bugs](#unfixed-bugs)
-      + [Supported screens and browsers](#supported-screens-and-browsers)
-   * [Deployment](#deployment)
-      + [Pre Deployment](#pre-deployment)
-      + [Deploying with heroku](#deploying-with-heroku)
-      + [Fork this repository:](#fork-this-repository)
-      + [Clone this repository:](#clone-this-repository)
-   * [Credits](#credits)
-      + [Code](#code)
-      + [Media](#media)
-      + [Inspiration from real world beauty blogs](#inspiration-from-real-world-beauty-blogs)
-   * [Acknowledgements](#acknowledgements)
 
 ## User experience (UX)
 
@@ -250,7 +181,7 @@ A responsive navigation bar is in place. Concentrating on 'mobile first' design,
 
 ![Monitor navbar](docs/readme_images/navbar_monitor.PNG)
 
-### Hero Image
+### Hero image
 
 The hero image was chosen to convey the main topic of the blog site. It is a beauty blog, so an image of a brightly colored nail salon was used.
 
@@ -334,7 +265,7 @@ This is a crispy form that asks for username and password. It was styled with a 
 
 ![Sign in form](docs/readme_images/sign_in_form.PNG)
 
-### Register Form (Sign up)
+### Register form (Sign up)
 
 This is a crispy form. I styled it with a light yellow background and I removed the bullet point dots that are normally present on the password instructions (e.g. your password must contain at least 8 characters). The username and password (x2) are required fields and the email is optional.
 
@@ -493,7 +424,7 @@ The overall structure was kept from initial inception of wireframes to the resul
 
 ![Makeover Monitor](docs/readme_images/Monitor_Book_Makeover.png)
 
-### Blog Post Detail Page
+### Blog post detail page
 
 ![Blog Post iPhone SE](docs/readme_images/Post_Detail_Page.png)
 
@@ -501,7 +432,7 @@ The overall structure was kept from initial inception of wireframes to the resul
 
 ![Blog Post Monitor](docs/readme_images/Monitor_Post_Detail.png)
 
-### Register Page
+### Register page
 
 ![Register iPhone SE](docs/readme_images/Register_Page.png)
 
@@ -509,7 +440,7 @@ The overall structure was kept from initial inception of wireframes to the resul
 
 ![Register Monitor](docs/readme_images/Monitor_Register.png)
 
-### Log In Page
+### Log in page
 
 ![Log In iPhone SE](docs/readme_images/Login_Page.png)
 
@@ -517,7 +448,7 @@ The overall structure was kept from initial inception of wireframes to the resul
 
 ![Log In Monitor](docs/readme_images/Monitor_Login.png)
 
-### Log Out Page
+### Log out page
 
 ![Log Out iPhone SE](docs/readme_images/Logout_Page.png)
 
@@ -527,13 +458,13 @@ The overall structure was kept from initial inception of wireframes to the resul
 
 ## Database schema
 
-### Entity Relationship Diagram
+### Entity relationship diagram
 
 In the diagram below it can be seen that User has a relationship to Post, Comment and Booking. Comment has a relationship with both User and Post.
 
 ![DBSchema](docs/readme_images/db_schema.PNG)
 
-### Entity Relationship Tables
+### Entity relationship tables
 
 Please find a screenshot of tables below. These tables are in preparation for the final entity relationship diagram (ERD). This excel sheet was my rough work that I prepared before making the database schema using dbdiagram.io, that can be seen above.
 
@@ -701,7 +632,7 @@ To my knowledge, on submission of this project for assessment, there are no unfi
 
 All code for this project was written in visual studio integrated development environment. Github was used for version control and the application was deployed to heroku from github.
 
-### Pre Deployment
+### Pre deployment
 
 - To ensure successful deployment with heroku, it's good practice to make sure that the requirements.txt file is kept up to date so as that imported python modules are configured correctly.
 - A Procfile is required to allow heroku deployment to be configured to a gunicorn web app.
