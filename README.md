@@ -572,7 +572,7 @@ In the screen shot below is showing the 'after' of the fix. Where is underlined 
 
 2. Filter bookings bug
 
-When I was logged in as username 'katiedunne' I was still being shown bookings from another user called 'Sophie. This can be seen in the screenshot below. This was fixed in 2 ways; by adding a login required decorator to the view, like this one '@login_required', and by adding a filter for the username to the query, i.e. '.filter(username=request.user)'.
+When I was logged in as username 'katiedunne' I was still being shown bookings from another user called 'Sophie'. This can be seen in the screenshot below. This was fixed in 2 ways; by adding a login required decorator to the view, like this one '@login_required', and by adding a filter for the username to the query, i.e. '.filter(username=request.user)'.
 
 #### What booking filter problem looked like
 
@@ -598,7 +598,7 @@ I was on the makeover page but the navbar was showing the about page as bold. Th
 
 The warnings that can be seen in the screenshot were appearing in the console. The warnings say that insecure elements were requested with http instead of https. These are the blog images that are hosted on cloudinary. When I encountered this problem I looked in the 'project-portfolio-4' channel on slack and another student had encountered this problem also. They used the following code in settings.py and this worked for removing the console warnings for them: 'cloudinary.config(secure=True)'. It worked to remove warnings for me too.
 
-I was also having a problem with my cloudinary images being large so I changed a setting under the 'optimization' tab on cloudinary to 'economy mode' for default image quality. This improved the performance score in lighthouse, slightly. If time allowed a better solution for the image size problem might have been [django resized fields](https://pypi.org/project/django-resized/).
+I was also having a problem with my cloudinary images being large, so I changed a setting under the 'optimization' tab on cloudinary to 'economy mode' for default image quality. This improved the performance score in lighthouse, slightly. If time allowed a better solution for the image size problem might have been [django resized fields](https://pypi.org/project/django-resized/).
 
 Here is a screenshot of the warnings I was getting:
 
