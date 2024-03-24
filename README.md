@@ -402,57 +402,99 @@ The overall structure was kept from initial inception of wireframes to the resul
 
 ### Index page wireframes
 
+#### Mobile
+
 ![Index iPhone SE](docs/readme_images/Home_Page.png)
 
+#### Tablet
+
 ![Index Tablet](docs/readme_images/Tablet_Home.png)
+
+#### Monitor
 
 ![Index Monitor](docs/readme_images/Monitor_Home.png)
 
 ### About page wireframes
 
+#### Mobile
+
 ![About iPhone SE](docs/readme_images/About_Page.png)
 
+#### Tablet
+
 ![About Tablet](docs/readme_images/Tablet_About.png)
+
+#### Monitor
 
 ![About Monitor](docs/readme_images/Monitor_About.png)
 
 ### Book makeover page wireframes
 
+#### Mobile
+
 ![Makover iPhone SE](docs/readme_images/Book_Makeover_Page.png)
 
+#### Tablet
+
 ![Makeover Tablet](docs/readme_images/Tablet_Book_Makeover.png)
+
+#### Monitor
 
 ![Makeover Monitor](docs/readme_images/Monitor_Book_Makeover.png)
 
 ### Blog post detail page
 
+#### Mobile
+
 ![Blog Post iPhone SE](docs/readme_images/Post_Detail_Page.png)
 
+#### Tablet
+
 ![Blog Post Tablet](docs/readme_images/Tablet_Post_Detail.png)
+
+#### Monitor
 
 ![Blog Post Monitor](docs/readme_images/Monitor_Post_Detail.png)
 
 ### Register page
 
+#### Mobile
+
 ![Register iPhone SE](docs/readme_images/Register_Page.png)
 
+#### Tablet
+
 ![Register Tablet](docs/readme_images/Tablet_Register.png)
+
+#### Monitor
 
 ![Register Monitor](docs/readme_images/Monitor_Register.png)
 
 ### Log in page
 
+#### Mobile
+
 ![Log In iPhone SE](docs/readme_images/Login_Page.png)
 
+#### Tablet
+
 ![Log In Tablet](docs/readme_images/Tablet_Login.png)
+
+#### Monitor
 
 ![Log In Monitor](docs/readme_images/Monitor_Login.png)
 
 ### Log out page
 
+#### Mobile
+
 ![Log Out iPhone SE](docs/readme_images/Logout_Page.png)
 
+#### Tablet
+
 ![Log Out Tablet](docs/readme_images/Tablet_Logout.png)
+
+#### Monitor
 
 ![Log Out Monitor](docs/readme_images/Monitor_Logout.png)
 
